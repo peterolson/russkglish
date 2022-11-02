@@ -1,7 +1,5 @@
 <script lang="ts">
 	import { enToIPA } from '../lib/toIPA';
-
-	console.log('enToIPA', enToIPA('hello'));
 </script>
 
 <h1>Welcome to SvelteKit</h1>

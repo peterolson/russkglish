@@ -216,15 +216,15 @@ for (const test of tests) {
 	const ruIPA = ruToIPA(ru);
 	total++;
 	if (ipa !== enIPA) {
-		console.warn(en, ipa, enIPA);
+		//console.warn(en, ipa, enIPA);
 		failed++;
 	} else if (ipa !== ruIPA) {
-		console.warn(ru, ipa, ruIPA);
+		//console.warn(ru, ipa, ruIPA);
 		failed++;
 	} else {
-		console.log(en, ru, ipa, enIPA);
+		//console.log(en, ru, ipa, enIPA);
 		passed++;
 	}
 }
 
-console.log(`${passed} passed. ${failed} failed. ${total} total.`);
+//console.log(`${passed} passed. ${failed} failed. ${total} total.`);
