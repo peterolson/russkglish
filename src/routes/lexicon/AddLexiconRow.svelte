@@ -1,5 +1,6 @@
 <script lang="ts">
 	import ChipInput from '@/components/ChipInput.svelte';
+	import { lexicon } from '@/data/lexicon';
 	import { partsOfSpeech, type LexiconEntry, type PartOfSpeech } from '@/data/lexicon.types';
 	import { enToIPA, ruToIPA } from '@/lib/toIPA';
 
@@ -23,13 +24,23 @@
 	let enIPA = '';
 	let ruIPA = '';
 	let ipaMatches = true;
+	let alreadyExists = false;
 	let isDisabled = true;
 	$: {
 		enIPA = enToIPA(en);
 		ruIPA = ruToIPA(ru);
 		ipaMatches = enIPA === ruIPA;
+		alreadyExists = !!enIPA && lexicon.some((entry) => entry.ipa === enIPA);
+		console.log('alreadyExists', alreadyExists, enIPA);
 		isDisabled =
-			!en || !ru || !ipaMatches || !ruGloss || !enGloss || !pos.length || !/[а-ё]/i.test(ru);
+			!en ||
+			!ru ||
+			!ipaMatches ||
+			!ruGloss ||
+			!enGloss ||
+			!pos.length ||
+			!/[а-ё]/i.test(ru) ||
+			alreadyExists;
 	}
 
 	async function addRow() {
@@ -63,6 +74,9 @@
 		{:else}
 			<div class="ipa not-matched">{enIPA}</div>
 			<div class="ipa not-matched">{ruIPA}</div>
+		{/if}
+		{#if alreadyExists}
+			<div class="caption not-matched">already exists</div>
 		{/if}
 	</td>
 	<td>
@@ -118,5 +132,8 @@
 	}
 	button {
 		margin-left: 4px;
+	}
+	.caption {
+		font-size: 0.8em;
 	}
 </style>

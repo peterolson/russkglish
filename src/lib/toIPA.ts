@@ -114,6 +114,7 @@ export function ruToIPA(ru: string) {
 		.replaceAll('ш', 'ʃ')
 		.replaceAll('щ', 'tʃ')
 		.replaceAll('ꙑ', 'ɵ')
+		.replaceAll('ы', 'ɨ')
 		.replaceAll('ь', '')
 		.replaceAll('э', 'ɪ')
 		.replaceAll('ю', 'ju')
