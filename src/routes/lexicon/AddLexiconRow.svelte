@@ -7,7 +7,7 @@
 	export let isEditing = false;
 	export let onCancel: () => void = () => {};
 	export let initialEntry: LexiconEntry = {
-		id: 0,
+		id: -1,
 		ipa: '',
 		en: '',
 		enGloss: '',
@@ -30,17 +30,9 @@
 		enIPA = enToIPA(en);
 		ruIPA = ruToIPA(ru);
 		ipaMatches = enIPA === ruIPA;
-		alreadyExists = !!enIPA && lexicon.some((entry) => entry.ipa === enIPA);
-		console.log('alreadyExists', alreadyExists, enIPA);
-		isDisabled =
-			!en ||
-			!ru ||
-			!ipaMatches ||
-			!ruGloss ||
-			!enGloss ||
-			!pos.length ||
-			!/[а-ё]/i.test(ru) ||
-			alreadyExists;
+		const existingRow = lexicon.find((row) => row.ipa === enIPA);
+		alreadyExists = !!existingRow && existingRow.id !== initialEntry.id;
+		isDisabled = !en || !ru || !ipaMatches || !ruGloss || !enGloss || !pos.length || alreadyExists;
 	}
 
 	async function addRow() {
@@ -126,6 +118,7 @@
 	}
 	.ipa {
 		font-family: sans-serif;
+		white-space: nowrap;
 	}
 	.not-matched {
 		color: red;

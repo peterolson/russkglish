@@ -28,11 +28,11 @@
 	<AddLexiconRow isEditing onCancel={toggleEditMode} initialEntry={entry} />
 {:else}
 	<tr>
-		<td class="sans">{entry.ipa}</td>
-		<td class="sans">{entry.en}</td>
+		<td class="ipa">{entry.ipa}</td>
+		<td>{entry.en}</td>
 		<td>{entry.enGloss}</td>
 		<td>{entry.enCognate || entry.enGloss}</td>
-		<td class="sans">{entry.ru}</td>
+		<td>{entry.ru}</td>
 		<td>{entry.ruGloss}</td>
 		<td>{entry.ruCognate || entry.ruGloss}</td>
 		<td class="wide"><Chips value={entry.pos} /></td>
@@ -48,13 +48,14 @@
 	td {
 		padding: 4px;
 		text-align: center;
-	}
-
-	.sans {
 		font-family: sans-serif;
 	}
 
 	.wide {
 		width: 125px;
+	}
+
+	.ipa {
+		white-space: nowrap;
 	}
 </style>

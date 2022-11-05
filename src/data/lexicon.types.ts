@@ -8,7 +8,11 @@ export const partsOfSpeech = [
 	'interj',
 	'neg',
 	'num',
-	'prep'
+	'prep',
+	'punct',
+	'punct-left',
+	'punct-right',
+	'punct-middle'
 ] as const;
 
 export type PartOfSpeech = typeof partsOfSpeech[number];

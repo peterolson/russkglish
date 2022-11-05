@@ -6,15 +6,14 @@
 
 <table>
 	<thead>
-		<tr>
+		<tr class="thead1">
 			<th>{lexicon.length} words</th>
 			<th colspan="3">English</th>
 			<th colspan="3">Русский</th>
-			<td />
-			<td />
+			<th colspan="2">&nbsp;á é í ó ö ú &nbsp; а́ е́ и́ о́ у́ ы́ э́ ю́ я́ ꙑ </th>
 			<td />
 		</tr>
-		<tr>
+		<tr class="thead2">
 			<th>IPA</th>
 			<th>Orthography</th>
 			<th>Gloss</th>
@@ -38,10 +37,18 @@
 <style>
 	table {
 		border-collapse: collapse;
+		position: relative;
 	}
 	th {
 		border: 1px solid #ccc;
 		padding: 4px;
 		text-align: center;
+		position: sticky;
+		top: 0;
+		background-color: white;
+	}
+
+	.thead2 th {
+		top: 24px;
 	}
 </style>
