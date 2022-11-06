@@ -100,13 +100,13 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 6,
-        "ipa": "əfˈekt",
+        "ipa": "efˈekt",
         "en": "efféct",
         "enGloss": "effect",
         "enCognate": "effect",
-        "ru": "эффе́кт",
+        "ru": "еффе́кт",
         "ruGloss": "эффект",
-        "ruCognate": "effect",
+        "ruCognate": "эффект",
         "pos": [
             "noun"
         ],
@@ -232,7 +232,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 14,
-        "ipa": "doca",
+        "ipa": "docə",
         "en": "daughta",
         "enGloss": "daughter",
         "enCognate": "daughter",
@@ -249,7 +249,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 15,
-        "ipa": "braθa",
+        "ipa": "braθə",
         "en": "bratha",
         "enGloss": "brother",
         "enCognate": "",
@@ -266,7 +266,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 16,
-        "ipa": "sɪstra",
+        "ipa": "sɪstrə",
         "en": "sistra",
         "enGloss": "sister",
         "enCognate": "sister",
@@ -283,7 +283,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 17,
-        "ipa": "mama",
+        "ipa": "mamə",
         "en": "mama",
         "enGloss": "mother",
         "enCognate": "mama",
@@ -300,7 +300,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 18,
-        "ipa": "papa",
+        "ipa": "papə",
         "en": "papa",
         "enGloss": "father",
         "enCognate": "papa",
@@ -936,6 +936,862 @@ export const lexicon: LexiconEntry[] = [
         ],
         "tags": [
             "symbol"
+        ]
+    },
+    {
+        "id": 58,
+        "ipa": "smeʃ",
+        "en": "smesh",
+        "enGloss": "mix",
+        "enCognate": "mix/mesh/smash",
+        "ru": "смешь",
+        "ruGloss": "смесь/смешивать",
+        "ruCognate": "смесь/смешивать",
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "tags": [
+            "action"
+        ]
+    },
+    {
+        "id": 59,
+        "ipa": "tʃokolat",
+        "en": "chocolat",
+        "enGloss": "chocolate",
+        "enCognate": "",
+        "ru": "щоколат",
+        "ruGloss": "шоколад",
+        "ruCognate": "",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food"
+        ]
+    },
+    {
+        "id": 60,
+        "ipa": "keks",
+        "en": "caykes",
+        "enGloss": "cake",
+        "enCognate": "cakes",
+        "ru": "кекс",
+        "ruGloss": "кекс",
+        "ruCognate": "кекс",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food"
+        ]
+    },
+    {
+        "id": 61,
+        "ipa": "ɪnstrˈuktsiən",
+        "en": "instrúction",
+        "enGloss": "instruction/directions/recipe",
+        "enCognate": "instruction",
+        "ru": "инстру́кция",
+        "ruGloss": "инструкция/рецепт",
+        "ruCognate": "инструкция",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "action"
+        ]
+    },
+    {
+        "id": 62,
+        "ipa": "komˈand",
+        "en": "commánd",
+        "enGloss": "command",
+        "enCognate": "command",
+        "ru": "кома́нд",
+        "ruGloss": "командовать/команда",
+        "ruCognate": "командовать/команда",
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "tags": [
+            "action"
+        ]
+    },
+    {
+        "id": 63,
+        "ipa": "<br>",
+        "en": "<br>",
+        "enGloss": "newline",
+        "enCognate": "<br>",
+        "ru": "<br>",
+        "ruGloss": "новая линия",
+        "ruCognate": "<br>",
+        "pos": [
+            "punct"
+        ],
+        "tags": [
+            "symbol",
+            "html"
+        ]
+    },
+    {
+        "id": 64,
+        "ipa": "sagar",
+        "en": "sagar",
+        "enGloss": "sugar",
+        "enCognate": "sugar",
+        "ru": "сагар",
+        "ruGloss": "сахар",
+        "ruCognate": "сахар",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food"
+        ]
+    },
+    {
+        "id": 65,
+        "ipa": "kakao",
+        "en": "cacao",
+        "enGloss": "cocoa/cacao",
+        "enCognate": "cacao",
+        "ru": "какао",
+        "ruGloss": "какао",
+        "ruCognate": "какао",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food"
+        ]
+    },
+    {
+        "id": 66,
+        "ipa": "ɪngrediˈent",
+        "en": "ingrediént",
+        "enGloss": "ingredient",
+        "enCognate": "ingredient",
+        "ru": "ингредие́нт",
+        "ruGloss": "ingredient",
+        "ruCognate": "ingredient",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food"
+        ]
+    },
+    {
+        "id": 67,
+        "ipa": "oin",
+        "en": "oin",
+        "enGloss": "one",
+        "enCognate": "one",
+        "ru": "оин",
+        "ruGloss": "один",
+        "ruCognate": "один",
+        "pos": [
+            "num"
+        ],
+        "tags": [
+            "number"
+        ]
+    },
+    {
+        "id": 68,
+        "ipa": "twə",
+        "en": "twa",
+        "enGloss": "two",
+        "enCognate": "two",
+        "ru": "твьа",
+        "ruGloss": "два",
+        "ruCognate": "",
+        "pos": [
+            "num"
+        ],
+        "tags": [
+            "number"
+        ]
+    },
+    {
+        "id": 69,
+        "ipa": "θri",
+        "en": "three",
+        "enGloss": "three",
+        "enCognate": "",
+        "ru": "тьри",
+        "ruGloss": "три",
+        "ruCognate": "",
+        "pos": [
+            "num"
+        ],
+        "tags": [
+            "number"
+        ]
+    },
+    {
+        "id": 70,
+        "ipa": "masɪv",
+        "en": "massiv",
+        "enGloss": "big",
+        "enCognate": "massive",
+        "ru": "массив",
+        "ruGloss": "большой",
+        "ruCognate": "массивный",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "quality"
+        ]
+    },
+    {
+        "id": 71,
+        "ipa": "mɪni",
+        "en": "mini",
+        "enGloss": "small",
+        "enCognate": "mini",
+        "ru": "мини",
+        "ruGloss": "маленький",
+        "ruCognate": "мини",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "quality"
+        ]
+    },
+    {
+        "id": 72,
+        "ipa": "smalɨ",
+        "en": "smally",
+        "enGloss": "small",
+        "enCognate": "small",
+        "ru": "смалый",
+        "ruGloss": "маленький",
+        "ruCognate": "малый",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "quality"
+        ]
+    },
+    {
+        "id": 73,
+        "ipa": "granul",
+        "en": "granul",
+        "enGloss": "grain",
+        "enCognate": "granule",
+        "ru": "гранул",
+        "ruGloss": "зерно",
+        "ruCognate": "гранула",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food"
+        ]
+    },
+    {
+        "id": 74,
+        "ipa": "pɵwdr",
+        "en": "pöwdr",
+        "enGloss": "powder/flour",
+        "enCognate": "powder",
+        "ru": "пүдр",
+        "ruGloss": "пудра/мука",
+        "ruCognate": "пудра",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food"
+        ]
+    },
+    {
+        "id": 75,
+        "ipa": "sodə",
+        "en": "soda",
+        "enGloss": "soda",
+        "enCognate": "soda",
+        "ru": "сода",
+        "ruGloss": "сода",
+        "ruCognate": "сода",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food"
+        ]
+    },
+    {
+        "id": 76,
+        "ipa": "mɪlko",
+        "en": "milko",
+        "enGloss": "milk",
+        "enCognate": "milk",
+        "ru": "милко",
+        "ruGloss": "молоко",
+        "ruCognate": "молоко",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food"
+        ]
+    },
+    {
+        "id": 77,
+        "ipa": "nol",
+        "en": "null",
+        "enGloss": "zero/none",
+        "enCognate": "null",
+        "ru": "ноль",
+        "ruGloss": "ноль",
+        "ruCognate": "ноль",
+        "pos": [
+            "num"
+        ],
+        "tags": [
+            "number"
+        ]
+    },
+    {
+        "id": 78,
+        "ipa": "gram",
+        "en": "gram",
+        "enGloss": "gram",
+        "enCognate": "gram",
+        "ru": "грамм",
+        "ruGloss": "грамм",
+        "ruCognate": "грамм",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "measure"
+        ]
+    },
+    {
+        "id": 79,
+        "ipa": "kilogram",
+        "en": "kilogram",
+        "enGloss": "kilogram",
+        "enCognate": "kilogram",
+        "ru": "килограмм",
+        "ruGloss": "килограмм",
+        "ruCognate": "килограмм",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "measure"
+        ]
+    },
+    {
+        "id": 80,
+        "ipa": "portsiən",
+        "en": "portion",
+        "enGloss": "portion/amount/quanity",
+        "enCognate": "portion",
+        "ru": "порция",
+        "ruGloss": "порция/количество",
+        "ruCognate": "порция",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "measure"
+        ]
+    },
+    {
+        "id": 81,
+        "ipa": "solt",
+        "en": "solt",
+        "enGloss": "salt",
+        "enCognate": "salt",
+        "ru": "сольт",
+        "ruGloss": "соль",
+        "ruCognate": "соль",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food"
+        ]
+    },
+    {
+        "id": 82,
+        "ipa": "kofi",
+        "en": "coffee",
+        "enGloss": "coffee",
+        "enCognate": "coffee",
+        "ru": "кофи",
+        "ruGloss": "кофе",
+        "ruCognate": "кофе",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food"
+        ]
+    },
+    {
+        "id": 83,
+        "ipa": "lɪtr",
+        "en": "litr",
+        "enGloss": "liter",
+        "enCognate": "liter",
+        "ru": "литр",
+        "ruGloss": "литр",
+        "ruCognate": "литр",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "measure"
+        ]
+    },
+    {
+        "id": 84,
+        "ipa": "mɪlilɪtr",
+        "en": "millilitr",
+        "enGloss": "milliliter",
+        "enCognate": "milliliter",
+        "ru": "миллилитр",
+        "ruGloss": "миллилитр",
+        "ruCognate": "миллилитр",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "measure"
+        ]
+    },
+    {
+        "id": 85,
+        "ipa": "losion",
+        "en": "locion",
+        "enGloss": "lotion/oil/grease/butter",
+        "enCognate": "lotion",
+        "ru": "лосьион",
+        "ruGloss": "лосьон/масло",
+        "ruCognate": "лосьон",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food"
+        ]
+    },
+    {
+        "id": 86,
+        "ipa": "olɪv",
+        "en": "oliv",
+        "enGloss": "olive",
+        "enCognate": "olive",
+        "ru": "олив",
+        "ruGloss": "оливка",
+        "ruCognate": "олив",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food"
+        ]
+    },
+    {
+        "id": 87,
+        "ipa": "vanˈil",
+        "en": "vaníll",
+        "enGloss": "vanilla",
+        "enCognate": "vanilla",
+        "ru": "вани́ль",
+        "ruGloss": "ваниль",
+        "ruCognate": "ваниль",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food"
+        ]
+    },
+    {
+        "id": 88,
+        "ipa": "wadə",
+        "en": "wada",
+        "enGloss": "water",
+        "enCognate": "water",
+        "ru": "вьада",
+        "ruGloss": "вода",
+        "ruCognate": "вода",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food"
+        ]
+    },
+    {
+        "id": 89,
+        "ipa": "temperatur",
+        "en": "temperatur",
+        "enGloss": "temperature",
+        "enCognate": "temperature",
+        "ru": "температур",
+        "ruGloss": "температура",
+        "ruCognate": "температура",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "measure"
+        ]
+    },
+    {
+        "id": 90,
+        "ipa": "maksimum",
+        "en": "maximum",
+        "enGloss": "maximum",
+        "enCognate": "maximum",
+        "ru": "максимум",
+        "ruGloss": "maximum",
+        "ruCognate": "maximum",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "quality"
+        ]
+    },
+    {
+        "id": 91,
+        "ipa": "minɪmum",
+        "en": "minimum",
+        "enGloss": "minimum",
+        "enCognate": "minimum",
+        "ru": "минимум",
+        "ruGloss": "минимум",
+        "ruCognate": "минимум",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "quality"
+        ]
+    },
+    {
+        "id": 92,
+        "ipa": "ekstrakt",
+        "en": "extract",
+        "enGloss": "extract",
+        "enCognate": "extract",
+        "ru": "екстракт",
+        "ruGloss": "экстракт",
+        "ruCognate": "экстракт",
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "tags": [
+            "food"
+        ]
+    },
+    {
+        "id": 93,
+        "ipa": "nojc",
+        "en": "night",
+        "enGloss": "night",
+        "enCognate": "night",
+        "ru": "нойчь",
+        "ruGloss": "ночь",
+        "ruCognate": "ночь",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "nature"
+        ]
+    },
+    {
+        "id": 94,
+        "ipa": "mojc",
+        "en": "might",
+        "enGloss": "maybe/might",
+        "enCognate": "might",
+        "ru": "мойчь",
+        "ruGloss": "мочь/может",
+        "ruCognate": "мочь",
+        "pos": [
+            "verb"
+        ],
+        "tags": [
+            "function"
+        ]
+    },
+    {
+        "id": 95,
+        "ipa": "tʃɪken",
+        "en": "chicken",
+        "enGloss": "chicken",
+        "enCognate": "chicken",
+        "ru": "чиккен",
+        "ruGloss": "чикен",
+        "ruCognate": "чикен",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food"
+        ]
+    },
+    {
+        "id": 96,
+        "ipa": "embrjon",
+        "en": "embryon",
+        "enGloss": "egg/embryo",
+        "enCognate": "embryo",
+        "ru": "ембрйон",
+        "ruGloss": "яйцо/эмбрион",
+        "ruCognate": "эмбрион",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food"
+        ]
+    },
+    {
+        "id": 97,
+        "ipa": "mɪkser",
+        "en": "mıxer",
+        "enGloss": "mixer",
+        "enCognate": "mixer",
+        "ru": "миксер",
+        "ruGloss": "миксер",
+        "ruCognate": "миксер",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food"
+        ]
+    },
+    {
+        "id": 99,
+        "ipa": "kontejner",
+        "en": "container",
+        "enGloss": "container/box",
+        "enCognate": "container",
+        "ru": "контейнер",
+        "ruGloss": "контейнер/коробка",
+        "ruCognate": "контейнер",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "household"
+        ]
+    },
+    {
+        "id": 100,
+        "ipa": "bekar",
+        "en": "baykar",
+        "enGloss": "baker",
+        "enCognate": "baker",
+        "ru": "бекарь",
+        "ruGloss": "пекарь",
+        "ruCognate": "пекарь",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "people",
+            "food"
+        ]
+    },
+    {
+        "id": 101,
+        "ipa": "to",
+        "en": "to",
+        "enGloss": "to/unitl",
+        "enCognate": "to",
+        "ru": "то",
+        "ruGloss": "до",
+        "ruCognate": "до",
+        "pos": [
+            "prep"
+        ],
+        "tags": [
+            "function"
+        ]
+    },
+    {
+        "id": 102,
+        "ipa": "sevɪm",
+        "en": "sevim",
+        "enGloss": "seven",
+        "enCognate": "seven",
+        "ru": "севимь",
+        "ruGloss": "семь",
+        "ruCognate": "семь",
+        "pos": [
+            "num"
+        ],
+        "tags": [
+            "number"
+        ]
+    },
+    {
+        "id": 103,
+        "ipa": "tselsius",
+        "en": "celsius",
+        "enGloss": "celsius",
+        "enCognate": "celsius",
+        "ru": "цельсиус",
+        "ruGloss": "Цельсия",
+        "ruCognate": "Цельсия",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "measure"
+        ]
+    },
+    {
+        "id": 104,
+        "ipa": "plus",
+        "en": "plus",
+        "enGloss": "plus/add/put",
+        "enCognate": "plus",
+        "ru": "плус",
+        "ruGloss": "плюс/добавить/положить",
+        "ruCognate": "плюс",
+        "pos": [
+            "verb"
+        ],
+        "tags": [
+            "number"
+        ]
+    },
+    {
+        "id": 105,
+        "ipa": "tempo",
+        "en": "tempo",
+        "enGloss": "speed",
+        "enCognate": "tempo",
+        "ru": "темпо",
+        "ruGloss": "скорость",
+        "ruCognate": "темп",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "measure"
+        ]
+    },
+    {
+        "id": 106,
+        "ipa": "formə",
+        "en": "forma",
+        "enGloss": "form/baking pan",
+        "enCognate": "form",
+        "ru": "форма",
+        "ruGloss": "форма/форма для выпечки",
+        "ruCognate": "форма",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "household"
+        ]
+    },
+    {
+        "id": 107,
+        "ipa": "pauzə",
+        "en": "pause",
+        "enGloss": "pause/wait",
+        "enCognate": "pause",
+        "ru": "пауза",
+        "ruGloss": "пауза/ждать",
+        "ruCognate": "пауза",
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "tags": [
+            "time"
+        ]
+    },
+    {
+        "id": 108,
+        "ipa": "minut",
+        "en": "minut",
+        "enGloss": "minute",
+        "enCognate": "minute",
+        "ru": "минут",
+        "ruGloss": "минута",
+        "ruCognate": "минута",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "time",
+            "measure"
+        ]
+    },
+    {
+        "id": 109,
+        "ipa": "dekə",
+        "en": "deca",
+        "enGloss": "ten",
+        "enCognate": "deca(de)/deca(gon)",
+        "ru": "дека",
+        "ruGloss": "десять",
+        "ruCognate": "декад/дека(литр)",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "number"
+        ]
+    },
+    {
+        "id": 110,
+        "ipa": "finɪʃ",
+        "en": "finish",
+        "enGloss": "finish",
+        "enCognate": "finish",
+        "ru": "финиш",
+        "ruGloss": "конец",
+        "ruCognate": "финиш",
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "tags": [
+            "function"
+        ]
+    },
+    {
+        "id": 111,
+        "ipa": "njamnjam",
+        "en": "nyamnyam",
+        "enGloss": "eat/yum yum",
+        "enCognate": "yum yum/nom nom",
+        "ru": "ньямньям",
+        "ruGloss": "кушать/ням ням",
+        "ruCognate": "ням ням",
+        "pos": [
+            "verb"
+        ],
+        "tags": [
+            "food"
         ]
     }
 ];

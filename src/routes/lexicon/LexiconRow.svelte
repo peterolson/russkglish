@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Chips from '@/components/Chips.svelte';
 	import type { LexiconEntry } from '@/data/lexicon.types';
+	import { enToIPA, ruToIPA } from '@/lib/toIPA';
 	import AddLexiconRow from './AddLexiconRow.svelte';
 
 	export let entry: LexiconEntry;
@@ -28,7 +29,12 @@
 	<AddLexiconRow isEditing onCancel={toggleEditMode} initialEntry={entry} />
 {:else}
 	<tr>
-		<td class="ipa">{entry.ipa}</td>
+		<td class="ipa"
+			>{entry.ipa}
+			{#if enToIPA(entry.en) !== entry.ipa || ruToIPA(entry.ru) !== entry.ipa}
+				<div class="error">{enToIPA(entry.en)} {ruToIPA(entry.ru)}</div>
+			{/if}
+		</td>
 		<td>{entry.en}</td>
 		<td>{entry.enGloss}</td>
 		<td>{entry.enCognate || entry.enGloss}</td>
@@ -57,5 +63,9 @@
 
 	.ipa {
 		white-space: nowrap;
+	}
+
+	.error {
+		color: red;
 	}
 </style>

@@ -1,17 +1,22 @@
 export function enToIPA(en: string) {
 	const s = en
-		.toUpperCase()
+		.toLocaleUpperCase('tr-TR')
 		.replaceAll('AUGHT', 'oc')
+		.replaceAll('İGHT', 'ojc')
 		.replace(/^QUE/, 'kwə')
 		.replace(/QU/, 'kw')
-		.replace(/TION$/, 'jtsiən')
+		.replace(/TİON$/, 'jtsiən')
+		.replace(/ULL$/, 'ol')
 		.replaceAll('TLE', 'tl')
 		.replace(/AGE$/, 'aʒ')
+		.replace(/([AEİOUY][^AEİOU])ES$/, '$1s')
 		.replaceAll('TH', 'θ')
 		.replaceAll('SH', 'ʃ')
 		.replaceAll('CH', 'tʃ')
 		.replaceAll('KH', 'x')
-		.replace(/([AEIOUÁÉÍÓÖÚ])S([AEIOUÁÉÍÓÖÚ])/g, '$1z$2')
+		.replace(/^CE/, 'tse')
+		.replaceAll('Cİ', 'sİ')
+		.replace(/([AEİOUÁÉÍÓÖÚ])S([AEİOUÁÉÍÓÖÚ])/g, '$1z$2')
 		.replace(/EE(.)E$/, 'e$1ə')
 		.replace(/Ú(.)E$/, 'jˈu$1')
 		.replace(/Ú(.)E/, 'jˈu$1e')
@@ -21,11 +26,11 @@ export function enToIPA(en: string) {
 		.replace(/EA/, 'i')
 		.replace(/OO/, 'u')
 		.replace(/AY/, 'e')
-		.replace(/I$/, 'i')
-		.replace(/I([^AEIOUÁÉÍÓÖÚ])E$/, 'i$1')
-		.replace(/I(.[AEIOUÁÉÍÓÖÚ])/g, 'i$1')
-		.replace(/I([AEIOUÁÉÍÓÖÚ])/, 'i$1')
-		.replace(/OI/, 'oi')
+		.replace(/İ$/, 'i')
+		.replace(/İ([^AEİOUÁÉÍÓÖÚ])E$/, 'i$1')
+		.replace(/İ(.[AEİOUÁÉÍÓÖÚ])/g, 'i$1')
+		.replace(/İ([AEİOUÁÉÍÓÖÚ])/, 'i$1')
+		.replace(/Oİ/, 'oi')
 		.replace(/WE$/, 'wɨ')
 		.replace(/^(.)E$/, '$1i')
 		.replace(/([^AEIOUÁÉÍÓÖÚ][^AEIOUÁÉÍÓÖÚ])E$/, '$1ə')
@@ -45,6 +50,7 @@ export function enToIPA(en: string) {
 		.replaceAll('F', 'f')
 		.replaceAll('G', 'g')
 		.replaceAll('H', 'x')
+		.replaceAll('İ', 'ɪ')
 		.replaceAll('I', 'ɪ')
 		.replaceAll('J', 'ʒ')
 		.replaceAll('K', 'k')
@@ -62,7 +68,8 @@ export function enToIPA(en: string) {
 		.replaceAll('X', 'ks')
 		.replaceAll('Y', 'j')
 		.replaceAll('“', '«')
-		.replaceAll('”', '»');
+		.replaceAll('”', '»')
+		.replaceAll('ai', 'ej');
 
 	return applyPhonologicalRules(removeDuplicateLetters(s));
 }
@@ -84,9 +91,9 @@ export function ruToIPA(ru: string) {
 		.replace(/ий/, 'i')
 		.replace(/ый$/, 'ɨ')
 		.replace(/^мы/, 'mwɨ')
-		.replace(/(\u0301?[аеёиоуыэюя])и/, '$1i')
-		.replace(/и(\u0301?[аеёиоуыэюя])/, 'i$1')
-		.replace(/и(.\u0301?[аеёиоуыэюя])/g, 'i$1')
+		.replace(/([аеёиоуыэюя])и/, '$1i')
+		.replace(/и(ˈ?[аеёиоуыэюя])/, 'i$1')
+		.replace(/и(.ˈ?[аеёиоуыэюя])/g, 'i$1')
 		.replaceAll('а', 'a')
 		.replaceAll('б', 'b')
 		.replaceAll('в', 'v')
@@ -110,10 +117,12 @@ export function ruToIPA(ru: string) {
 		.replaceAll('ф', 'f')
 		.replaceAll('х', 'x')
 		.replaceAll('ц', 'ts')
+		.replace(/^ч/, 'tʃ')
 		.replaceAll('ч', 'c')
 		.replaceAll('ш', 'ʃ')
 		.replaceAll('щ', 'tʃ')
 		.replaceAll('ꙑ', 'ɵ')
+		.replaceAll('ү', 'ɵw')
 		.replaceAll('ы', 'ɨ')
 		.replaceAll('ь', '')
 		.replaceAll('э', 'ɪ')
@@ -128,18 +137,22 @@ function removeDuplicateLetters(s: string) {
 }
 
 function applyPhonologicalRules(s: string) {
-	// unstressed initial e changes to schwa
-	const hasNonInitialStress = s.includes('ˈ');
-	if (hasNonInitialStress && (s.startsWith('e') || s.startsWith('ɪ'))) {
-		return 'ə' + s.slice(1);
-	}
+	// final a and e to schwa
+	s = s.replace(/([ae])$/, 'ə');
+
 	// final j after consonant changes to i
 	if (s.endsWith('j')) {
 		const beforeLast = s.charAt(s.length - 2);
 		if (!/[aeiouɨɪəɵ]/.test(beforeLast)) {
-			return s.slice(0, -1) + 'i';
+			s = s.slice(0, -1) + 'i';
 		}
 	}
+	// j between consonants is removed
+	s = s.replace(/([^aeiouɨɪəɵ])j([^aeiouɨɪəɵ])/g, '$1$2');
+
+	// uw -> u
+	s = s.replace(/uw/g, 'u');
+
 	return s;
 }
 
@@ -223,26 +236,3 @@ pik	peak	пийк`
 		en: x[1],
 		ru: x[2]
 	}));
-
-console.clear();
-let passed = 0;
-let total = 0;
-let failed = 0;
-for (const test of tests) {
-	const { en, ru, ipa } = test;
-	const enIPA = enToIPA(en);
-	const ruIPA = ruToIPA(ru);
-	total++;
-	if (ipa !== enIPA) {
-		//console.warn(en, ipa, enIPA);
-		failed++;
-	} else if (ipa !== ruIPA) {
-		//console.warn(ru, ipa, ruIPA);
-		failed++;
-	} else {
-		//console.log(en, ru, ipa, enIPA);
-		passed++;
-	}
-}
-
-//console.log(`${passed} passed. ${failed} failed. ${total} total.`);

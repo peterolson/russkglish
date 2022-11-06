@@ -2,6 +2,7 @@
 	import type { WordDisplaySettings } from '@/components/WordDisplay.settings';
 	import WordDisplay from '@/components/WordDisplay.svelte';
 	import { lexicon } from '@/data/lexicon';
+	import { enToIPA } from '@/lib/toIPA';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -10,11 +11,20 @@
 	let text = '';
 	let original = data.textData.join(',');
 	let settings: WordDisplaySettings = { orthography: 'ipa' };
+	let textData = data.textData;
+
+	let [enName, ruName] = data.textName.split('|');
+	let ipaName = enToIPA(enName);
+	let textName = {
+		en: enName,
+		ru: ruName,
+		ipa: ipaName
+	};
 
 	$: lexiconEntries = text.length
 		? lexicon.filter((entry) => JSON.stringify(entry).toLowerCase().includes(text.toLowerCase())).slice(0, 9)
 		: [];
-	$: hasChanges = original !== data.textData.join(',');
+	$: hasChanges = original !== textData.join(',');
 
 	function keydown(event: KeyboardEvent) {
 		const keyPressed = event.key;
@@ -23,11 +33,10 @@
 			const number = parseInt(keyPressed);
 			if (number <= lexiconEntries.length) {
 				const entry = lexiconEntries[number - 1];
-				data.textData.splice(caretIndex, 0, entry.id);
+				textData.splice(caretIndex, 0, entry.id);
 				text = '';
 				caretIndex += 1;
 			}
-			data.textData = [...data.textData];
 		}
 		// is other symbol
 		else if (keyPressed.length === 1) {
@@ -38,14 +47,14 @@
 			if (text) {
 				text = text.slice(0, -1);
 			} else if (caretIndex > 0) {
-				data.textData.splice(caretIndex - 1, 1);
+				textData.splice(caretIndex - 1, 1);
 				caretIndex -= 1;
 			}
 		}
 		// delete
 		else if (keyPressed === 'Delete') {
 			if (caretIndex < data.textData.length) {
-				data.textData.splice(caretIndex, 1);
+				textData.splice(caretIndex, 1);
 			}
 		}
 		// right arrow
@@ -60,7 +69,7 @@
 				caretIndex -= 1;
 			}
 		}
-		data.textData = [...data.textData];
+		textData = [...textData];
 	}
 
 	async function save() {
@@ -69,9 +78,9 @@
 			headers: {
 				'Content-Type': 'application/json'
 			},
-			body: JSON.stringify(data)
+			body: JSON.stringify({ textData })
 		});
-		original = data.textData.join(',');
+		original = textData.join(',');
 	}
 </script>
 
@@ -83,18 +92,18 @@
 	<option value="ru">Russian</option>
 </select>
 
-<h1>{data.textName}</h1>
+<h1>{textName[settings.orthography]}</h1>
 {#if hasChanges}
 	<button on:click={save}>Save</button>
 {/if}
 
 <div class="text">
-	{#each data.textData as wordId, i}{#if i === caretIndex}
+	{#each textData as wordId, i}{#if i === caretIndex}
 			<span class="caret">&nbsp;</span>
 		{/if}<span on:click={() => (caretIndex = i + 1)} on:keydown>
-			<WordDisplay {wordId} {settings} nextWordId={data.textData[i + 1]} prevWordId={data.textData[i - 1]} />
+			<WordDisplay {wordId} {settings} nextWordId={textData[i + 1]} prevWordId={textData[i - 1]} />
 		</span>{/each}
-	{#if caretIndex === data.textData.length}
+	{#if caretIndex === textData.length}
 		<span class="caret">&nbsp;</span>
 	{/if}
 </div>

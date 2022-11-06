@@ -10,8 +10,7 @@
 			<th>{lexicon.length} words</th>
 			<th colspan="3">English</th>
 			<th colspan="3">Русский</th>
-			<th colspan="2">&nbsp;á é í ó ö ú &nbsp; а́ е́ и́ о́ у́ ы́ э́ ю́ я́ ꙑ </th>
-			<td />
+			<th colspan="3">&nbsp;á é í ó ö ú &nbsp; а́ е́ и́ о́ у́ ы́ э́ ю́ я́ ꙑ ү </th>
 		</tr>
 		<tr class="thead2">
 			<th>IPA</th>
