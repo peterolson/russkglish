@@ -59,58 +59,56 @@
 	}
 </script>
 
-<tr>
-	<td>
-		{#if ipaMatches}
-			<span class="ipa">{enIPA}</span>
-		{:else}
-			<div class="ipa not-matched">{enIPA}</div>
-			<div class="ipa not-matched">{ruIPA}</div>
-		{/if}
-		{#if alreadyExists}
-			<div class="caption not-matched">already exists</div>
-		{/if}
-	</td>
-	<td>
-		<input type="text" bind:value={en} />
-	</td>
-	<td>
-		<input type="text" bind:value={enGloss} />
-	</td>
-	<td>
-		<input type="text" bind:value={enCognate} />
-	</td>
-	<td>
-		<input type="text" bind:value={ru} />
-	</td>
-	<td>
-		<input type="text" bind:value={ruGloss} />
-	</td>
-	<td>
-		<input type="text" bind:value={ruCognate} />
-	</td>
-	<td>
-		<ChipInput bind:value={pos} type="select" options={partsOfSpeech.map((x) => x)} />
-	</td>
-	<td>
-		<ChipInput bind:value={tags} type="free" />
-	</td>
-	<td>
-		<button disabled={isDisabled} on:click={addRow}>
-			{#if isEditing}
-				Save
-			{:else}
-				Add
-			{/if}
-		</button>
+<div>
+	{#if ipaMatches}
+		<span class="ipa">{enIPA}</span>
+	{:else}
+		<div class="ipa not-matched">{enIPA}</div>
+		<div class="ipa not-matched">{ruIPA}</div>
+	{/if}
+	{#if alreadyExists}
+		<div class="caption not-matched">already exists</div>
+	{/if}
+</div>
+<div>
+	<input type="text" bind:value={en} />
+</div>
+<div>
+	<input type="text" bind:value={enGloss} />
+</div>
+<div>
+	<input type="text" bind:value={enCognate} />
+</div>
+<div>
+	<input type="text" bind:value={ru} />
+</div>
+<div>
+	<input type="text" bind:value={ruGloss} />
+</div>
+<div>
+	<input type="text" bind:value={ruCognate} />
+</div>
+<div>
+	<ChipInput bind:value={pos} type="select" options={partsOfSpeech.map((x) => x)} />
+</div>
+<div>
+	<ChipInput bind:value={tags} type="free" />
+</div>
+<div>
+	<button disabled={isDisabled} on:click={addRow}>
 		{#if isEditing}
-			<button on:click={onCancel}>Cancel</button>
+			Save
+		{:else}
+			Add
 		{/if}
-	</td>
-</tr>
+	</button>
+	{#if isEditing}
+		<button on:click={onCancel}>Cancel</button>
+	{/if}
+</div>
 
 <style>
-	td {
+	div {
 		text-align: center;
 	}
 	input {

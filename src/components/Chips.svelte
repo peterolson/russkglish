@@ -23,8 +23,8 @@
 		justify-content: center;
 	}
 	.chip {
-		padding: 4px 8px;
-		border-radius: 4px;
+		padding: 2px 4px;
+		border-radius: 2px;
 		background-color: rgba(0, 0, 0, 0.1);
 		font-family: sans-serif;
 		font-size: small;
