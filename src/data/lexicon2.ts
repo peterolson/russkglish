@@ -652,5 +652,65 @@ export const lexicon2: LexiconEntry2[] = [
             "food",
             "measure"
         ]
+    },
+    {
+        "id": 45,
+        "orthography": "БEKAR",
+        "enGloss": "baker",
+        "enCognate": "baker",
+        "ruGloss": "пекарь",
+        "ruCognate": "пекарь",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "people",
+            "food",
+            "job"
+        ]
+    },
+    {
+        "id": 46,
+        "orthography": "KONTÉINER",
+        "enGloss": "container/box",
+        "enCognate": "container",
+        "ruGloss": "контейнер/коробка",
+        "ruCognate": "container",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "household"
+        ]
+    },
+    {
+        "id": 47,
+        "orthography": "CELSIUS",
+        "enGloss": "celsius",
+        "enCognate": "celsius",
+        "ruGloss": "Цельсия",
+        "ruCognate": "Цельсия",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "measure",
+            "science",
+            "unit"
+        ]
+    },
+    {
+        "id": 48,
+        "orthography": "TO",
+        "enGloss": "to",
+        "enCognate": "to",
+        "ruGloss": "до",
+        "ruCognate": "до",
+        "pos": [
+            "prep"
+        ],
+        "tags": [
+            "function"
+        ]
     }
 ];
