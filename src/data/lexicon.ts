@@ -104,7 +104,7 @@ export const lexicon: LexiconEntry[] = [
         "en": "efféct",
         "enGloss": "effect",
         "enCognate": "effect",
-        "ru": "еффе́кт",
+        "ru": "эффе́кт",
         "ruGloss": "эффект",
         "ruCognate": "эффект",
         "pos": [
@@ -556,8 +556,8 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 34,
-        "ipa": "ɪt",
-        "en": "it",
+        "ipa": "et",
+        "en": "et",
         "enGloss": "it/this",
         "enCognate": "it",
         "ru": "эт",
@@ -940,13 +940,13 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 58,
-        "ipa": "smeʃ",
-        "en": "smesh",
+        "ipa": "mɪks",
+        "en": "mix",
         "enGloss": "mix",
-        "enCognate": "mix/mesh/smash",
-        "ru": "смешь",
+        "enCognate": "mix",
+        "ru": "микс",
         "ruGloss": "смесь/смешивать",
-        "ruCognate": "смесь/смешивать",
+        "ruCognate": "микс",
         "pos": [
             "noun",
             "verb"
@@ -1200,7 +1200,7 @@ export const lexicon: LexiconEntry[] = [
     {
         "id": 74,
         "ipa": "pɵwdr",
-        "en": "pöwdr",
+        "en": "pöwdre",
         "enGloss": "powder/flour",
         "enCognate": "powder",
         "ru": "пүдр",
@@ -1297,10 +1297,10 @@ export const lexicon: LexiconEntry[] = [
         "id": 80,
         "ipa": "portsiən",
         "en": "portion",
-        "enGloss": "portion/amount/quanity",
+        "enGloss": "portion/food/amount/quanity",
         "enCognate": "portion",
         "ru": "порция",
-        "ruGloss": "порция/количество",
+        "ruGloss": "порция/еда/количество",
         "ruCognate": "порция",
         "pos": [
             "noun"
@@ -1344,7 +1344,7 @@ export const lexicon: LexiconEntry[] = [
     {
         "id": 83,
         "ipa": "lɪtr",
-        "en": "litr",
+        "en": "litre",
         "enGloss": "liter",
         "enCognate": "liter",
         "ru": "литр",
@@ -1360,7 +1360,7 @@ export const lexicon: LexiconEntry[] = [
     {
         "id": 84,
         "ipa": "mɪlilɪtr",
-        "en": "millilitr",
+        "en": "millilitre",
         "enGloss": "milliliter",
         "enCognate": "milliliter",
         "ru": "миллилитр",
@@ -1491,7 +1491,7 @@ export const lexicon: LexiconEntry[] = [
         "en": "extract",
         "enGloss": "extract",
         "enCognate": "extract",
-        "ru": "екстракт",
+        "ru": "экстракт",
         "ruGloss": "экстракт",
         "ruCognate": "экстракт",
         "pos": [
@@ -1519,22 +1519,6 @@ export const lexicon: LexiconEntry[] = [
         ]
     },
     {
-        "id": 94,
-        "ipa": "mojc",
-        "en": "might",
-        "enGloss": "maybe/might",
-        "enCognate": "might",
-        "ru": "мойчь",
-        "ruGloss": "мочь/может",
-        "ruCognate": "мочь",
-        "pos": [
-            "verb"
-        ],
-        "tags": [
-            "function"
-        ]
-    },
-    {
         "id": 95,
         "ipa": "tʃɪken",
         "en": "chicken",
@@ -1556,7 +1540,7 @@ export const lexicon: LexiconEntry[] = [
         "en": "embryon",
         "enGloss": "egg/embryo",
         "enCognate": "embryo",
-        "ru": "ембрйон",
+        "ru": "эмбрйон",
         "ruGloss": "яйцо/эмбрион",
         "ruCognate": "эмбрион",
         "pos": [
@@ -1792,6 +1776,599 @@ export const lexicon: LexiconEntry[] = [
         ],
         "tags": [
             "food"
+        ]
+    },
+    {
+        "id": 113,
+        "ipa": "erə",
+        "en": "era",
+        "enGloss": "age/era",
+        "enCognate": "era",
+        "ru": "эра",
+        "ruGloss": "эра/век",
+        "ruCognate": "эра",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "time"
+        ]
+    },
+    {
+        "id": 114,
+        "ipa": "period",
+        "en": "period",
+        "enGloss": "time/period",
+        "enCognate": "period",
+        "ru": "период",
+        "ruGloss": "время/период",
+        "ruCognate": "период",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "time"
+        ]
+    },
+    {
+        "id": 115,
+        "ipa": "multi",
+        "en": "multi",
+        "enGloss": "many",
+        "enCognate": "multi-",
+        "ru": "мульти",
+        "ruGloss": "много",
+        "ruCognate": "мульти",
+        "pos": [
+            "num"
+        ],
+        "tags": [
+            "number"
+        ]
+    },
+    {
+        "id": 116,
+        "ipa": "pred",
+        "en": "pred",
+        "enGloss": "before",
+        "enCognate": "pre-",
+        "ru": "пред",
+        "ruGloss": "перед/до",
+        "ruCognate": "пред",
+        "pos": [
+            "prep"
+        ],
+        "tags": [
+            "time",
+            "function"
+        ]
+    },
+    {
+        "id": 117,
+        "ipa": "sɪd",
+        "en": "sid",
+        "enGloss": "sit",
+        "enCognate": "sit",
+        "ru": "сид",
+        "ruGloss": "сидеть",
+        "ruCognate": "сидеть",
+        "pos": [
+            "verb"
+        ],
+        "tags": [
+            "action"
+        ]
+    },
+    {
+        "id": 118,
+        "ipa": "ɪnter",
+        "en": "inter",
+        "enGloss": "between",
+        "enCognate": "inter(national)",
+        "ru": "интер",
+        "ruGloss": "между",
+        "ruCognate": "интер(национальный)",
+        "pos": [
+            "prep"
+        ],
+        "tags": [
+            "place",
+            "function"
+        ]
+    },
+    {
+        "id": 119,
+        "ipa": "tsentr",
+        "en": "centre",
+        "enGloss": "center/in/inside",
+        "enCognate": "center",
+        "ru": "центр",
+        "ruGloss": "центр/в/внутри",
+        "ruCognate": "центр",
+        "pos": [
+            "noun",
+            "prep"
+        ],
+        "tags": [
+            "place",
+            "function"
+        ]
+    },
+    {
+        "id": 120,
+        "ipa": "kotedʒ",
+        "en": "cottedge",
+        "enGloss": "cottage/house",
+        "enCognate": "cottage",
+        "ru": "коттедж",
+        "ruGloss": "коттедж/дом",
+        "ruCognate": "коттедж",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "household"
+        ]
+    },
+    {
+        "id": 121,
+        "ipa": "ni",
+        "en": "ne",
+        "enGloss": "no/doesn't have",
+        "enCognate": "no",
+        "ru": "ни",
+        "ruGloss": "нет",
+        "ruCognate": "не",
+        "pos": [
+            "verb"
+        ],
+        "tags": [
+            "negative"
+        ]
+    },
+    {
+        "id": 122,
+        "ipa": "mort",
+        "en": "mort",
+        "enGloss": "dead",
+        "enCognate": "mort(uary)",
+        "ru": "мёрт",
+        "ruGloss": "мертвый",
+        "ruCognate": "мертвый",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "life"
+        ]
+    },
+    {
+        "id": 123,
+        "ipa": "finans",
+        "en": "finance",
+        "enGloss": "money",
+        "enCognate": "finance",
+        "ru": "финанс",
+        "ruGloss": "деньги",
+        "ruCognate": "финансы",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "money"
+        ]
+    },
+    {
+        "id": 124,
+        "ipa": "emˈojtsiən",
+        "en": "emótion",
+        "enGloss": "emotion/feel",
+        "enCognate": "emotion",
+        "ru": "эмо́ция",
+        "ruGloss": "эмоция/чувствовать",
+        "ruCognate": "эмоция",
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "tags": [
+            "abstract",
+            "feelings"
+        ]
+    },
+    {
+        "id": 125,
+        "ipa": "deprˈes",
+        "en": "depréss",
+        "enGloss": "sad/depressed/depression",
+        "enCognate": "depressed",
+        "ru": "депре́сс",
+        "ruGloss": "грустный/депрессия",
+        "ruCognate": "депрессия",
+        "pos": [
+            "noun",
+            "adj"
+        ],
+        "tags": [
+            "feelings"
+        ]
+    },
+    {
+        "id": 126,
+        "ipa": "dejn",
+        "en": "deyn",
+        "enGloss": "day",
+        "enCognate": "day",
+        "ru": "день",
+        "ruGloss": "день",
+        "ruCognate": "день",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "time"
+        ]
+    },
+    {
+        "id": 127,
+        "ipa": "oktˈembr",
+        "en": "Octémbre",
+        "enGloss": "October",
+        "enCognate": "October",
+        "ru": "Окте́мбрь",
+        "ruGloss": "Октябрь",
+        "ruCognate": "Октябрь",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "time"
+        ]
+    },
+    {
+        "id": 128,
+        "ipa": "nevˈambr",
+        "en": "Nevámbre",
+        "enGloss": "November",
+        "enCognate": "November",
+        "ru": "Нева́мбрь",
+        "ruGloss": "Невамбрь",
+        "ruCognate": "Невамбрь",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "time"
+        ]
+    },
+    {
+        "id": 129,
+        "ipa": "dekˈambr",
+        "en": "Decámbre",
+        "enGloss": "December",
+        "enCognate": "December",
+        "ru": "Дека́мбрь",
+        "ruGloss": "Декабрь",
+        "ruCognate": "Декабрь",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "time"
+        ]
+    },
+    {
+        "id": 130,
+        "ipa": "sevˈimbr",
+        "en": "Sevímbre",
+        "enGloss": "September",
+        "enCognate": "September",
+        "ru": "Севи́мбрь",
+        "ruGloss": "Сентябрь",
+        "ruCognate": "Сентябрь",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "time"
+        ]
+    },
+    {
+        "id": 131,
+        "ipa": "oktem",
+        "en": "octem",
+        "enGloss": "eight",
+        "enCognate": "octo(gon)",
+        "ru": "октемь",
+        "ruGloss": "восемь",
+        "ruCognate": "восемь, осьми(ног)\t",
+        "pos": [
+            "num"
+        ],
+        "tags": [
+            "number"
+        ]
+    },
+    {
+        "id": 132,
+        "ipa": "nevə",
+        "en": "neva",
+        "enGloss": "nine",
+        "enCognate": "nine, Novem(ber)",
+        "ru": "невя",
+        "ruGloss": "девять",
+        "ruCognate": "девять, ноя(брь)",
+        "pos": [
+            "num"
+        ],
+        "tags": [
+            "number"
+        ]
+    },
+    {
+        "id": 133,
+        "ipa": "martʃ",
+        "en": "march",
+        "enGloss": "walk/go",
+        "enCognate": "march",
+        "ru": "марщ",
+        "ruGloss": "идти",
+        "ruCognate": "марш",
+        "pos": [
+            "verb"
+        ],
+        "tags": [
+            "action"
+        ]
+    },
+    {
+        "id": 134,
+        "ipa": "out",
+        "en": "out",
+        "enGloss": "out/from",
+        "enCognate": "out",
+        "ru": "оут",
+        "ruGloss": "от/из",
+        "ruCognate": "от",
+        "pos": [
+            "prep"
+        ],
+        "tags": [
+            "function"
+        ]
+    },
+    {
+        "id": 135,
+        "ipa": "ekskˈursiən",
+        "en": "excúrsion",
+        "enGloss": "travel/journey",
+        "enCognate": "excursion",
+        "ru": "экску́рсия",
+        "ruGloss": "путешествие",
+        "ruCognate": "экскурсия",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "action"
+        ]
+    },
+    {
+        "id": 136,
+        "ipa": "kolˈekt",
+        "en": "colléct",
+        "enGloss": "gather",
+        "enCognate": "collect",
+        "ru": "колле́кт",
+        "ruGloss": "собирать",
+        "ruCognate": "коллекция",
+        "pos": [
+            "verb"
+        ],
+        "tags": [
+            "action"
+        ]
+    },
+    {
+        "id": 137,
+        "ipa": "kolˈektsiən",
+        "en": "colléction",
+        "enGloss": "collection",
+        "enCognate": "collection",
+        "ru": "колле́кция",
+        "ruGloss": "коллекция",
+        "ruCognate": "коллекция",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "household"
+        ]
+    },
+    {
+        "id": 138,
+        "ipa": "trivo",
+        "en": "treevo",
+        "enGloss": "tree",
+        "enCognate": "tree",
+        "ru": "триво",
+        "ruGloss": "дерево",
+        "ruCognate": "древо",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "nature"
+        ]
+    },
+    {
+        "id": 139,
+        "ipa": "aprikos",
+        "en": "apricos",
+        "enGloss": "apricot",
+        "enCognate": "apricot",
+        "ru": "априкос",
+        "ruGloss": "абрикос",
+        "ruCognate": "абрикос",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food",
+            "nature"
+        ]
+    },
+    {
+        "id": 140,
+        "ipa": "frukt",
+        "en": "fruct",
+        "enGloss": "fruit",
+        "enCognate": "fruct(ose)",
+        "ru": "фрукт",
+        "ruGloss": "фрукт",
+        "ruCognate": "фрукт",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food",
+            "nature"
+        ]
+    },
+    {
+        "id": 141,
+        "ipa": "krik",
+        "en": "creak",
+        "enGloss": "make noise/shout",
+        "enCognate": "creak",
+        "ru": "крийк",
+        "ruGloss": "крик/шуметь",
+        "ruCognate": "крик",
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "tags": [
+            "action",
+            "sound"
+        ]
+    },
+    {
+        "id": 142,
+        "ipa": "gastro",
+        "en": "gastro",
+        "enGloss": "stomach",
+        "enCognate": "gastro(enteritis)",
+        "ru": "гастро",
+        "ruGloss": "желудок",
+        "ruCognate": "гастро(энтерит)",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "body",
+            "food"
+        ]
+    },
+    {
+        "id": 143,
+        "ipa": "rowr",
+        "en": "rowr",
+        "enGloss": "growl/roar",
+        "enCognate": "roar",
+        "ru": "рёвьр",
+        "ruGloss": "рев/рычать",
+        "ruCognate": "рев",
+        "pos": [
+            "verb"
+        ],
+        "tags": [
+            "sound",
+            "action"
+        ]
+    },
+    {
+        "id": 144,
+        "ipa": "optɪk",
+        "en": "optic",
+        "enGloss": "to see",
+        "enCognate": "optic",
+        "ru": "оптик",
+        "ruGloss": "видеть",
+        "ruCognate": "оптика",
+        "pos": [
+            "verb"
+        ],
+        "tags": [
+            "body",
+            "action"
+        ]
+    },
+    {
+        "id": 145,
+        "ipa": "no",
+        "en": "no",
+        "enGloss": "but/however",
+        "enCognate": "no",
+        "ru": "но",
+        "ruGloss": "но",
+        "ruCognate": "но",
+        "pos": [
+            "conj"
+        ],
+        "tags": [
+            "function"
+        ]
+    },
+    {
+        "id": 146,
+        "ipa": "koment",
+        "en": "comment",
+        "enGloss": "comment/to remark",
+        "enCognate": "comment",
+        "ru": "коммент",
+        "ruGloss": "комментировать",
+        "ruCognate": "комментировать",
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "tags": [
+            "speech",
+            "action"
+        ]
+    },
+    {
+        "id": 147,
+        "ipa": "oj",
+        "en": "oy",
+        "enGloss": "oops/oy",
+        "enCognate": "oy",
+        "ru": "ой",
+        "ruGloss": "ой",
+        "ruCognate": "ой",
+        "pos": [
+            "interj"
+        ],
+        "tags": [
+            "sound"
+        ]
+    },
+    {
+        "id": 148,
+        "ipa": "geriatrɪk",
+        "en": "geriatric",
+        "enGloss": "old",
+        "enCognate": "geriatric",
+        "ru": "гериатрик",
+        "ruGloss": "старый",
+        "ruCognate": "гериатрический",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "people",
+            "time"
         ]
     }
 ];

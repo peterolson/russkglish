@@ -22,7 +22,30 @@
 	};
 
 	$: lexiconEntries = text.length
-		? lexicon.filter((entry) => JSON.stringify(entry).toLowerCase().includes(text.toLowerCase())).slice(0, 9)
+		? lexicon
+				.filter((entry) =>
+					`${entry.en} ${entry.enCognate} ${entry.enGloss} ${entry.ru} ${entry.ruGloss} ${entry.ruCognate} ${entry.ipa}`
+						.toLowerCase()
+						.includes(text.toLowerCase())
+				)
+				.sort((a, b) => {
+					let aIsExact =
+						a.en.toLowerCase() === text.toLowerCase() ||
+						a.ru.toLowerCase() === text.toLowerCase() ||
+						a.ipa.toLowerCase() === text.toLowerCase();
+					let bIsExact =
+						b.en.toLowerCase() === text.toLowerCase() ||
+						b.ru.toLowerCase() === text.toLowerCase() ||
+						b.ipa.toLowerCase() === text.toLowerCase();
+					if (aIsExact && !bIsExact) {
+						return -1;
+					}
+					if (!aIsExact && bIsExact) {
+						return 1;
+					}
+					return a.id - b.id;
+				})
+				.slice(0, 9)
 		: [];
 	$: hasChanges = original !== textData.join(',');
 
@@ -53,13 +76,13 @@
 		}
 		// delete
 		else if (keyPressed === 'Delete') {
-			if (caretIndex < data.textData.length) {
+			if (caretIndex < textData.length) {
 				textData.splice(caretIndex, 1);
 			}
 		}
 		// right arrow
 		else if (keyPressed === 'ArrowRight') {
-			if (caretIndex < data.textData.length) {
+			if (caretIndex < textData.length) {
 				caretIndex += 1;
 			}
 		}

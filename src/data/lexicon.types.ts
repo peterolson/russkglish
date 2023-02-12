@@ -29,3 +29,14 @@ export type LexiconEntry = {
 	pos: PartOfSpeech[];
 	tags: string[];
 };
+
+export type LexiconEntry2 = {
+	id: number;
+	orthography: string;
+	enGloss: string;
+	ruGloss: string;
+	enCognate: string;
+	ruCognate: string;
+	pos: PartOfSpeech[];
+	tags: string[];
+};

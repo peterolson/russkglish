@@ -62,11 +62,15 @@
 <h1>Texts</h1>
 
 <div class="texts-grid">
-	{#each textNames as textName}
+	{#each textNames.sort() as textName}
 		{#if editing.has(textName)}
 			<input bind:value={newTextNames[textName]} />
 		{:else}
-			<a href="texts/{textName}">{textName}</a>
+			<a href="texts/{textName}">
+				{#each textName.split('|') as part}
+					<span>{part}</span>
+				{/each}
+			</a>
 		{/if}
 		<div>
 			{#if editing.has(textName)}
@@ -96,5 +100,13 @@
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 4px;
 		margin: 16px;
+	}
+
+	a {
+		display: flex;
+	}
+
+	a span {
+		flex: 1;
 	}
 </style>

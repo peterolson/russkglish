@@ -231,6 +231,7 @@
 			/sɵn/.
 		</p>
 	</div>
+
 	<div>
 		<h3 class="en">Stress</h3>
 		<h3 class="ru">Ударение</h3>
@@ -246,6 +247,54 @@
 			<em>проблем/problem</em> ударен, а в <em>апа́ртамент/apártament</em> ударен второй слог.
 		</p>
 	</div>
+
+	<div>
+		<h2 class="en">Orthography</h2>
+		<h2 class="ru">Орфография</h2>
+	</div>
+
+	<div>
+		<p class="en">Russkglish is written using the following letters:</p>
+		<p class="ru">Русскглиш пишется с использованием следующих букв:</p>
+	</div>
+
+	<div>
+		<table>
+			<tbody>
+				<tr style="font-size: 12px;">
+					<td>A</td>
+					<td>Ꙗ</td>
+					<td>Б</td>
+					<td>C</td>
+					<td>D</td>
+					<td>E</td>
+					<td>Э</td>
+					<td>F</td>
+					<td>G</td>
+					<td>H</td>
+					<td>I</td>
+					<td>J</td>
+					<td>К</td>
+					<td>L</td>
+					<td>М</td>
+					<td>N</td>
+					<td>O</td>
+					<td>П</td>
+					<td>Q</td>
+					<td>R</td>
+					<td>S</td>
+					<td>Т</td>
+					<td>U</td>
+					<td>V</td>
+					<td>W</td>
+					<td>X</td>
+					<td>Y</td>
+					<td>Z</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
 	<div>
 		<h2 class="en">Grammar</h2>
 		<h2 class="ru">Грамматика</h2>

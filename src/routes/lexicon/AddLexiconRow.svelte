@@ -59,6 +59,8 @@
 	}
 </script>
 
+<div />
+<div />
 <div>
 	{#if ipaMatches}
 		<span class="ipa">{enIPA}</span>

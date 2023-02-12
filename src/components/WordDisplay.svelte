@@ -18,9 +18,10 @@
 		let nextPunct = nextWord?.pos.includes('punct');
 		let prevPunct = prevWord?.pos.includes('punct');
 		let nextPunctRight = nextWord?.pos.includes('punct-right');
+		let thisPunctLeft = word?.pos.includes('punct-left');
 
 		spaceAfter = true;
-		if (nextPunct || nextPunctRight) {
+		if (nextPunct || nextPunctRight || thisPunctLeft) {
 			spaceAfter = false;
 		}
 
