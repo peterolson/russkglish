@@ -18,7 +18,7 @@
 		prevWord = prevWordId !== undefined ? lexicon2.find((entry) => entry.id === prevWordId) : undefined;
 		displayWord = typeof wordId === 'string' ? wordId : word?.orthography ?? '';
 
-		let nextPunct = nextWord?.pos.includes('punct') || [',', '.', '!', '?'].includes(String(nextWordId));
+		let nextPunct = nextWord?.pos.includes('punct') || [',', '.', '!', '?', ':'].includes(String(nextWordId));
 		let prevPunct = prevWord?.pos.includes('punct');
 		let nextPunctRight = nextWord?.pos.includes('punct-right');
 		let thisPunctLeft = word?.pos.includes('punct-left');

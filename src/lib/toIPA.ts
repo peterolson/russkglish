@@ -155,7 +155,7 @@ function applyPhonologicalRules(s: string) {
 		}
 	}
 	// j between consonants is removed
-	s = s.replace(/([^ɑaeiouɨɪəɛɵ])j([^ɑaeiouɨɪəɛɵ])/g, '$1$2');
+	s = s.replace(/([^ˈɑaeiouɨɪəɛɵ])j([^ˈɑaeiouɨɪəɛɵ])/g, '$1$2');
 
 	// final ɪ changes to i
 	s = s.replace(/ɪ$/, 'i');
@@ -194,7 +194,7 @@ export function orthographyToIPA(orthography: string) {
 		.replaceAll('G', 'ɡ')
 		.replaceAll('H', 'h')
 		.replaceAll('I', 'ɪ')
-		.replaceAll('J', 'j')
+		.replaceAll('J', 'dʒ')
 		.replaceAll('K', 'k')
 		.replaceAll('L', 'l')
 		.replaceAll('M', 'm')
