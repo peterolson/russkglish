@@ -172,6 +172,17 @@ function applyPhonologicalRules(s: string) {
 export function orthographyToIPA(orthography: string) {
 	// AꙖБCDEЭFGHIJKLMNOҨПQRSTUVWXYZÁÉÍÓÚЭ́"
 	let ipa = removeDuplicateLetters(orthography)
+		.replaceAll('10', 'dˈeka')
+		.replaceAll('0', 'nˈul')
+		.replaceAll('1', 'oˈin')
+		.replaceAll('2', 'twˈɑ')
+		.replaceAll('3', 'θrˈi')
+		.replaceAll('4', 'kwˈɛtir')
+		.replaceAll('5', 'pˈɪft')
+		.replaceAll('6', 'ʃˈɪkst')
+		.replaceAll('7', 'sˈɛvɪm')
+		.replaceAll('8', 'ˈoktem')
+		.replaceAll('9', 'nˈevɑ')
 		.replaceAll('TSIAN', 'tsiə̃')
 		.replaceAll('SH', 'ʃ')
 		.replaceAll('ZH', 'ʒ')

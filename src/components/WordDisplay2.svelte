@@ -17,14 +17,18 @@
 		nextWord = nextWordId !== undefined ? lexicon2.find((entry) => entry.id === nextWordId) : undefined;
 		prevWord = prevWordId !== undefined ? lexicon2.find((entry) => entry.id === prevWordId) : undefined;
 		displayWord = typeof wordId === 'string' ? wordId : word?.orthography ?? '';
+		const nextDisplayWord = typeof nextWordId === 'string' ? nextWordId : nextWord?.orthography ?? '';
 
 		let nextPunct = nextWord?.pos.includes('punct') || [',', '.', '!', '?', ':'].includes(String(nextWordId));
 		let prevPunct = prevWord?.pos.includes('punct');
 		let nextPunctRight = nextWord?.pos.includes('punct-right');
 		let thisPunctLeft = word?.pos.includes('punct-left');
+		let isNum = /[0-9]/.test(displayWord);
+		let isNextNum = /[0-9]/.test(nextDisplayWord);
+		let betweenNums = isNum && isNextNum;
 
 		spaceAfter = true;
-		if (nextPunct || nextPunctRight || thisPunctLeft) {
+		if (nextPunct || nextPunctRight || thisPunctLeft || betweenNums) {
 			spaceAfter = false;
 		}
 	}

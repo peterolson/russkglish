@@ -18,9 +18,9 @@ export const lexicon2: LexiconEntry2[] = [
     {
         "id": 1,
         "orthography": "MISTER",
-        "enGloss": "husband",
+        "enGloss": "husband/man",
         "enCognate": "mister",
-        "ruGloss": "муж",
+        "ruGloss": "муж/мужчина",
         "ruCognate": "мистер",
         "pos": [
             "noun"
@@ -262,7 +262,7 @@ export const lexicon2: LexiconEntry2[] = [
     },
     {
         "id": 18,
-        "orthography": "NULL",
+        "orthography": "0",
         "enGloss": "zero",
         "enCognate": "null",
         "ruGloss": "ноль",
@@ -276,7 +276,7 @@ export const lexicon2: LexiconEntry2[] = [
     },
     {
         "id": 19,
-        "orthography": "OIN",
+        "orthography": "1",
         "enGloss": "one",
         "enCognate": "one",
         "ruGloss": "один",
@@ -290,7 +290,7 @@ export const lexicon2: LexiconEntry2[] = [
     },
     {
         "id": 20,
-        "orthography": "TWA",
+        "orthography": "2",
         "enGloss": "two",
         "enCognate": "two",
         "ruGloss": "два",
@@ -304,7 +304,7 @@ export const lexicon2: LexiconEntry2[] = [
     },
     {
         "id": 21,
-        "orthography": "THRI",
+        "orthography": "3",
         "enGloss": "three",
         "enCognate": "three",
         "ruGloss": "три",
@@ -457,7 +457,7 @@ export const lexicon2: LexiconEntry2[] = [
     },
     {
         "id": 31,
-        "orthography": "SEVIM",
+        "orthography": "7",
         "enGloss": "seven",
         "enCognate": "seven",
         "ruGloss": "семь",
@@ -1065,10 +1065,10 @@ export const lexicon2: LexiconEntry2[] = [
     {
         "id": 73,
         "orthography": "ME",
-        "enGloss": "I/me",
+        "enGloss": "I/me/we/us",
         "enCognate": "me",
-        "ruGloss": "я/мне/меня",
-        "ruCognate": "меня",
+        "ruGloss": "я/мне/меня/мы",
+        "ruCognate": "меня/мы",
         "pos": [
             "pron"
         ],
@@ -1102,20 +1102,6 @@ export const lexicon2: LexiconEntry2[] = [
         ],
         "tags": [
             "action"
-        ]
-    },
-    {
-        "id": 76,
-        "orthography": "SMALLY",
-        "enGloss": "small",
-        "enCognate": "small",
-        "ruGloss": "маленький",
-        "ruCognate": "малый",
-        "pos": [
-            "adj"
-        ],
-        "tags": [
-            "size"
         ]
     },
     {
@@ -1371,7 +1357,8 @@ export const lexicon2: LexiconEntry2[] = [
             "verb"
         ],
         "tags": [
-            "action"
+            "action",
+            "movement"
         ]
     },
     {
@@ -1547,10 +1534,10 @@ export const lexicon2: LexiconEntry2[] = [
     },
     {
         "id": 107,
-        "orthography": "БOUM",
-        "enGloss": "make a loud sound",
+        "orthography": "БOUM-БOUM",
+        "enGloss": "make a loud sound/knock",
         "enCognate": "boom",
-        "ruGloss": "кричать",
+        "ruGloss": "кричать/стучать",
         "ruCognate": "бум",
         "pos": [
             "verb"
@@ -1870,7 +1857,7 @@ export const lexicon2: LexiconEntry2[] = [
     },
     {
         "id": 129,
-        "orthography": "GLOTGLOT",
+        "orthography": "GLOT-GLOT",
         "enGloss": "drink/swallow",
         "enCognate": "glug glug/glottal",
         "ruGloss": "пить/глотать",
@@ -1913,7 +1900,7 @@ export const lexicon2: LexiconEntry2[] = [
     },
     {
         "id": 132,
-        "orthography": "ЭQUIVALÉNT",
+        "orthography": "ЭKUÍVALENT",
         "enGloss": "same/just like/equivalent to",
         "enCognate": "equivalent",
         "ruGloss": "подобно/то же самое",
@@ -2088,13 +2075,14 @@ export const lexicon2: LexiconEntry2[] = [
     },
     {
         "id": 144,
-        "orthography": "ПARK",
-        "enGloss": "park/to park/put",
-        "enCognate": "park",
-        "ruGloss": "парк/парковать",
-        "ruCognate": "парк",
+        "orthography": "ПARKING",
+        "enGloss": "to park/parking",
+        "enCognate": "parking",
+        "ruGloss": "паркинг/парковать",
+        "ruCognate": "паркинг",
         "pos": [
-            "noun"
+            "noun",
+            "verb"
         ],
         "tags": [
             "place",
@@ -2666,20 +2654,6 @@ export const lexicon2: LexiconEntry2[] = [
         ]
     },
     {
-        "id": 184,
-        "orthography": "MWE",
-        "enGloss": "we",
-        "enCognate": "we",
-        "ruGloss": "мы",
-        "ruCognate": "мы",
-        "pos": [
-            "pron"
-        ],
-        "tags": [
-            "function"
-        ]
-    },
-    {
         "id": 185,
         "orthography": "ПERSONAJ",
         "enGloss": "person",
@@ -2719,6 +2693,377 @@ export const lexicon2: LexiconEntry2[] = [
         ],
         "tags": [
             "abstract"
+        ]
+    },
+    {
+        "id": 188,
+        "orthography": "SHTORM",
+        "enGloss": "storm/wind",
+        "enCognate": "storm",
+        "ruGloss": "шторм/ветер",
+        "ruCognate": "шторм",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "nature"
+        ]
+    },
+    {
+        "id": 189,
+        "orthography": "SOL",
+        "enGloss": "sun",
+        "enCognate": "sol(ar)",
+        "ruGloss": "солнце",
+        "ruCognate": "солнце",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "nature"
+        ]
+    },
+    {
+        "id": 190,
+        "orthography": "LUNA",
+        "enGloss": "moon",
+        "enCognate": "luna(r)",
+        "ruGloss": "луна",
+        "ruCognate": "луна",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "nature"
+        ]
+    },
+    {
+        "id": 191,
+        "orthography": "DEБÁT",
+        "enGloss": "debate/argue/argument",
+        "enCognate": "debate",
+        "ruGloss": "дебатировать/дебаты/спорить/спор",
+        "ruCognate": "дебаты",
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "tags": [
+            "speech"
+        ]
+    },
+    {
+        "id": 192,
+        "orthography": "KWO",
+        "enGloss": "who/what/which",
+        "enCognate": "who/(quid pro) quo",
+        "ruGloss": "кто/что",
+        "ruCognate": "кто",
+        "pos": [
+            "pron"
+        ],
+        "tags": [
+            "function"
+        ]
+    },
+    {
+        "id": 193,
+        "orthography": "DOMINANT",
+        "enGloss": "dominant/mighty",
+        "enCognate": "dominant",
+        "ruGloss": "доминантный/мощный",
+        "ruCognate": "доминантный/доминирующий",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "action"
+        ]
+    },
+    {
+        "id": 194,
+        "orthography": "TOП",
+        "enGloss": "top/most/more",
+        "enCognate": "top",
+        "ruGloss": "самый/более/больше",
+        "ruCognate": "топ(-модель)",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "abstract",
+            "function"
+        ]
+    },
+    {
+        "id": 195,
+        "orthography": "EXПEDÍTSIAN",
+        "enGloss": "expedition/travel",
+        "enCognate": "expedition",
+        "ruGloss": "экспедиция/путешествовать",
+        "ruCognate": "экспедиция",
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "tags": [
+            "movement",
+            "action"
+        ]
+    },
+    {
+        "id": 196,
+        "orthography": "SWITER",
+        "enGloss": "sweater/coat/jacket",
+        "enCognate": "sweater",
+        "ruGloss": "свитер/пальто/куртка",
+        "ruCognate": "свитер",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "clothes"
+        ]
+    },
+    {
+        "id": 197,
+        "orthography": "KOSTUM",
+        "enGloss": "costume/suit/clothes/wear",
+        "enCognate": "costume",
+        "ruGloss": "костюм/одежда/одевать",
+        "ruCognate": "костюм",
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "tags": [
+            "clothes"
+        ]
+    },
+    {
+        "id": 198,
+        "orthography": "KONTRAKT",
+        "enGloss": "contract/agreement",
+        "enCognate": "contract",
+        "ruGloss": "контракт/договор",
+        "ruCognate": "контракт",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "speech"
+        ]
+    },
+    {
+        "id": 199,
+        "orthography": "KOMПROMIS",
+        "enGloss": "compromise",
+        "enCognate": "compromise",
+        "ruGloss": "компромисс",
+        "ruCognate": "компромисс",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "speech"
+        ]
+    },
+    {
+        "id": 200,
+        "orthography": "KONSÉNSUS",
+        "enGloss": "consensus/agreement/agree",
+        "enCognate": "consensus",
+        "ruGloss": "консенсус/согласие/соглашаться",
+        "ruCognate": "консенсус",
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "tags": [
+            "speech"
+        ]
+    },
+    {
+        "id": 201,
+        "orthography": "AGITAT",
+        "enGloss": "agitate/persuade/convince",
+        "enCognate": "agitate",
+        "ruGloss": "агитировать/убеждать/уговаривать",
+        "ruCognate": "агитировать/агитация",
+        "pos": [
+            "verb"
+        ],
+        "tags": [
+            "speech"
+        ]
+    },
+    {
+        "id": 202,
+        "orthography": "STRIПTIZ",
+        "enGloss": "take off/undress",
+        "enCognate": "striptease",
+        "ruGloss": "снять/раздеться",
+        "ruCognate": "стриптиз",
+        "pos": [
+            "verb"
+        ],
+        "tags": [
+            "clothes"
+        ]
+    },
+    {
+        "id": 203,
+        "orthography": "TURБULENT",
+        "enGloss": "blow/windy/strong wind",
+        "enCognate": "turbulent",
+        "ruGloss": "дуть/ветер/сильный ветер",
+        "ruCognate": "турбулентность/турбулентный",
+        "pos": [
+            "adj",
+            "verb"
+        ],
+        "tags": [
+            "nature"
+        ]
+    },
+    {
+        "id": 204,
+        "orthography": "FIX",
+        "enGloss": "fixed/attached to/fixated",
+        "enCognate": "fixed",
+        "ruGloss": "фиксированный/закрепленный",
+        "ruCognate": "фиксированный",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "physical"
+        ]
+    },
+    {
+        "id": 205,
+        "orthography": "ПARK",
+        "enGloss": "park",
+        "enCognate": "park",
+        "ruGloss": "парк",
+        "ruCognate": "парк",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "place"
+        ]
+    },
+    {
+        "id": 206,
+        "orthography": "4",
+        "enGloss": "four",
+        "enCognate": "quarter",
+        "ruGloss": "четыре",
+        "ruCognate": "четыре",
+        "pos": [
+            "num"
+        ],
+        "tags": [
+            "math"
+        ]
+    },
+    {
+        "id": 207,
+        "orthography": "5",
+        "enGloss": "five",
+        "enCognate": "fifth",
+        "ruGloss": "пять",
+        "ruCognate": "пять",
+        "pos": [
+            "num"
+        ],
+        "tags": [
+            "math"
+        ]
+    },
+    {
+        "id": 208,
+        "orthography": "6",
+        "enGloss": "six",
+        "enCognate": "sixth",
+        "ruGloss": "шесть",
+        "ruCognate": "шесть",
+        "pos": [
+            "num"
+        ],
+        "tags": [
+            "math"
+        ]
+    },
+    {
+        "id": 209,
+        "orthography": "8",
+        "enGloss": "eight",
+        "enCognate": "oct(ogon)",
+        "ruGloss": "восемь",
+        "ruCognate": "восемь/октябрь",
+        "pos": [
+            "num"
+        ],
+        "tags": [
+            "math"
+        ]
+    },
+    {
+        "id": 210,
+        "orthography": "9",
+        "enGloss": "nine",
+        "enCognate": "nove(mber)",
+        "ruGloss": "девять",
+        "ruCognate": "девять/ноябрь",
+        "pos": [
+            "num"
+        ],
+        "tags": [
+            "math"
+        ]
+    },
+    {
+        "id": 211,
+        "orthography": "10",
+        "enGloss": "ten",
+        "enCognate": "deka(gon)/December",
+        "ruGloss": "десять",
+        "ruCognate": "десять/декабрь",
+        "pos": [
+            "num"
+        ],
+        "tags": [
+            "math"
+        ]
+    },
+    {
+        "id": 212,
+        "orthography": "FORTIFIKÁTSIAN",
+        "enGloss": "fort/fortification/castle",
+        "enCognate": "fortification",
+        "ruGloss": "форт/фортификация",
+        "ruCognate": "фортификация",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "building"
+        ]
+    },
+    {
+        "id": 213,
+        "orthography": "ПREZERV",
+        "enGloss": "preserve/protect/save",
+        "enCognate": "preserve",
+        "ruGloss": "защищать/спасать/сохранять",
+        "ruCognate": "презерватив",
+        "pos": [
+            "verb"
+        ],
+        "tags": [
+            "action"
         ]
     }
 ];

@@ -31,7 +31,7 @@
 	}
 
 	function normalizeOrthography(text: string) {
-		const allowedChars = "abcdefghijklmnopqrstuvwxyzAꙖБCDEЭҨFGHIJKLMNOПQRSTUVWXYZ'!ÁÉÍÓÚÝЭ́";
+		const allowedChars = "-0123456789abcdefghijklmnopqrstuvwxyzAꙖБCDEЭҨFGHIJKLMNOПQRSTUVWXYZ'!ÁÉÍÓÚÝЭ́";
 		// strip out all characters that are not in the allowedChars string
 		let normalized = text
 			.split('')
