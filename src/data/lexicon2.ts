@@ -92,7 +92,7 @@ export const lexicon2: LexiconEntry2[] = [
     },
     {
         "id": 6,
-        "orthography": "SҨN",
+        "orthography": "SYN",
         "enGloss": "son",
         "enCognate": "son",
         "ruGloss": "сын",
@@ -122,11 +122,11 @@ export const lexicon2: LexiconEntry2[] = [
     },
     {
         "id": 8,
-        "orthography": "GҨRL",
+        "orthography": "MADEMUAZÉL",
         "enGloss": "girl",
-        "enCognate": "girl",
-        "ruGloss": "девочка",
-        "ruCognate": "гёрл",
+        "enCognate": "mademoiselle",
+        "ruGloss": "девочка/девушка",
+        "ruCognate": "мадемуазель",
         "pos": [
             "noun"
         ],
@@ -654,22 +654,6 @@ export const lexicon2: LexiconEntry2[] = [
         ]
     },
     {
-        "id": 45,
-        "orthography": "БEKAR",
-        "enGloss": "baker",
-        "enCognate": "baker",
-        "ruGloss": "пекарь",
-        "ruCognate": "пекарь",
-        "pos": [
-            "noun"
-        ],
-        "tags": [
-            "people",
-            "food",
-            "job"
-        ]
-    },
-    {
         "id": 46,
         "orthography": "KONTÉINER",
         "enGloss": "container/box",
@@ -730,7 +714,7 @@ export const lexicon2: LexiconEntry2[] = [
     },
     {
         "id": 50,
-        "orthography": "I",
+        "orthography": "Y",
         "enGloss": "and",
         "enCognate": "yea",
         "ruGloss": "и",
@@ -2349,7 +2333,7 @@ export const lexicon2: LexiconEntry2[] = [
     },
     {
         "id": 163,
-        "orthography": "ҨST",
+        "orthography": "OST",
         "enGloss": "east",
         "enCognate": "east",
         "ruGloss": "восток",
@@ -2576,22 +2560,8 @@ export const lexicon2: LexiconEntry2[] = [
             "noun"
         ],
         "tags": [
-            "religion"
-        ]
-    },
-    {
-        "id": 179,
-        "orthography": "TAT",
-        "enGloss": "that/which",
-        "enCognate": "that",
-        "ruGloss": "то/что/который",
-        "ruCognate": "тот",
-        "pos": [
-            "conj",
-            "pron"
-        ],
-        "tags": [
-            "function"
+            "religion",
+            "name"
         ]
     },
     {
@@ -2655,9 +2625,9 @@ export const lexicon2: LexiconEntry2[] = [
     },
     {
         "id": 185,
-        "orthography": "ПERSONAJ",
+        "orthography": "ПERSÓNA",
         "enGloss": "person",
-        "enCognate": "personage/person",
+        "enCognate": "persona/person",
         "ruGloss": "человек",
         "ruCognate": "персонаж",
         "pos": [
@@ -2670,9 +2640,9 @@ export const lexicon2: LexiconEntry2[] = [
     {
         "id": 186,
         "orthography": "SCENA",
-        "enGloss": "scene/place",
+        "enGloss": "scene",
         "enCognate": "scene",
-        "ruGloss": "сцена/место",
+        "ruGloss": "сцена",
         "ruCognate": "сцена",
         "pos": [
             "noun"
@@ -2711,9 +2681,9 @@ export const lexicon2: LexiconEntry2[] = [
     },
     {
         "id": 189,
-        "orthography": "SOL",
+        "orthography": "SOLN",
         "enGloss": "sun",
-        "enCognate": "sol(ar)",
+        "enCognate": "sol(ar)/sun",
         "ruGloss": "солнце",
         "ruCognate": "солнце",
         "pos": [
@@ -2763,7 +2733,8 @@ export const lexicon2: LexiconEntry2[] = [
             "pron"
         ],
         "tags": [
-            "function"
+            "function",
+            "question"
         ]
     },
     {
@@ -2884,20 +2855,6 @@ export const lexicon2: LexiconEntry2[] = [
         ]
     },
     {
-        "id": 201,
-        "orthography": "AGITAT",
-        "enGloss": "agitate/persuade/convince",
-        "enCognate": "agitate",
-        "ruGloss": "агитировать/убеждать/уговаривать",
-        "ruCognate": "агитировать/агитация",
-        "pos": [
-            "verb"
-        ],
-        "tags": [
-            "speech"
-        ]
-    },
-    {
         "id": 202,
         "orthography": "STRIПTIZ",
         "enGloss": "take off/undress",
@@ -2924,20 +2881,6 @@ export const lexicon2: LexiconEntry2[] = [
         ],
         "tags": [
             "nature"
-        ]
-    },
-    {
-        "id": 204,
-        "orthography": "FIX",
-        "enGloss": "fixed/attached to/fixated",
-        "enCognate": "fixed",
-        "ruGloss": "фиксированный/закрепленный",
-        "ruCognate": "фиксированный",
-        "pos": [
-            "adj"
-        ],
-        "tags": [
-            "physical"
         ]
     },
     {
@@ -3064,6 +3007,1564 @@ export const lexicon2: LexiconEntry2[] = [
         ],
         "tags": [
             "action"
+        ]
+    },
+    {
+        "id": 214,
+        "orthography": "ROASTER",
+        "enGloss": "oven",
+        "enCognate": "roaster",
+        "ruGloss": "печь/духовка",
+        "ruCognate": "ростер",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food",
+            "tool"
+        ]
+    },
+    {
+        "id": 215,
+        "orthography": "TOASTER",
+        "enGloss": "toaster",
+        "enCognate": "toaster",
+        "ruGloss": "тостер",
+        "ruCognate": "тостер",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food",
+            "tool"
+        ]
+    },
+    {
+        "id": 216,
+        "orthography": "RADIATOR",
+        "enGloss": "heater/radiator/radiate",
+        "enCognate": "radiator",
+        "ruGloss": "батарея/излучать",
+        "ruCognate": "радиатор",
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "tags": [
+            "tool",
+            "household"
+        ]
+    },
+    {
+        "id": 217,
+        "orthography": "LOKÁTSIAN",
+        "enGloss": "location/place",
+        "enCognate": "location",
+        "ruGloss": "локация/место",
+        "ruCognate": "локация",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "place"
+        ]
+    },
+    {
+        "id": 218,
+        "orthography": "KWAT",
+        "enGloss": "what",
+        "enCognate": "what",
+        "ruGloss": "который/какой",
+        "ruCognate": "который/какой",
+        "pos": [
+            "pron"
+        ],
+        "tags": [
+            "function",
+            "question"
+        ]
+    },
+    {
+        "id": 220,
+        "orthography": "REZÚLT",
+        "enGloss": "result/conclusion",
+        "enCognate": "result",
+        "ruGloss": "результат/итог",
+        "ruCognate": "результат",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "abstract"
+        ]
+    },
+    {
+        "id": 221,
+        "orthography": "SUD",
+        "enGloss": "south",
+        "enCognate": "south",
+        "ruGloss": "юг",
+        "ruCognate": "зюйд",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "place",
+            "direction"
+        ]
+    },
+    {
+        "id": 222,
+        "orthography": "ПRESS",
+        "enGloss": "press/apply pressure to",
+        "enCognate": "press",
+        "ruGloss": "давление/давить",
+        "ruCognate": "пресс",
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "tags": [
+            "action"
+        ]
+    },
+    {
+        "id": 223,
+        "orthography": "ПROVOKAT",
+        "enGloss": "provoke/compel/to cause",
+        "enCognate": "provoke/provocation",
+        "ruGloss": "провоцировать/заставлять",
+        "ruCognate": "провокация",
+        "pos": [
+            "verb"
+        ],
+        "tags": [
+            "action"
+        ]
+    },
+    {
+        "id": 224,
+        "orthography": "YURI",
+        "enGloss": "Yuri",
+        "enCognate": "Yuri",
+        "ruGloss": "Юрий",
+        "ruCognate": "Юрий",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "name"
+        ]
+    },
+    {
+        "id": 225,
+        "orthography": "ALEKSÉEVICH",
+        "enGloss": "Alekseyevich",
+        "enCognate": "Alekseyevich",
+        "ruGloss": "Алексеевич",
+        "ruCognate": "Алексеевич",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "name"
+        ]
+    },
+    {
+        "id": 226,
+        "orthography": "GAGÁRIN",
+        "enGloss": "Gagarin",
+        "enCognate": "Gagarin",
+        "ruGloss": "Gagarin",
+        "ruCognate": "Gagarin",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "name"
+        ]
+    },
+    {
+        "id": 227,
+        "orthography": "NEIL",
+        "enGloss": "Neil",
+        "enCognate": "Neil",
+        "ruGloss": "Нил",
+        "ruCognate": "Нил",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "name"
+        ]
+    },
+    {
+        "id": 228,
+        "orthography": "ALDEN",
+        "enGloss": "Alden",
+        "enCognate": "Alden",
+        "ruGloss": "О́лден",
+        "ruCognate": "О́лден",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "name"
+        ]
+    },
+    {
+        "id": 229,
+        "orthography": "ARMSTRONG",
+        "enGloss": "Armstrong",
+        "enCognate": "Armstrong",
+        "ruGloss": "Армстронг",
+        "ruCognate": "Армстронг",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "name"
+        ]
+    },
+    {
+        "id": 230,
+        "orthography": "KOSMOS",
+        "enGloss": "space/universe",
+        "enCognate": "cosmos",
+        "ruGloss": "космос",
+        "ruCognate": "космос",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "science",
+            "place"
+        ]
+    },
+    {
+        "id": 231,
+        "orthography": "DUEL",
+        "enGloss": "duel/competition",
+        "enCognate": "duel",
+        "ruGloss": "дуэль/соревнование",
+        "ruCognate": "дуэль",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "action"
+        ]
+    },
+    {
+        "id": 232,
+        "orthography": "SOVIET",
+        "enGloss": "Soviet",
+        "enCognate": "Soviet",
+        "ruGloss": "советский/совет",
+        "ruCognate": "советский",
+        "pos": [
+            "adj",
+            "noun"
+        ],
+        "tags": [
+            "politics"
+        ]
+    },
+    {
+        "id": 233,
+        "orthography": "SOCIALIST",
+        "enGloss": "socialist",
+        "enCognate": "socialist",
+        "ruGloss": "социалист/социалистический",
+        "ruCognate": "социалист",
+        "pos": [
+            "adj",
+            "noun"
+        ],
+        "tags": [
+            "politics"
+        ]
+    },
+    {
+        "id": 234,
+        "orthography": "RESПÚБLIK",
+        "enGloss": "republic",
+        "enCognate": "republic",
+        "ruGloss": "республика",
+        "ruCognate": "республика",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "politics"
+        ]
+    },
+    {
+        "id": 235,
+        "orthography": "USSR",
+        "enGloss": "USSR",
+        "enCognate": "USSR",
+        "ruGloss": "СССР",
+        "ruCognate": "СССР",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "abbreviation",
+            "politics",
+            "place"
+        ]
+    },
+    {
+        "id": 236,
+        "orthography": "UNIFIKATSIAN",
+        "enGloss": "unification",
+        "enCognate": "unification",
+        "ruGloss": "унификация",
+        "ruCognate": "унификация",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "politics"
+        ]
+    },
+    {
+        "id": 237,
+        "orthography": "STAT",
+        "enGloss": "state",
+        "enCognate": "state",
+        "ruGloss": "штат",
+        "ruCognate": "штат",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "politics"
+        ]
+    },
+    {
+        "id": 238,
+        "orthography": "AMÉRIKA",
+        "enGloss": "America",
+        "enCognate": "America",
+        "ruGloss": "Америка",
+        "ruCognate": "Америка",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "place",
+            "politics"
+        ]
+    },
+    {
+        "id": 239,
+        "orthography": "USA",
+        "enGloss": "USA",
+        "enCognate": "USA",
+        "ruGloss": "США",
+        "ruCognate": "США",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "abbreviation",
+            "place",
+            "politics"
+        ]
+    },
+    {
+        "id": 240,
+        "orthography": "TE",
+        "enGloss": "these/those",
+        "enCognate": "the/these",
+        "ruGloss": "те/эти",
+        "ruCognate": "те",
+        "pos": [
+            "pron"
+        ],
+        "tags": [
+            "function"
+        ]
+    },
+    {
+        "id": 241,
+        "orthography": "DEMONSTRAT",
+        "enGloss": "demonstrate",
+        "enCognate": "demonstrate",
+        "ruGloss": "демонстрировать",
+        "ruCognate": "демонстрация",
+        "pos": [
+            "verb"
+        ],
+        "tags": [
+            "action",
+            "speech"
+        ]
+    },
+    {
+        "id": 242,
+        "orthography": "ЭXПOZÍTSIAN",
+        "enGloss": "exposition/exhibition",
+        "enCognate": "exposition",
+        "ruGloss": "экспозиция",
+        "ruCognate": "экспозиция",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "action"
+        ]
+    },
+    {
+        "id": 243,
+        "orthography": "TEKHNÓLOGY",
+        "enGloss": "technology",
+        "enCognate": "technology",
+        "ruGloss": "технология",
+        "ruCognate": "технология",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "science"
+        ]
+    },
+    {
+        "id": 244,
+        "orthography": "TRIUMF",
+        "enGloss": "triumph/victory",
+        "enCognate": "triumph",
+        "ruGloss": "триумф/победа",
+        "ruCognate": "триумф",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "action"
+        ]
+    },
+    {
+        "id": 245,
+        "orthography": "ПROGRAMM",
+        "enGloss": "program",
+        "enCognate": "program",
+        "ruGloss": "программа",
+        "ruCognate": "программа",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "abstract"
+        ]
+    },
+    {
+        "id": 246,
+        "orthography": "AUTOMOБIL",
+        "enGloss": "car",
+        "enCognate": "automobile",
+        "ruGloss": "машина",
+        "ruCognate": "автомобиль",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "transport"
+        ]
+    },
+    {
+        "id": 247,
+        "orthography": "AЭROMOБIL",
+        "enGloss": "airplane",
+        "enCognate": "airplane/automobile",
+        "ruGloss": "самолет",
+        "ruCognate": "аэроплан/автомобиль",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "transport"
+        ]
+    },
+    {
+        "id": 248,
+        "orthography": "KOSMOS-MOБIL",
+        "enGloss": "space ship",
+        "enCognate": "cosmos/automobile",
+        "ruGloss": "космический корабль",
+        "ruCognate": "космос/автомобиль",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "transport"
+        ]
+    },
+    {
+        "id": 249,
+        "orthography": "TRANSПORT",
+        "enGloss": "transport",
+        "enCognate": "transport",
+        "ruGloss": "транспорт",
+        "ruCognate": "транспорт",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "transport"
+        ]
+    },
+    {
+        "id": 250,
+        "orthography": "OБJEKT",
+        "enGloss": "object",
+        "enCognate": "object",
+        "ruGloss": "объект",
+        "ruCognate": "объект",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "abstract"
+        ]
+    },
+    {
+        "id": 251,
+        "orthography": "JANUAR",
+        "enGloss": "January",
+        "enCognate": "January",
+        "ruGloss": "январь",
+        "ruCognate": "январь",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "month",
+            "time"
+        ]
+    },
+    {
+        "id": 252,
+        "orthography": "FEБRAR",
+        "enGloss": "February",
+        "enCognate": "February",
+        "ruGloss": "февраль",
+        "ruCognate": "февраль",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "month",
+            "time"
+        ]
+    },
+    {
+        "id": 253,
+        "orthography": "MARC",
+        "enGloss": "March",
+        "enCognate": "March",
+        "ruGloss": "март",
+        "ruCognate": "март",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "month",
+            "time"
+        ]
+    },
+    {
+        "id": 254,
+        "orthography": "AПREL",
+        "enGloss": "April",
+        "enCognate": "April",
+        "ruGloss": "апрель",
+        "ruCognate": "апрель",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "month",
+            "time"
+        ]
+    },
+    {
+        "id": 255,
+        "orthography": "MAY",
+        "enGloss": "May",
+        "enCognate": "May",
+        "ruGloss": "май",
+        "ruCognate": "май",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "month",
+            "time"
+        ]
+    },
+    {
+        "id": 256,
+        "orthography": "JUN",
+        "enGloss": "June",
+        "enCognate": "June",
+        "ruGloss": "Июнь",
+        "ruCognate": "Июнь",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "month",
+            "time"
+        ]
+    },
+    {
+        "id": 257,
+        "orthography": "JUL",
+        "enGloss": "July",
+        "enCognate": "July",
+        "ruGloss": "Июль",
+        "ruCognate": "Июль",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "month",
+            "time"
+        ]
+    },
+    {
+        "id": 258,
+        "orthography": "AUGUST",
+        "enGloss": "August",
+        "enCognate": "August",
+        "ruGloss": "август",
+        "ruCognate": "август",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "month",
+            "time"
+        ]
+    },
+    {
+        "id": 259,
+        "orthography": "SEПTÁMБR",
+        "enGloss": "September",
+        "enCognate": "September",
+        "ruGloss": "сентябрь",
+        "ruCognate": "сентябрь",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "month",
+            "time"
+        ]
+    },
+    {
+        "id": 260,
+        "orthography": "NOVÁMБR",
+        "enGloss": "November",
+        "enCognate": "November",
+        "ruGloss": "ноябрь",
+        "ruCognate": "ноябрь",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "month",
+            "time"
+        ]
+    },
+    {
+        "id": 261,
+        "orthography": "OKTÁMБR",
+        "enGloss": "October",
+        "enCognate": "October",
+        "ruGloss": "октябрь",
+        "ruCognate": "октябрь",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "month",
+            "time"
+        ]
+    },
+    {
+        "id": 262,
+        "orthography": "DEKÁMБR",
+        "enGloss": "December",
+        "enCognate": "December",
+        "ruGloss": "декабрь",
+        "ruCognate": "декабрь",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "month",
+            "time"
+        ]
+    },
+    {
+        "id": 263,
+        "orthography": "SПUTNIK",
+        "enGloss": "satellite/Sputnik",
+        "enCognate": "Sputnik",
+        "ruGloss": "спутник",
+        "ruCognate": "спутник",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "transport",
+            "science"
+        ]
+    },
+    {
+        "id": 264,
+        "orthography": "ORБIT",
+        "enGloss": "orbit",
+        "enCognate": "orbit",
+        "ruGloss": "орбита",
+        "ruCognate": "орбита",
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "tags": [
+            "science",
+            "transport"
+        ]
+    },
+    {
+        "id": 265,
+        "orthography": "FEYRWORK",
+        "enGloss": "firework",
+        "enCognate": "firework",
+        "ruGloss": "фейерверк",
+        "ruCognate": "фейерверк",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "science"
+        ]
+    },
+    {
+        "id": 266,
+        "orthography": "ORGANIZM",
+        "enGloss": "organism/animal",
+        "enCognate": "organism",
+        "ruGloss": "организм",
+        "ruCognate": "организм",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "science"
+        ]
+    },
+    {
+        "id": 267,
+        "orthography": "DOG",
+        "enGloss": "dog",
+        "enCognate": "dog",
+        "ruGloss": "собака",
+        "ruCognate": "дог",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "animal"
+        ]
+    },
+    {
+        "id": 268,
+        "orthography": "LAIKA",
+        "enGloss": "Laika",
+        "enCognate": "Laika",
+        "ruGloss": "Лайка",
+        "ruCognate": "Лайка",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "name"
+        ]
+    },
+    {
+        "id": 269,
+        "orthography": "TRAGEDY",
+        "enGloss": "tragedy",
+        "enCognate": "tragedy",
+        "ruGloss": "трагедия",
+        "ruCognate": "трагедия",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "bad"
+        ]
+    },
+    {
+        "id": 270,
+        "orthography": "DYSFÚNKTSIAN",
+        "enGloss": "dysfunction/malfunction",
+        "enCognate": "dysfunction",
+        "ruGloss": "дисфункция",
+        "ruCognate": "дисфункция",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "bad"
+        ]
+    },
+    {
+        "id": 271,
+        "orthography": "KATÁSTROFE",
+        "enGloss": "catastrophe/disaster",
+        "enCognate": "catastrophe",
+        "ruGloss": "катастрофа",
+        "ruCognate": "катастрофа",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "bad"
+        ]
+    },
+    {
+        "id": 272,
+        "orthography": "ПUNKTUAL",
+        "enGloss": "punctual/early/on time",
+        "enCognate": "punctual",
+        "ruGloss": "пунктуальный/вовремя",
+        "ruCognate": "пунктуальный",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "good"
+        ]
+    },
+    {
+        "id": 273,
+        "orthography": "ЭXПLORER",
+        "enGloss": "Explorer",
+        "enCognate": "Explorer",
+        "ruGloss": "Эксплорер",
+        "ruCognate": "Эксплорер",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "name"
+        ]
+    },
+    {
+        "id": 274,
+        "orthography": "MASS",
+        "enGloss": "mass/weight",
+        "enCognate": "mass",
+        "ruGloss": "масса/вес",
+        "ruCognate": "масса",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "science"
+        ]
+    },
+    {
+        "id": 275,
+        "orthography": "KONTRAST",
+        "enGloss": "contrast",
+        "enCognate": "contrast",
+        "ruGloss": "контраст",
+        "ruCognate": "контраст",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "abstract"
+        ]
+    },
+    {
+        "id": 276,
+        "orthography": "SHOK",
+        "enGloss": "shock",
+        "enCognate": "shock",
+        "ruGloss": "шок/шокировать",
+        "ruCognate": "шок",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "bad"
+        ]
+    },
+    {
+        "id": 277,
+        "orthography": "ROKET",
+        "enGloss": "rocket",
+        "enCognate": "rocket",
+        "ruGloss": "ракета",
+        "ruCognate": "ракета",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "science"
+        ]
+    },
+    {
+        "id": 278,
+        "orthography": "KRAXSH",
+        "enGloss": "crash",
+        "enCognate": "crash",
+        "ruGloss": "крушение",
+        "ruCognate": "крах",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "bad"
+        ]
+    },
+    {
+        "id": 279,
+        "orthography": "БELKA",
+        "enGloss": "Belka",
+        "enCognate": "Belka",
+        "ruGloss": "Белка",
+        "ruCognate": "Белка",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "name"
+        ]
+    },
+    {
+        "id": 280,
+        "orthography": "STRELKA",
+        "enGloss": "Strelka",
+        "enCognate": "Strelka",
+        "ruGloss": "Стрелка",
+        "ruCognate": "Стрелка",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "name"
+        ]
+    },
+    {
+        "id": 281,
+        "orthography": "LIDER",
+        "enGloss": "leader",
+        "enCognate": "leader",
+        "ruGloss": "лидер",
+        "ruCognate": "лидер",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "person",
+            "job"
+        ]
+    },
+    {
+        "id": 282,
+        "orthography": "ПREMÍER",
+        "enGloss": "premier",
+        "enCognate": "premier",
+        "ruGloss": "премьер",
+        "ruCognate": "премьер",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "person",
+            "job"
+        ]
+    },
+    {
+        "id": 283,
+        "orthography": "ПREZIDENT",
+        "enGloss": "president",
+        "enCognate": "president",
+        "ruGloss": "президент",
+        "ruCognate": "президент",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "person",
+            "job"
+        ]
+    },
+    {
+        "id": 284,
+        "orthography": "NIKITA",
+        "enGloss": "Nikita",
+        "enCognate": "Nikita",
+        "ruGloss": "Никита",
+        "ruCognate": "Никита",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "name"
+        ]
+    },
+    {
+        "id": 285,
+        "orthography": "KHRUSHCHÓV",
+        "enGloss": "Krushchev",
+        "enCognate": "Krushchev",
+        "ruGloss": "Хрущёв",
+        "ruCognate": "Хрущёв",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "name"
+        ]
+    },
+    {
+        "id": 286,
+        "orthography": "JON",
+        "enGloss": "John",
+        "enCognate": "John",
+        "ruGloss": "Джон",
+        "ruCognate": "Джон",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "name"
+        ]
+    },
+    {
+        "id": 287,
+        "orthography": "KENNEDY",
+        "enGloss": "Kennedy",
+        "enCognate": "Kennedy",
+        "ruGloss": "Кеннеди",
+        "ruCognate": "Кеннеди",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "name"
+        ]
+    },
+    {
+        "id": 288,
+        "orthography": "SURПRÍZ",
+        "enGloss": "surprise",
+        "enCognate": "surprise",
+        "ruGloss": "сюрприз",
+        "ruCognate": "сюрприз",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "good"
+        ]
+    },
+    {
+        "id": 289,
+        "orthography": "ПUSHÍNKA",
+        "enGloss": "Pushinka",
+        "enCognate": "Pushinka",
+        "ruGloss": "Пушинка",
+        "ruCognate": "Пушинка",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "name"
+        ]
+    },
+    {
+        "id": 290,
+        "orthography": "ПREZENT",
+        "enGloss": "present",
+        "enCognate": "present",
+        "ruGloss": "подарок",
+        "ruCognate": "презент",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "good"
+        ]
+    },
+    {
+        "id": 291,
+        "orthography": "HOMINID",
+        "enGloss": "hominid",
+        "enCognate": "hominid",
+        "ruGloss": "гоминид",
+        "ruCognate": "гоминид",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "animal",
+            "person"
+        ]
+    },
+    {
+        "id": 292,
+        "orthography": "SHIMПANZÉE",
+        "enGloss": "chimpanzee",
+        "enCognate": "chimpanzee",
+        "ruGloss": "шимпанзе",
+        "ruCognate": "шимпанзе",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "animal"
+        ]
+    },
+    {
+        "id": 293,
+        "orthography": "HAM",
+        "enGloss": "Ham",
+        "enCognate": "Ham",
+        "ruGloss": "Хэм",
+        "ruCognate": "Хэм",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "name"
+        ]
+    },
+    {
+        "id": 294,
+        "orthography": "VOSTÓK",
+        "enGloss": "Vostok",
+        "enCognate": "Vostok",
+        "ruGloss": "Восток",
+        "ruCognate": "Восток",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "name"
+        ]
+    },
+    {
+        "id": 295,
+        "orthography": "KOSMONAUT",
+        "enGloss": "cosmonaut",
+        "enCognate": "cosmonaut",
+        "ruGloss": "космонавт",
+        "ruCognate": "космонавт",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "person",
+            "job",
+            "science"
+        ]
+    },
+    {
+        "id": 296,
+        "orthography": "БAIKONÚR",
+        "enGloss": "Baikonur",
+        "enCognate": "Baikonur",
+        "ruGloss": "Байконур",
+        "ruCognate": "Байқоңыр",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "place",
+            "geography"
+        ]
+    },
+    {
+        "id": 297,
+        "orthography": "KOSMODROM",
+        "enGloss": "cosmodrome",
+        "enCognate": "cosmodrome",
+        "ruGloss": "космодром",
+        "ruCognate": "космодром",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "science",
+            "place"
+        ]
+    },
+    {
+        "id": 298,
+        "orthography": "KAZAKHSTAN",
+        "enGloss": "Kazakhstan",
+        "enCognate": "Kazakhstan",
+        "ruGloss": "Казахстан",
+        "ruCognate": "Казахстан",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "place",
+            "politics"
+        ]
+    },
+    {
+        "id": 299,
+        "orthography": "VOLGA",
+        "enGloss": "Volga",
+        "enCognate": "Volga",
+        "ruGloss": "Волга",
+        "ruCognate": "Волга",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "nature",
+            "geography"
+        ]
+    },
+    {
+        "id": 300,
+        "orthography": "KANAL",
+        "enGloss": "river",
+        "enCognate": "canal",
+        "ruGloss": "река",
+        "ruCognate": "канал",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "nature",
+            "geography"
+        ]
+    },
+    {
+        "id": 301,
+        "orthography": "REGION",
+        "enGloss": "region",
+        "enCognate": "region",
+        "ruGloss": "регион",
+        "ruCognate": "регион",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "place"
+        ]
+    },
+    {
+        "id": 302,
+        "orthography": "ПARASHUT",
+        "enGloss": "parachute",
+        "enCognate": "parachute",
+        "ruGloss": "парашют",
+        "ruCognate": "парашют",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "technology"
+        ]
+    },
+    {
+        "id": 303,
+        "orthography": "KONTAKT",
+        "enGloss": "contact",
+        "enCognate": "contact",
+        "ruGloss": "контакт",
+        "ruCognate": "контакт",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "action"
+        ]
+    },
+    {
+        "id": 304,
+        "orthography": "ORANJ",
+        "enGloss": "orange",
+        "enCognate": "orange",
+        "ruGloss": "оранжевый",
+        "ruCognate": "оранжевый",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "color"
+        ]
+    },
+    {
+        "id": 305,
+        "orthography": "FOБIA",
+        "enGloss": "phobia",
+        "enCognate": "phobia",
+        "ruGloss": "фобия",
+        "ruCognate": "фобия",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "emotion"
+        ]
+    },
+    {
+        "id": 306,
+        "orthography": "TELEFON",
+        "enGloss": "telephone",
+        "enCognate": "telephone",
+        "ruGloss": "телефон",
+        "ruCognate": "телефон",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "speech",
+            "technology"
+        ]
+    },
+    {
+        "id": 307,
+        "orthography": "MOSKWA",
+        "enGloss": "Moscow",
+        "enCognate": "Moscow",
+        "ruGloss": "Москва",
+        "ruCognate": "Москва",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "place",
+            "politics"
+        ]
+    },
+    {
+        "id": 308,
+        "orthography": "VALENTÍNA",
+        "enGloss": "Valentina",
+        "enCognate": "Valentina",
+        "ruGloss": "Валентина",
+        "ruCognate": "Валентина",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "name"
+        ]
+    },
+    {
+        "id": 309,
+        "orthography": "TERESHKÓVA",
+        "enGloss": "Tereshkova",
+        "enCognate": "Tereshkova",
+        "ruGloss": "Терешкова",
+        "ruCognate": "Терешкова",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "name"
+        ]
+    },
+    {
+        "id": 310,
+        "orthography": "БUZZ",
+        "enGloss": "Buzz",
+        "enCognate": "Buzz",
+        "ruGloss": "Базз",
+        "ruCognate": "Базз",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "name"
+        ]
+    },
+    {
+        "id": 311,
+        "orthography": "ALDRIN",
+        "enGloss": "Aldrin",
+        "enCognate": "Aldrin",
+        "ruGloss": "Олдрин",
+        "ruCognate": "Олдрин",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "name"
+        ]
+    },
+    {
+        "id": 312,
+        "orthography": "FLORIDA",
+        "enGloss": "Florida",
+        "enCognate": "Florida",
+        "ruGloss": "Флорида",
+        "ruCognate": "Флорида",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "geography"
+        ]
+    },
+    {
+        "id": 313,
+        "orthography": "CIVILIZATSIAN",
+        "enGloss": "civilization",
+        "enCognate": "civilization",
+        "ruGloss": "цивилизация",
+        "ruCognate": "цивилизация",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "society",
+            "people"
+        ]
+    },
+    {
+        "id": 314,
+        "orthography": "GALLOП",
+        "enGloss": "gallop/leap",
+        "enCognate": "gallop",
+        "ruGloss": "галоп/прыгнуть",
+        "ruCognate": "галоп",
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "tags": [
+            "action"
+        ]
+    },
+    {
+        "id": 315,
+        "orthography": "AKT",
+        "enGloss": "action/deed",
+        "enCognate": "act",
+        "ruGloss": "поступка",
+        "ruCognate": "акт",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "action"
+        ]
+    },
+    {
+        "id": 316,
+        "orthography": "JENTLMEN",
+        "enGloss": "man",
+        "enCognate": "gentleman",
+        "ruGloss": "мужчина",
+        "ruCognate": "джентльмен",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "people"
+        ]
+    },
+    {
+        "id": 317,
+        "orthography": "MATHEMÁTIK",
+        "enGloss": "mathematics",
+        "enCognate": "mathematics",
+        "ruGloss": "математика",
+        "ruCognate": "математика",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "math"
+        ]
+    },
+    {
+        "id": 318,
+        "orthography": "THEOREM",
+        "enGloss": "theorem",
+        "enCognate": "theorem",
+        "ruGloss": "теорема",
+        "ruCognate": "теорема",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "math"
+        ]
+    },
+    {
+        "id": 319,
+        "orthography": "EUKLID",
+        "enGloss": "Euclid",
+        "enCognate": "Euclid",
+        "ruGloss": "Евклид",
+        "ruCognate": "Евклид",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "name"
+        ]
+    },
+    {
+        "id": 320,
+        "orthography": "ПITHAGORA",
+        "enGloss": "Pythagoras",
+        "enCognate": "Pythagoras",
+        "ruGloss": "Пифагор",
+        "ruCognate": "Пифагор",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "name"
+        ]
+    },
+    {
+        "id": 321,
+        "orthography": "DEMONSTRÁTSIAN",
+        "enGloss": "demonstration/proof",
+        "enCognate": "demonstration",
+        "ruGloss": "демонстрация",
+        "ruCognate": "демонстрация/доказательство",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "math"
+        ]
+    },
+    {
+        "id": 322,
+        "orthography": "ПRIMITIV",
+        "enGloss": "primitive/prime",
+        "enCognate": "primitive",
+        "ruGloss": "примитивное/простое",
+        "ruCognate": "примитивное",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "math"
         ]
     }
 ];
