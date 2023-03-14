@@ -1917,6 +1917,8 @@ export const textCorpus2: Record<string, (number | string)[]> = {
         "<br>",
         318,
         320,
+        ":",
+        "<span>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></span>",
         "<br>",
         "<br>",
         318,

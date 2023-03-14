@@ -23,8 +23,8 @@
 		let prevPunct = prevWord?.pos.includes('punct');
 		let nextPunctRight = nextWord?.pos.includes('punct-right');
 		let thisPunctLeft = word?.pos.includes('punct-left') || ['('].includes(String(wordId));
-		let isNum = /[0-9]/.test(displayWord);
-		let isNextNum = /[0-9]/.test(nextDisplayWord);
+		let isNum = /^[0-9]+$/.test(displayWord);
+		let isNextNum = /^[0-9]+$/.test(nextDisplayWord);
 		let betweenNums = isNum && isNextNum;
 
 		spaceAfter = true;

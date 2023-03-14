@@ -43,8 +43,28 @@
 		: [];
 	$: hasChanges = originalText !== textData.join(',');
 
+	let literalMode = false;
+
 	function keydown(event: KeyboardEvent) {
+		// if in literal mode, just act like a normal input
+		if (literalMode) {
+			// but escape literal mode on F2
+			if (event.key === 'F2') {
+				literalMode = false;
+				return false;
+			}
+			return;
+		}
+
+		event.preventDefault();
+		event.stopPropagation();
 		const keyPressed = event.key;
+		// toggle literal mode on F2
+		if (keyPressed === 'F2') {
+			literalMode = !literalMode;
+			return false;
+		}
+
 		// is number
 		if (keyPressed.match(/\d/)) {
 			const number = parseInt(keyPressed);
@@ -93,6 +113,7 @@
 			caretIndex += 1;
 		}
 		textData = [...textData];
+		return false;
 	}
 
 	async function save() {
@@ -125,7 +146,10 @@
 	{/if}
 </div>
 
-<input value={text} readonly />
+<input bind:value={text} readonly={!literalMode} />
+{#if literalMode}
+	<span class="literal-mode">LITERAL MODE</span>
+{/if}
 
 <div id="suggestions">
 	{#each lexiconEntries as entry, i}
