@@ -187,6 +187,7 @@ export function orthographyToIPA(orthography: string) {
 		.replaceAll('SH', 'ʃ')
 		.replaceAll('ZH', 'ʒ')
 		.replaceAll('CH', 'tʃ')
+		.replaceAll('KH', 'x')
 		.replaceAll('TH', 'θ')
 		.replaceAll('Á', 'ˈɑ')
 		.replaceAll('É', 'ˈe')
