@@ -5,18 +5,17 @@
 </script>
 
 <div class="grid">
-	<div class="header" style="grid-column: 1/4;">{lexicon.length} words</div>
-	<div class="header" style="grid-column: 4/7;">English</div>
-	<div class="header" style="grid-column: 7/10;">Russian</div>
-	<div class="header" style="grid-column: 10/12;">&nbsp;á é í ó ö ú &nbsp; а́ е́ и́ о́ у́ ы́ э́ ю́ я́ ꙑ ү</div>
+	<div class="header" style="grid-column: 1/5">{lexicon.length} words</div>
+	<div class="header" style="grid-column: 5/7;">English</div>
+	<div class="header" style="grid-column: 7/9;">Russian</div>
+	<div style="grid-column: 9/11;" />
 	<div />
 	<div class="header r2">ID</div>
 	<div class="header r2">Freq</div>
-	<div class="header r2">IPA</div>
 	<div class="header r2">Orthography</div>
+	<div class="header r2">IPA</div>
 	<div class="header r2">Gloss</div>
 	<div class="header r2">Cognate</div>
-	<div class="header r2">Orthography</div>
 	<div class="header r2">Gloss</div>
 	<div class="header r2">Cognate</div>
 	<div class="header r2">Part-of-speech</div>
@@ -31,7 +30,7 @@
 <style>
 	.grid {
 		display: grid;
-		grid-template-columns: 50px 50px repeat(10, 1fr);
+		grid-template-columns: 50px 50px repeat(9, 1fr);
 		grid-gap: 4px;
 		position: relative;
 	}

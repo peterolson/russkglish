@@ -25,6 +25,6 @@ export const PUT: RequestHandler = async ({ request }) => {
 };
 
 export async function updateTexts(newTexts: Record<string, number[]>) {
-	const fileContents = `export const textCorpus: Record<string, number[]> = ${JSON.stringify(newTexts, null, 4)};`;
+	const fileContents = `export const textCorpus: Record<string, (number | string)[]> = ${JSON.stringify(newTexts, null, 4)};`;
 	await fs.writeFile('src/data/textCorpus.ts', fileContents);
 }

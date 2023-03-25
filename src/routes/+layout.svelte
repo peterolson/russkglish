@@ -1,9 +1,7 @@
 <nav>
 	<a href="/">Home</a>
 	<a href="/lexicon">Lexicon</a>
-	<a href="/lexicon2">Lexicon 2</a>
 	<a href="/texts">Texts</a>
-	<a href="/texts2">Texts 2</a>
 </nav>
 <main>
 	<slot />

@@ -19,19 +19,6 @@ export type PartOfSpeech = typeof partsOfSpeech[number];
 
 export type LexiconEntry = {
 	id: number;
-	ipa: string;
-	en: string;
-	ru: string;
-	enGloss: string;
-	ruGloss: string;
-	enCognate: string;
-	ruCognate: string;
-	pos: PartOfSpeech[];
-	tags: string[];
-};
-
-export type LexiconEntry2 = {
-	id: number;
 	orthography: string;
 	enGloss: string;
 	ruGloss: string;

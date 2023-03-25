@@ -1,38 +1,83 @@
 <script lang="ts">
 	import ChipInput from '@/components/ChipInput.svelte';
 	import { lexicon } from '@/data/lexicon';
-	import { partsOfSpeech, type LexiconEntry, type PartOfSpeech } from '@/data/lexicon.types';
-	import { enToIPA, ruToIPA } from '@/lib/toIPA';
+	import { partsOfSpeech, type LexiconEntry } from '@/data/lexicon.types';
+	import { orthographyToIPA } from '@/lib/toIPA';
 
 	export let isEditing = false;
 	export let onCancel: () => void = () => {};
 	export let initialEntry: LexiconEntry = {
 		id: -1,
-		ipa: '',
-		en: '',
+		orthography: '',
 		enGloss: '',
 		enCognate: '',
-		ru: '',
 		ruGloss: '',
 		ruCognate: '',
 		pos: [],
 		tags: []
 	};
 
-	let { en, enGloss, enCognate, ru, ruGloss, ruCognate, pos, tags } = initialEntry;
+	let { orthography, enGloss, enCognate, ruGloss, ruCognate, pos, tags } = initialEntry;
 
-	let enIPA = '';
-	let ruIPA = '';
-	let ipaMatches = true;
 	let alreadyExists = false;
 	let isDisabled = true;
+	let ipa = '';
 	$: {
-		enIPA = enToIPA(en);
-		ruIPA = ruToIPA(ru);
-		ipaMatches = enIPA === ruIPA;
-		const existingRow = lexicon.find((row) => row.ipa === enIPA);
+		orthography = normalizeOrthography(orthography);
+		ipa = orthographyToIPA(orthography);
+		const existingRow = lexicon.find((row) => ipa === orthographyToIPA(row.orthography) || row.orthography === orthography);
 		alreadyExists = !!existingRow && existingRow.id !== initialEntry.id;
-		isDisabled = !en || !ru || !ipaMatches || !ruGloss || !enGloss || !pos.length || alreadyExists;
+		isDisabled = !orthography || !ruGloss || !enGloss || !pos.length || alreadyExists;
+	}
+
+	function normalizeOrthography(text: string) {
+		const allowedChars = "-0123456789abcdefghijklmnopqrstuvwxyzAꙖБCDEЭҨFGHIJKLMNOПQRSTUVWXYZ'!ÁÉÍÓÚÝЭ́";
+		// strip out all characters that are not in the allowedChars string
+		let normalized = text
+			.split('')
+			.filter((char) => allowedChars.includes(char))
+			.join('');
+		// simple replacements
+		normalized = normalized
+			.replace(/a/g, 'A')
+			.replaceAll('b', 'Б')
+			.replaceAll('c', 'C')
+			.replaceAll('d', 'D')
+			.replaceAll('e', 'E')
+			.replaceAll('f', 'F')
+			.replaceAll('g', 'G')
+			.replaceAll('h', 'H')
+			.replaceAll('i', 'I')
+			.replaceAll('j', 'J')
+			.replaceAll('k', 'K')
+			.replaceAll('l', 'L')
+			.replaceAll('m', 'M')
+			.replaceAll('n', 'N')
+			.replaceAll('o', 'O')
+			.replaceAll('p', 'П')
+			.replaceAll('q', 'Q')
+			.replaceAll('r', 'R')
+			.replaceAll('s', 'S')
+			.replaceAll('t', 'T')
+			.replaceAll('u', 'U')
+			.replaceAll('v', 'V')
+			.replaceAll('w', 'W')
+			.replaceAll('x', 'X')
+			.replaceAll('y', 'Y')
+			.replaceAll('z', 'Z');
+		// fancy replacements
+		normalized = normalized.replaceAll('A!', 'Ꙗ').replaceAll('E!', 'Э').replaceAll('O!', 'Ҩ').replaceAll('!', '');
+		// add accents
+		normalized = normalized
+			.replaceAll("A'", 'Á')
+			.replaceAll("E'", 'É')
+			.replaceAll("I'", 'Í')
+			.replaceAll("O'", 'Ó')
+			.replaceAll("U'", 'Ú')
+			.replaceAll("Y'", 'Ý')
+			.replaceAll("Э'", 'Э́')
+			.replaceAll("'", '');
+		return normalized;
 	}
 
 	async function addRow() {
@@ -44,11 +89,9 @@
 			body: JSON.stringify({
 				id: initialEntry.id,
 				row: {
-					ipa: enIPA,
-					en,
+					orthography,
 					enGloss,
 					enCognate,
-					ru,
 					ruGloss,
 					ruCognate,
 					pos,
@@ -60,29 +103,22 @@
 </script>
 
 <div />
-<div />
 <div>
-	{#if ipaMatches}
-		<span class="ipa">{enIPA}</span>
-	{:else}
-		<div class="ipa not-matched">{enIPA}</div>
-		<div class="ipa not-matched">{ruIPA}</div>
-	{/if}
 	{#if alreadyExists}
 		<div class="caption not-matched">already exists</div>
 	{/if}
 </div>
 <div>
-	<input type="text" bind:value={en} />
+	<input type="text" bind:value={orthography} />
+</div>
+<div class="ipa">
+	{ipa}
 </div>
 <div>
 	<input type="text" bind:value={enGloss} />
 </div>
 <div>
 	<input type="text" bind:value={enCognate} />
-</div>
-<div>
-	<input type="text" bind:value={ru} />
 </div>
 <div>
 	<input type="text" bind:value={ruGloss} />

@@ -66,10 +66,8 @@
 		{#if editing.has(textName)}
 			<input bind:value={newTextNames[textName]} />
 		{:else}
-			<a href="texts/{textName}">
-				{#each textName.split('|') as part}
-					<span>{part}</span>
-				{/each}
+			<a href="texts/{encodeURIComponent(textName)}">
+				{textName}
 			</a>
 		{/if}
 		<div>
@@ -104,9 +102,5 @@
 
 	a {
 		display: flex;
-	}
-
-	a span {
-		flex: 1;
 	}
 </style>
