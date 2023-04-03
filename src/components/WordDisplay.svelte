@@ -34,6 +34,13 @@
 		if (displayWord === ':' && isNextNum) {
 			spaceAfter = false;
 		}
+
+		//capitalize first letter if beginning of line or sentence
+		if (['<br>', '.', '?', '!', '70'].includes(String(prevWordId)) || prevWordId === undefined) {
+			if (displayWord.length > 0) {
+				displayWord = displayWord[0].toUpperCase() + displayWord.slice(1);
+			}
+		}
 	}
 </script>
 

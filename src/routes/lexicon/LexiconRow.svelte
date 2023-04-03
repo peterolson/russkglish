@@ -72,8 +72,6 @@
 	}
 
 	.orthography {
-		margin-top: 2px;
 		font-family: sans-serif;
-		font-size: 11px;
 	}
 </style>

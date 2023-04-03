@@ -31,42 +31,14 @@
 	}
 
 	function normalizeOrthography(text: string) {
-		const allowedChars = "-0123456789abcdefghijklmnopqrstuvwxyzAꙖБCDEЭҨFGHIJKLMNOПQRSTUVWXYZ'!ÁÉÍÓÚÝЭ́";
+		const allowedChars = "-0123456789abcdefghijklmnopqrstuvwxyzэAꙖБCDEЭҨFGHIJKLMNOPПQRSTUVWXYZ'!ÁÉÍÓÚÝЭ́";
 		// strip out all characters that are not in the allowedChars string
 		let normalized = text
 			.split('')
 			.filter((char) => allowedChars.includes(char))
 			.join('');
-		// simple replacements
-		normalized = normalized
-			.replace(/a/g, 'A')
-			.replaceAll('b', 'Б')
-			.replaceAll('c', 'C')
-			.replaceAll('d', 'D')
-			.replaceAll('e', 'E')
-			.replaceAll('f', 'F')
-			.replaceAll('g', 'G')
-			.replaceAll('h', 'H')
-			.replaceAll('i', 'I')
-			.replaceAll('j', 'J')
-			.replaceAll('k', 'K')
-			.replaceAll('l', 'L')
-			.replaceAll('m', 'M')
-			.replaceAll('n', 'N')
-			.replaceAll('o', 'O')
-			.replaceAll('p', 'П')
-			.replaceAll('q', 'Q')
-			.replaceAll('r', 'R')
-			.replaceAll('s', 'S')
-			.replaceAll('t', 'T')
-			.replaceAll('u', 'U')
-			.replaceAll('v', 'V')
-			.replaceAll('w', 'W')
-			.replaceAll('x', 'X')
-			.replaceAll('y', 'Y')
-			.replaceAll('z', 'Z');
 		// fancy replacements
-		normalized = normalized.replaceAll('A!', 'Ꙗ').replaceAll('E!', 'Э').replaceAll('O!', 'Ҩ').replaceAll('!', '');
+		normalized = normalized.replaceAll('E!', 'Э').replaceAll('e!', 'э').replaceAll('!', '');
 		// add accents
 		normalized = normalized
 			.replaceAll("A'", 'Á')
@@ -76,6 +48,13 @@
 			.replaceAll("U'", 'Ú')
 			.replaceAll("Y'", 'Ý')
 			.replaceAll("Э'", 'Э́')
+			.replaceAll("a'", 'á')
+			.replaceAll("e'", 'é')
+			.replaceAll("i'", 'í')
+			.replaceAll("o'", 'ó')
+			.replaceAll("u'", 'ú')
+			.replaceAll("y'", 'ý')
+			.replaceAll("э'", 'э́')
 			.replaceAll("'", '');
 		return normalized;
 	}

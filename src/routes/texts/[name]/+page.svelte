@@ -144,38 +144,41 @@
 	{/if}
 </div>
 
-<input bind:value={text} readonly={!literalMode} />
-{#if literalMode}
-	<span class="literal-mode">LITERAL MODE</span>
-{/if}
+<div class="input-area">
+	<input bind:value={text} readonly={!literalMode} />
+	{#if literalMode}
+		<span class="literal-mode">LITERAL MODE</span>
+	{/if}
 
-<div id="suggestions">
-	{#each lexiconEntries as entry, i}
-		<div class="suggestion-box">
-			<div class="suggestion-box-header">
-				<span>{i + 1}</span>
-				<span>{entry.orthography}</span>
-			</div>
-			<div class="suggestion-box-info">
-				<div>
+	<div id="suggestions">
+		{#each lexiconEntries as entry, i}
+			<div class="suggestion-box">
+				<div class="suggestion-box-header">
+					<span>{i + 1}</span>
 					<span>{entry.orthography}</span>
-					<span>{entry.enGloss}</span>
-					<span>{entry.enCognate}</span>
 				</div>
-				<div>
-					<span>{orthographyToIPA(entry.orthography)}</span>
-					<span>{entry.ruGloss}</span>
-					<span>{entry.ruCognate}</span>
+				<div class="suggestion-box-info">
+					<div>
+						<span>{entry.orthography}</span>
+						<span>{entry.enGloss}</span>
+						<span>{entry.enCognate}</span>
+					</div>
+					<div>
+						<span>{orthographyToIPA(entry.orthography)}</span>
+						<span>{entry.ruGloss}</span>
+						<span>{entry.ruCognate}</span>
+					</div>
 				</div>
 			</div>
-		</div>
-	{/each}
+		{/each}
+	</div>
 </div>
 
 <style>
 	.text {
 		padding: 16px;
 		font-family: sans-serif;
+		margin-bottom: 500px;
 	}
 
 	#suggestions {
@@ -223,5 +226,12 @@
 		100% {
 			opacity: 0;
 		}
+	}
+
+	.input-area {
+		position: fixed;
+		bottom: 0;
+		background-color: white;
+		border-top: 1px solid black;
 	}
 </style>
