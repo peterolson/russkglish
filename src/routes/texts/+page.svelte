@@ -1,5 +1,6 @@
 <script lang="ts">
 	import CategoryDisplay from '@/components/CategoryDisplay.svelte';
+	import TextDisplay from '@/components/TextDisplay.svelte';
 	import { texts } from '@/data/texts';
 
 	const sortedTexts = texts.map((x, i) => ({ ...x, index: i })).sort((a, b) => a.title.localeCompare(b.title));
@@ -37,12 +38,19 @@
 				<div class="img" style={`background-image: url(${text.img});`} />
 			</a>
 			<div>
-				<h2><a href="/texts/{text.title}">{text.title}</a></h2>
+				<h2>
+					<a href="/texts/{text.title}">{text.title}</a>
+					<!--
+                    <button on:click={() => deleteText(text.title)}>❌</button>
+                    -->
+				</h2>
 				<CategoryDisplay category={text.category} />
-				<em>{text.subtitle}</em>
-				<br />
-				<br />
-				<button on:click={() => deleteText(text.title)}>❌</button>
+				<div class="excerpt">
+					{#if text.subtitle}
+						<em>{text.subtitle}</em>
+					{/if}
+					<TextDisplay {text} isExcerpt />
+				</div>
 			</div>
 		</div>
 	{/each}
@@ -77,5 +85,19 @@
 	h2 {
 		margin: 0;
 		font-size: 1.1rem;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	em {
+		font-size: 0.8rem;
+		opacity: 0.8;
+	}
+
+	.excerpt {
+		height: 90px;
+		overflow: hidden;
+		-webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
+		mask-image: linear-gradient(180deg, #000 60%, transparent);
 	}
 </style>

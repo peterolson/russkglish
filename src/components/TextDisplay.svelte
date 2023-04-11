@@ -4,6 +4,7 @@
 	import { afterUpdate } from 'svelte';
 
 	export let text: Text;
+	export let isExcerpt: boolean = false;
 
 	afterUpdate(() => {
 		if (typeof window !== 'undefined' && (window as any).MathJax) {
@@ -18,21 +19,23 @@
 	</script>
 </svelte:head>
 
-<article>
-	{#if text.category}
-		<CategoryDisplay category={text.category} />
-	{/if}
-	<h1>{text.title}</h1>
-	{#if text.subtitle}
-		<div><em>{text.subtitle}</em></div>
-		<br />
+<article class:excerpt={isExcerpt}>
+	{#if !isExcerpt}
+		{#if text.category}
+			<CategoryDisplay category={text.category} />
+		{/if}
+		<h1>{text.title}</h1>
+		{#if text.subtitle}
+			<div><em>{text.subtitle}</em></div>
+			<br />
+		{/if}
+
+		{#if text.img}
+			<img src={text.img} alt="" />
+		{/if}
 	{/if}
 
-	{#if text.img}
-		<img src={text.img} alt="" />
-	{/if}
-
-	{@html text.text}
+	{@html isExcerpt ? text.text.slice(0, 300) : text.text}
 </article>
 
 <style>
@@ -45,5 +48,8 @@
 		padding: 0 1rem;
 		line-height: 1.5;
 		color: #404040;
+	}
+	article.excerpt > :global(*) {
+		font-size: 80%;
 	}
 </style>
