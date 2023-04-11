@@ -1,7 +1,7 @@
 <nav>
-	<a href="/">Home</a>
+	<a href="/">Russglish</a>
 	<a href="/lexicon">Lexicon</a>
-	<a href="/texts">Texts</a>
+	<a href="/texts">Text</a>
 </nav>
 <main>
 	<slot />

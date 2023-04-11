@@ -1,30 +1,26 @@
+import { texts } from '@/data/texts';
 import type { RequestHandler } from './$types';
 import * as fs from 'fs/promises';
-import { textCorpus } from '@/data/textCorpus';
 
-export const POST: RequestHandler = async ({ request }) => {
-	const { textName } = await request.json();
-	textCorpus[textName] = [];
-	await updateTexts(textCorpus);
+export const POST: RequestHandler = async () => {
+	await _updateTexts([
+		...texts.map((x) => x.raw),
+		'title. New Text\nsubtitle. New Subtitle\ncategory. New Category\nimg. New Image\n\nNew Text'
+	]);
 	return new Response('OK');
 };
 
 export const DELETE: RequestHandler = async ({ request }) => {
-	const { textName } = await request.json();
-	delete textCorpus[textName];
-	await updateTexts(textCorpus);
+	const { title } = await request.json();
+	await _updateTexts([...texts.filter((x) => x.title !== title).map((x) => x.raw)]);
 	return new Response('OK');
 };
 
-export const PUT: RequestHandler = async ({ request }) => {
-	const { oldTextName, newTextName } = await request.json();
-	textCorpus[newTextName] = textCorpus[oldTextName];
-	delete textCorpus[oldTextName];
-	await updateTexts(textCorpus);
-	return new Response('OK');
-};
+export async function _updateTexts(texts: string[]) {
+	const fileContents = `import { parseMarkup } from '@/lib/markup';
 
-export async function updateTexts(newTexts: Record<string, number[]>) {
-	const fileContents = `export const textCorpus: Record<string, (number | string)[]> = ${JSON.stringify(newTexts, null, 4)};`;
-	await fs.writeFile('src/data/textCorpus.ts', fileContents);
+    const rawTexts: string[] = ${JSON.stringify(texts, null, 4)};
+    
+    export const texts = rawTexts.map((t) => ({ raw: t, ...parseMarkup(t) }));`;
+	await fs.writeFile('src/data/texts.ts', fileContents);
 }

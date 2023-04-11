@@ -1,19 +1,13 @@
 <script lang="ts">
 	import Chips from '@/components/Chips.svelte';
 	import type { LexiconEntry } from '@/data/lexicon.types';
-	import { textCorpus } from '@/data/textCorpus';
 	import { orthographyToIPA } from '@/lib/toIPA';
 	import AddLexiconRow from './AddLexiconRow.svelte';
 
 	export let entry: LexiconEntry;
+	export let frequency: number;
 
 	let editMode = false;
-
-	let frequency = 0;
-	for (const textName in textCorpus) {
-		const wordIds = textCorpus[textName];
-		frequency += wordIds.filter((id) => id === entry.id).length;
-	}
 
 	async function toggleEditMode() {
 		editMode = !editMode;

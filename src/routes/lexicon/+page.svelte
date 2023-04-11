@@ -2,6 +2,18 @@
 	import { lexicon } from '@/data/lexicon';
 	import AddLexiconRow from './AddLexiconRow.svelte';
 	import LexiconRow from './LexiconRow.svelte';
+	import { texts } from '@/data/texts';
+	const frequencies: Record<number, number> = {};
+	for (const { raw } of texts) {
+		// find tokens of format 'ъъ1234'
+		const matches = raw.match(/ъ+(\d+)/g);
+		if (matches) {
+			for (const match of matches) {
+				const id = +match.replace(/ъ+/g, '');
+				frequencies[id] = (frequencies[id] ?? 0) + 1;
+			}
+		}
+	}
 </script>
 
 <div class="grid">
@@ -22,7 +34,7 @@
 	<div class="header r2">Tags</div>
 	<div />
 	{#each lexicon as entry}
-		<LexiconRow {entry} />
+		<LexiconRow {entry} frequency={frequencies[entry.id] ?? 0} />
 	{/each}
 	<AddLexiconRow />
 </div>

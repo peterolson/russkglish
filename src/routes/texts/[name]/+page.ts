@@ -1,14 +1,13 @@
-import { textCorpus } from '@/data/textCorpus';
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
+import { texts } from '@/data/texts';
 
 export const load: PageLoad = ({ params }) => {
-	if (params.name in textCorpus) {
+	const matchingText = texts.find((t) => t.title === params.name);
+	if (matchingText) {
 		return {
-			textName: params.name,
-			textData: textCorpus[params.name]
+			text: matchingText
 		};
 	}
-
 	throw error(404, 'Not found');
 };

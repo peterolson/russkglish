@@ -1,22 +1,59 @@
+10 genres, 5 texts in each genre (total 50 texts)
+
 Recipe
+ - Chocolate Cake
+ - (Borsch)
+ - (Shepherd's pie)
+ - (Olivye)
+ - (Chicken and waffles)
 
 Fairy Tale
+ - 3 Little Pigs
+ - (Goldilocks and the 3 bears)
+ - (Kolobok/Gingerbread man)
+ - (The Frog Princess)
+ - (Pot of Porridge)
 
 Classic Literature short story
+ - Радость (Чехов)
+ - (A Country Cottage (Чехов))
+ - (Fat and Thin (Чехов))
 
 Scripture
+ - Tower of Babel (Genesis 11)
+ - (Creation (Genesis 1-2))
+ - (10 Commandments (Exodus 20))
+ - (Noah's Ark (Genesis 6-8))
+ - (Binding of Isaac (Genesis 22))
 
 Aesop fable
+ - North Wind and the Sun
+ - (The Goose and the Golden Egg)
+ - (The Tortoise and the Hare)
+ - (The Lion & The Mouse)
+ - (The Boy who Cried Wolf)
 
 Mathematical proof
+ - Euclid's Theorem
+ - (Pythagorean Theorem)
+ - (Denumerability of the Rational Numbers)
+ - (Irrationality of the Square Root of 2)
+ - (Halting Problem)
 
 History
+ - Space Race
+ - (Alaska Purchase)
+ - (Bertran Russel about meeting Lenin in 1920)
+ - (Cuban Missile Crisis)
+ - (Boris Yeltsin in America)
 
 ---
 
 Advice column (Miss Manner/Dear Abby/etc.)
 
-Poem
+Encyclopedia/Wikipedia article
 
+How-to/Self-help
 
-+ Explanation of Russkglish in russkglish
+One-off
++ Explanation of Russkglish in Russkglish

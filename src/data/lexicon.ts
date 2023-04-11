@@ -1318,9 +1318,9 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 93,
-        "orthography": "nomer",
+        "orthography": "numer",
         "enGloss": "number",
-        "enCognate": "number",
+        "enCognate": "number/numeral",
         "ruGloss": "номер",
         "ruCognate": "номер",
         "pos": [
@@ -2422,7 +2422,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 169,
-        "orthography": "fabrikatsian",
+        "orthography": "fabrikátsian",
         "enGloss": "manufacture/produce/create",
         "enCognate": "fabrication",
         "ruGloss": "производство/производить/создавать",
@@ -3883,12 +3883,13 @@ export const lexicon: LexiconEntry[] = [
     {
         "id": 275,
         "orthography": "kontrast",
-        "enGloss": "contrast",
+        "enGloss": "contrast/different",
         "enCognate": "contrast",
-        "ruGloss": "контраст",
+        "ruGloss": "контраст/различный",
         "ruCognate": "контраст",
         "pos": [
-            "noun"
+            "noun",
+            "adj"
         ],
         "tags": [
             "abstract"
@@ -6270,5 +6271,530 @@ export const lexicon: LexiconEntry[] = [
         "tags": [
             "noun"
         ]
+    },
+    {
+        "id": 442,
+        "orthography": "Tetris",
+        "enGloss": "Tetris",
+        "enCognate": "Tetris",
+        "ruGloss": "Тетрис",
+        "ruCognate": "Тетрис",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "game"
+        ]
+    },
+    {
+        "id": 443,
+        "orthography": "pazzl",
+        "enGloss": "puzzle",
+        "enCognate": "puzzle",
+        "ruGloss": "пазл",
+        "ruCognate": "пазл",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "game"
+        ]
+    },
+    {
+        "id": 444,
+        "orthography": "sport",
+        "enGloss": "sport/game",
+        "enCognate": "sport",
+        "ruGloss": "спорт/игра",
+        "ruCognate": "спорт",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "game"
+        ]
+    },
+    {
+        "id": 445,
+        "orthography": "komputer",
+        "enGloss": "computer",
+        "enCognate": "computer",
+        "ruGloss": "компьютер",
+        "ruCognate": "компьютер",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "technology"
+        ]
+    },
+    {
+        "id": 446,
+        "orthography": "programmist",
+        "enGloss": "programmer",
+        "enCognate": "programmer",
+        "ruGloss": "программист",
+        "ruCognate": "программист",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "person",
+            "job"
+        ]
+    },
+    {
+        "id": 447,
+        "orthography": "innovátsian",
+        "enGloss": "innovation/invention",
+        "enCognate": "innovation",
+        "ruGloss": "инновация",
+        "ruCognate": "инновация",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "abstract"
+        ]
+    },
+    {
+        "id": 448,
+        "orthography": "akademy",
+        "enGloss": "academy",
+        "enCognate": "academy",
+        "ruGloss": "академия",
+        "ruCognate": "академия",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "education"
+        ]
+    },
+    {
+        "id": 449,
+        "orthography": "bizness",
+        "enGloss": "business",
+        "enCognate": "business",
+        "ruGloss": "бизнес",
+        "ruCognate": "бизнес",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "job"
+        ]
+    },
+    {
+        "id": 450,
+        "orthography": "centr",
+        "enGloss": "center",
+        "enCognate": "center",
+        "ruGloss": "центр",
+        "ruCognate": "центр",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "place"
+        ]
+    },
+    {
+        "id": 451,
+        "orthography": "filosofy",
+        "enGloss": "philosophy/science",
+        "enCognate": "philosophy",
+        "ruGloss": "философия/наука",
+        "ruCognate": "философия",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "science"
+        ]
+    },
+    {
+        "id": 452,
+        "orthography": "english",
+        "enGloss": "English",
+        "enCognate": "English",
+        "ruGloss": "Английский",
+        "ruCognate": "Английский",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "language"
+        ]
+    },
+    {
+        "id": 453,
+        "orthography": "russkiy",
+        "enGloss": "Russian",
+        "enCognate": "Russky",
+        "ruGloss": "русский",
+        "ruCognate": "русский",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "language"
+        ]
+    },
+    {
+        "id": 454,
+        "orthography": "latin",
+        "enGloss": "Latin",
+        "enCognate": "Latin",
+        "ruGloss": "латинский",
+        "ruCognate": "латинский",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "language"
+        ]
+    },
+    {
+        "id": 455,
+        "orthography": "grek",
+        "enGloss": "Greek",
+        "enCognate": "Greek",
+        "ruGloss": "греческий",
+        "ruCognate": "грек",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "language"
+        ]
+    },
+    {
+        "id": 456,
+        "orthography": "franc",
+        "enGloss": "French",
+        "enCognate": "French",
+        "ruGloss": "Французский",
+        "ruCognate": "Французский",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "language"
+        ]
+    },
+    {
+        "id": 457,
+        "orthography": "hibrid",
+        "enGloss": "hybrid",
+        "enCognate": "hybrid",
+        "ruGloss": "гибрид",
+        "ruCognate": "гибрид",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "biology"
+        ]
+    },
+    {
+        "id": 458,
+        "orthography": "russglish",
+        "enGloss": "Russglish",
+        "enCognate": "Russglish",
+        "ruGloss": "руссглиш",
+        "ruCognate": "руссглиш",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "language"
+        ]
+    },
+    {
+        "id": 459,
+        "orthography": "orátor",
+        "enGloss": "speaker",
+        "enCognate": "orater",
+        "ruGloss": "говорящий",
+        "ruCognate": "оратор",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "speech",
+            "person"
+        ]
+    },
+    {
+        "id": 460,
+        "orthography": "erudit",
+        "enGloss": "erudite",
+        "enCognate": "erudite",
+        "ruGloss": "эрудированный",
+        "ruCognate": "эрудит",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "science"
+        ]
+    },
+    {
+        "id": 461,
+        "orthography": "erudítsian",
+        "enGloss": "erudition/science/knowledge",
+        "enCognate": "erudition",
+        "ruGloss": "эрудиция/наука/знания",
+        "ruCognate": "эрудиция",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "science"
+        ]
+    },
+    {
+        "id": 462,
+        "orthography": "analyz",
+        "enGloss": "analyze/analysis/research/study",
+        "enCognate": "analyze",
+        "ruGloss": "анализировать / анализировать / исследовать / изучать",
+        "ruCognate": "анализ",
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "tags": [
+            "science"
+        ]
+    },
+    {
+        "id": 463,
+        "orthography": "intérpret",
+        "enGloss": "interpret/comprehend",
+        "enCognate": "interpret",
+        "ruGloss": "интерпретировать/понимать",
+        "ruCognate": "интерпретировать",
+        "pos": [
+            "verb"
+        ],
+        "tags": [
+            "language"
+        ]
+    },
+    {
+        "id": 464,
+        "orthography": "barriér",
+        "enGloss": "barrier/obstacle",
+        "enCognate": "barrier",
+        "ruGloss": "барьер/препятствие",
+        "ruCognate": "барьер",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "abstract"
+        ]
+    },
+    {
+        "id": 465,
+        "orthography": "lexicon",
+        "enGloss": "vocabulary/lexicon",
+        "enCognate": "lexicon",
+        "ruGloss": "лексикон/лексика",
+        "ruCognate": "лексикон",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "language"
+        ]
+    },
+    {
+        "id": 466,
+        "orthography": "termin",
+        "enGloss": "word",
+        "enCognate": "terminology",
+        "ruGloss": "слово",
+        "ruCognate": "термин",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "language"
+        ]
+    },
+    {
+        "id": 467,
+        "orthography": "minimiz",
+        "enGloss": "minimize",
+        "enCognate": "minimize",
+        "ruGloss": "минимизировать",
+        "ruCognate": "минимизировать",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "math"
+        ]
+    },
+    {
+        "id": 468,
+        "orthography": "akkurat",
+        "enGloss": "accurately/carefully",
+        "enCognate": "accurate",
+        "ruGloss": "аккуратный",
+        "ruCognate": "аккуратный",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "behavior"
+        ]
+    },
+    {
+        "id": 469,
+        "orthography": "fortúna",
+        "enGloss": "fortune/fortunately",
+        "enCognate": "fortune",
+        "ruGloss": "судьба/к счастью",
+        "ruCognate": "фортуна",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "good"
+        ]
+    },
+    {
+        "id": 470,
+        "orthography": "India",
+        "enGloss": "India",
+        "enCognate": "India",
+        "ruGloss": "Индия",
+        "ruCognate": "Индия",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "place",
+            "country",
+            "geography"
+        ]
+    },
+    {
+        "id": 471,
+        "orthography": "Europa",
+        "enGloss": "Europe",
+        "enCognate": "Europe",
+        "ruGloss": "Европа",
+        "ruCognate": "Европа",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "place",
+            "continent",
+            "geography"
+        ]
+    },
+    {
+        "id": 472,
+        "orthography": "Indo-Europa",
+        "enGloss": "Indo-European",
+        "enCognate": "Indo-European",
+        "ruGloss": "индоевропейский",
+        "ruCognate": "индоевропейский",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "language"
+        ]
+    },
+    {
+        "id": 473,
+        "orthography": "beby",
+        "enGloss": "baby",
+        "enCognate": "baby",
+        "ruGloss": "малыш",
+        "ruCognate": "беби",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "person"
+        ]
+    },
+    {
+        "id": 474,
+        "orthography": "recipét",
+        "enGloss": "recipe",
+        "enCognate": "recipe",
+        "ruGloss": "рецепт",
+        "ruCognate": "рецепт",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food"
+        ]
+    },
+    {
+        "id": 475,
+        "orthography": "biblia",
+        "enGloss": "bible",
+        "enCognate": "bible",
+        "ruGloss": "библия",
+        "ruCognate": "библия",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "text",
+            "religion"
+        ]
+    },
+    {
+        "id": 476,
+        "orthography": "klassik",
+        "enGloss": "classic",
+        "enCognate": "classic",
+        "ruGloss": "классика",
+        "ruCognate": "классика",
+        "pos": [
+            "noun",
+            "adj"
+        ],
+        "tags": [
+            "history"
+        ]
+    },
+    {
+        "id": 477,
+        "orthography": "mith",
+        "enGloss": "myth/fable",
+        "enCognate": "myth",
+        "ruGloss": "миф/басня",
+        "ruCognate": "миф",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "literature"
+        ]
+    },
+    {
+        "id": 478,
+        "orthography": "эnciklopédia",
+        "enGloss": "encyclopedia",
+        "enCognate": "encyclopedia",
+        "ruGloss": "энциклопедия",
+        "ruCognate": "энциклопедия",
+        "pos": [
+            "noun"
+        ],
+        "tags": []
     }
 ];
