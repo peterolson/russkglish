@@ -6795,6 +6795,82 @@ export const lexicon: LexiconEntry[] = [
         "pos": [
             "noun"
         ],
-        "tags": []
+        "tags": [
+            "literature"
+        ]
+    },
+    {
+        "id": 479,
+        "orthography": "zoopark",
+        "enGloss": "zoo",
+        "enCognate": "zoo park",
+        "ruGloss": "зоопарк",
+        "ruCognate": "зоопарк",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "place"
+        ]
+    },
+    {
+        "id": 480,
+        "orthography": "Washington",
+        "enGloss": "Washington",
+        "enCognate": "Washington",
+        "ruGloss": "Вашингтон",
+        "ruCognate": "Вашингтон",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "place",
+            "city",
+            "capital",
+            "geography"
+        ]
+    },
+    {
+        "id": 481,
+        "orthography": "Atlántik",
+        "enGloss": "Atlantic",
+        "enCognate": "Atlantic",
+        "ruGloss": "Атлантика",
+        "ruCognate": "Атлантика",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "geography"
+        ]
+    },
+    {
+        "id": 482,
+        "orthography": "okean",
+        "enGloss": "ocean",
+        "enCognate": "ocean",
+        "ruGloss": "океан",
+        "ruCognate": "океан",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "geography"
+        ]
+    },
+    {
+        "id": 483,
+        "orthography": "Merkury",
+        "enGloss": "Mercury",
+        "enCognate": "Mercury",
+        "ruGloss": "Меркурий",
+        "ruCognate": "Меркурий",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "planet",
+            "science"
+        ]
     }
 ];
