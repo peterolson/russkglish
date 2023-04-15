@@ -1,23 +1,36 @@
+<script lang="ts">
+	import { page } from '$app/stores';
+</script>
+
 <nav>
-	<a href="/">Russglish</a>
-	<a href="/lexicon">Lexicon</a>
-	<a href="/texts">Text</a>
+	<a href="/" class:active={$page.route.id === '/'}>Russglish</a>
+	<a href="/lexicon" class:active={$page.route.id?.startsWith('/lexicon')}>Lexicon</a>
+	<a href="/texts" class:active={$page.route.id?.startsWith('/texts')}>Text</a>
 </nav>
-<main>
-	<slot />
-</main>
+
+<slot />
 
 <style>
 	nav {
-		background-color: white;
-		padding: 8px;
+		background-color: rgba(0, 0, 0, 0.9);
+		padding: 16px;
 		display: flex;
+		align-items: center;
 		gap: 8px;
 		justify-content: center;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	}
-	main {
-		background-color: white;
-		padding: 4px 24px;
+
+	nav a {
+		color: white;
+		text-decoration: none;
+	}
+
+	nav a:hover {
+		text-decoration: underline;
+	}
+
+	a.active {
+		font-weight: bold;
 	}
 </style>

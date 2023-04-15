@@ -10,8 +10,8 @@ function applyPhonologicalRules(s: string) {
 			s = s.slice(0, -1) + 'i';
 		}
 	}
-	// j between consonants is removed
-	s = s.replace(/([^ˈɑaeiouɨɪəɛɵ])j([^ˈɑaeiouɨɪəɛɵ])/g, '$1$2');
+	// j between consonants is changed to ɪj
+	s = s.replace(/([^ˈɑaeiouɨɪəɛɵ])j([^ˈɑaeiouɨɪəɛɵ])/g, '$1ɪj$2');
 
 	// final ɪ changes to i
 	s = s.replace(/ɪ$/, 'i');

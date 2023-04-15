@@ -260,7 +260,7 @@
 </script>
 
 <div class="container">
-	<pre contenteditable="true" bind:innerText={markup} bind:this={textareaNode} />
+	<pre contenteditable="plaintext-only" bind:innerText={markup} bind:this={textareaNode} />
 	<div class="output">
 		<TextDisplay text={parsedText} />
 	</div>
@@ -278,10 +278,12 @@
 	}
 	pre {
 		width: 100%;
+		max-width: 500px;
 		white-space: pre-wrap;
 		border: 1px solid #ccc;
 		overflow: auto;
 		padding: 8px;
+		background-color: #fff;
 	}
 	.output {
 		width: 100%;

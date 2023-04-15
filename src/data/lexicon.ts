@@ -248,7 +248,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 17,
-        "orthography": "kakao",
+        "orthography": "kakáo",
         "enGloss": "cocoa",
         "enCognate": "cacao",
         "ruGloss": "какао",
@@ -626,7 +626,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 43,
-        "orthography": "instrúktsian",
+        "orthography": "instrúkcian",
         "enGloss": "instruction/directions/recipe",
         "enCognate": "instruction",
         "ruGloss": "инструкция/рецепт",
@@ -640,7 +640,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 44,
-        "orthography": "portsian",
+        "orthography": "porcian",
         "enGloss": "portion",
         "enCognate": "portion",
         "ruGloss": "порция",
@@ -1290,7 +1290,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 91,
-        "orthography": "makaroni",
+        "orthography": "makaróni",
         "enGloss": "macaroni",
         "enCognate": "macaroni",
         "ruGloss": "макароны",
@@ -1462,7 +1462,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 103,
-        "orthography": "konstrúktsian",
+        "orthography": "konstrúkcian",
         "enGloss": "construction",
         "enCognate": "construction",
         "ruGloss": "строительство",
@@ -2118,7 +2118,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 148,
-        "orthography": "ventilatsian",
+        "orthography": "ventilácian",
         "enGloss": "vent/ventilation",
         "enCognate": "ventilation",
         "ruGloss": "вентиляция",
@@ -2160,7 +2160,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 151,
-        "orthography": "tomat",
+        "orthography": "tomát",
         "enGloss": "tomato",
         "enCognate": "tomato",
         "ruGloss": "томат",
@@ -2203,7 +2203,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 154,
-        "orthography": "absolut",
+        "orthography": "absolút",
         "enGloss": "absolute/completely",
         "enCognate": "absolute",
         "ruGloss": "абсолютный",
@@ -2217,7 +2217,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 155,
-        "orthography": "kommunikátsian",
+        "orthography": "kommunikácian",
         "enGloss": "communication/language",
         "enCognate": "communication",
         "ruGloss": "коммуникация/язык",
@@ -2378,7 +2378,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 166,
-        "orthography": "metropolis",
+        "orthography": "metrópolis",
         "enGloss": "city",
         "enCognate": "metropolis/megalopolis",
         "ruGloss": "город",
@@ -2422,7 +2422,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 169,
-        "orthography": "fabrikátsian",
+        "orthography": "fabrikácian",
         "enGloss": "manufacture/produce/create",
         "enCognate": "fabrication",
         "ruGloss": "производство/производить/создавать",
@@ -2450,7 +2450,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 171,
-        "orthography": "koalitsian",
+        "orthography": "koalícian",
         "enGloss": "coalition",
         "enCognate": "coalition",
         "ruGloss": "коалиция",
@@ -2507,7 +2507,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 175,
-        "orthography": "reputatsian",
+        "orthography": "reputácian",
         "enGloss": "reputation",
         "enCognate": "reputation",
         "ruGloss": "репутация",
@@ -2536,7 +2536,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 177,
-        "orthography": "fragmentatsian",
+        "orthography": "fragmentácian",
         "enGloss": "break up/fall apart/fragmentation",
         "enCognate": "fragmentation",
         "ruGloss": "разойтись/развалиться/фрагментация",
@@ -2566,7 +2566,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 180,
-        "orthography": "natsian",
+        "orthography": "nacian",
         "enGloss": "nation/people",
         "enCognate": "nation",
         "ruGloss": "нация/народ",
@@ -2768,7 +2768,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 195,
-        "orthography": "эxpedítsian",
+        "orthography": "эxpedícian",
         "enGloss": "expedition/travel",
         "enCognate": "expedition",
         "ruGloss": "экспедиция/путешествовать",
@@ -2983,7 +2983,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 212,
-        "orthography": "fortifikátsian",
+        "orthography": "fortifikácian",
         "enGloss": "fort/fortification/castle",
         "enCognate": "fortification",
         "ruGloss": "форт/фортификация",
@@ -3057,7 +3057,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 217,
-        "orthography": "lokátsian",
+        "orthography": "lokácian",
         "enGloss": "location/place",
         "enCognate": "location",
         "ruGloss": "локация/место",
@@ -3317,7 +3317,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 236,
-        "orthography": "unifikatsian",
+        "orthography": "unifikácian",
         "enGloss": "unification",
         "enCognate": "unification",
         "ruGloss": "унификация",
@@ -3405,7 +3405,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 242,
-        "orthography": "эxpozítsian",
+        "orthography": "эxpozícian",
         "enGloss": "exposition/exhibition",
         "enCognate": "exposition",
         "ruGloss": "экспозиция",
@@ -3812,7 +3812,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 270,
-        "orthography": "dysfúnktsian",
+        "orthography": "dysfúnkcian",
         "enGloss": "dysfunction/malfunction",
         "enCognate": "dysfunction",
         "ruGloss": "дисфункция",
@@ -4428,7 +4428,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 313,
-        "orthography": "civilizatsian",
+        "orthography": "civilizácian",
         "enGloss": "civilization",
         "enCognate": "civilization",
         "ruGloss": "цивилизация",
@@ -4542,7 +4542,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 321,
-        "orthography": "demonstrátsian",
+        "orthography": "demonstrácian",
         "enGloss": "demonstration/proof",
         "enCognate": "demonstration",
         "ruGloss": "демонстрация",
@@ -4598,7 +4598,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 325,
-        "orthography": "sektsian",
+        "orthography": "sekcian",
         "enGloss": "section/fraction/part",
         "enCognate": "section",
         "ruGloss": "раздел/фракция/часть",
@@ -4654,7 +4654,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 329,
-        "orthography": "kombinátsian",
+        "orthography": "kombinácian",
         "enGloss": "combination/composite",
         "enCognate": "combination",
         "ruGloss": "комбинация/составной",
@@ -4698,7 +4698,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 332,
-        "orthography": "effékt",
+        "orthography": "эffékt",
         "enGloss": "effect/as a result",
         "enCognate": "effect",
         "ruGloss": "следствие/эффект",
@@ -4726,7 +4726,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 334,
-        "orthography": "situátsian",
+        "orthography": "situácian",
         "enGloss": "situation",
         "enCognate": "situation",
         "ruGloss": "ситуация",
@@ -5139,7 +5139,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 363,
-        "orthography": "emótsian",
+        "orthography": "эmócian",
         "enGloss": "emotion/feeling",
         "enCognate": "emotion",
         "ruGloss": "эмоция/чувство",
@@ -5225,7 +5225,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 369,
-        "orthography": "эxklusiv",
+        "orthography": "эxklúsiv",
         "enGloss": "only/exclusively",
         "enCognate": "exclusive",
         "ruGloss": "только",
@@ -5239,7 +5239,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 370,
-        "orthography": "informátsian",
+        "orthography": "informácian",
         "enGloss": "information",
         "enCognate": "information",
         "ruGloss": "информация",
@@ -5456,7 +5456,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 385,
-        "orthography": "publikatsian",
+        "orthography": "publikácian",
         "enGloss": "publicity",
         "enCognate": "publication",
         "ruGloss": "гласность",
@@ -5470,7 +5470,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 386,
-        "orthography": "interestny",
+        "orthography": "interéstny",
         "enGloss": "interesting",
         "enCognate": "interesting",
         "ruGloss": "интересный",
@@ -5858,7 +5858,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 413,
-        "orthography": "assistent",
+        "orthography": "assístent",
         "enGloss": "helper",
         "enCognate": "assistant",
         "ruGloss": "помощник",
@@ -5988,7 +5988,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 422,
-        "orthography": "report",
+        "orthography": "repórt",
         "enGloss": "report",
         "enCognate": "report",
         "ruGloss": "отчет",
@@ -6003,7 +6003,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 423,
-        "orthography": "attak",
+        "orthography": "atták",
         "enGloss": "attack",
         "enCognate": "attack",
         "ruGloss": "атаковать/атака",
@@ -6133,7 +6133,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 432,
-        "orthography": "depozit",
+        "orthography": "depózit",
         "enGloss": "deposit/put into/save",
         "enCognate": "deposit",
         "ruGloss": "класть",
@@ -6161,7 +6161,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 434,
-        "orthography": "beret",
+        "orthography": "berét",
         "enGloss": "hat",
         "enCognate": "beret",
         "ruGloss": "шапка",
@@ -6189,7 +6189,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 436,
-        "orthography": "professian",
+        "orthography": "proféssian",
         "enGloss": "profession",
         "enCognate": "profession",
         "ruGloss": "профессия",
@@ -6217,7 +6217,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 438,
-        "orthography": "intoxikátsian",
+        "orthography": "intoxikácian",
         "enGloss": "intoxication/drunkeness",
         "enCognate": "intoxication",
         "ruGloss": "пьянство",
@@ -6232,7 +6232,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 439,
-        "orthography": "komponent",
+        "orthography": "kompónent",
         "enGloss": "component/part",
         "enCognate": "component",
         "ruGloss": "часть",
@@ -6246,7 +6246,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 440,
-        "orthography": "ceremonial",
+        "orthography": "ceremónial",
         "enGloss": "ceremonial/ceremoniously",
         "enCognate": "ceremonial",
         "ruGloss": "торжественный",
@@ -6316,7 +6316,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 445,
-        "orthography": "komputer",
+        "orthography": "kompúter",
         "enGloss": "computer",
         "enCognate": "computer",
         "ruGloss": "компьютер",
@@ -6345,7 +6345,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 447,
-        "orthography": "innovátsian",
+        "orthography": "innovácian",
         "enGloss": "innovation/invention",
         "enCognate": "innovation",
         "ruGloss": "инновация",
@@ -6359,7 +6359,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 448,
-        "orthography": "akademy",
+        "orthography": "akádemy",
         "enGloss": "academy",
         "enCognate": "academy",
         "ruGloss": "академия",
@@ -6401,7 +6401,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 451,
-        "orthography": "filosofy",
+        "orthography": "filósofy",
         "enGloss": "philosophy/science",
         "enCognate": "philosophy",
         "ruGloss": "философия/наука",
@@ -6528,7 +6528,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 460,
-        "orthography": "erudit",
+        "orthography": "эrudit",
         "enGloss": "erudite",
         "enCognate": "erudite",
         "ruGloss": "эрудированный",
@@ -6542,7 +6542,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 461,
-        "orthography": "erudítsian",
+        "orthography": "эrudícian",
         "enGloss": "erudition/science/knowledge",
         "enCognate": "erudition",
         "ruGloss": "эрудиция/наука/знания",
@@ -6685,7 +6685,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 471,
-        "orthography": "Europa",
+        "orthography": "Európa",
         "enGloss": "Europe",
         "enCognate": "Europe",
         "ruGloss": "Европа",
@@ -6701,7 +6701,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 472,
-        "orthography": "Indo-Europa",
+        "orthography": "Indo-Európa",
         "enGloss": "Indo-European",
         "enCognate": "Indo-European",
         "ruGloss": "индоевропейский",
@@ -6871,6 +6871,530 @@ export const lexicon: LexiconEntry[] = [
         "tags": [
             "planet",
             "science"
+        ]
+    },
+    {
+        "id": 484,
+        "orthography": "эtimólogy",
+        "enGloss": "etymology",
+        "enCognate": "etymology",
+        "ruGloss": "этимология",
+        "ruCognate": "этимология",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "language"
+        ]
+    },
+    {
+        "id": 485,
+        "orthography": "assórtiment",
+        "enGloss": "assortment",
+        "enCognate": "assortment",
+        "ruGloss": "ассортимент",
+        "ruCognate": "ассортимент",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "abstract"
+        ]
+    },
+    {
+        "id": 486,
+        "orthography": "kolléktiv",
+        "enGloss": "collective",
+        "enCognate": "collective",
+        "ruGloss": "коллективный",
+        "ruCognate": "коллективный",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "abstract"
+        ]
+    },
+    {
+        "id": 487,
+        "orthography": "specializ",
+        "enGloss": "specialized",
+        "enCognate": "specialized",
+        "ruGloss": "специализированный",
+        "ruCognate": "специализированный",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "abstract"
+        ]
+    },
+    {
+        "id": 488,
+        "orthography": "prestíj",
+        "enGloss": "prestige",
+        "enCognate": "prestige",
+        "ruGloss": "престиж",
+        "ruCognate": "престиж",
+        "pos": [
+            "noun",
+            "adj"
+        ],
+        "tags": [
+            "good"
+        ]
+    },
+    {
+        "id": 489,
+        "orthography": "England",
+        "enGloss": "England",
+        "enCognate": "England",
+        "ruGloss": "Англия",
+        "ruCognate": "Англия",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "geography",
+            "place",
+            "country"
+        ]
+    },
+    {
+        "id": 490,
+        "orthography": "balkony",
+        "enGloss": "balcony",
+        "enCognate": "balcony",
+        "ruGloss": "балкон",
+        "ruCognate": "балкон",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "household"
+        ]
+    },
+    {
+        "id": 491,
+        "orthography": "modern",
+        "enGloss": "modern",
+        "enCognate": "modern",
+        "ruGloss": "современный",
+        "ruCognate": "модерн",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "time"
+        ]
+    },
+    {
+        "id": 492,
+        "orthography": "anglicizm",
+        "enGloss": "anglicism",
+        "enCognate": "anglicism",
+        "ruGloss": "англицизм",
+        "ruCognate": "англицизм",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "language"
+        ]
+    },
+    {
+        "id": 493,
+        "orthography": "popkorn",
+        "enGloss": "popcorn",
+        "enCognate": "popcorn",
+        "ruGloss": "попкорн",
+        "ruCognate": "попкорн",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "food"
+        ]
+    },
+    {
+        "id": 494,
+        "orthography": "internet",
+        "enGloss": "internet",
+        "enCognate": "internet",
+        "ruGloss": "интернет",
+        "ruCognate": "интернет",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "technology"
+        ]
+    },
+    {
+        "id": 495,
+        "orthography": "smartfon",
+        "enGloss": "smartphone",
+        "enCognate": "smartphone",
+        "ruGloss": "смартфон",
+        "ruCognate": "смартфон",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "technology"
+        ]
+    },
+    {
+        "id": 496,
+        "orthography": "kreatív",
+        "enGloss": "creative",
+        "enCognate": "creative",
+        "ruGloss": "креативность",
+        "ruCognate": "креативность",
+        "pos": [
+            "adj",
+            "noun"
+        ],
+        "tags": [
+            "behavior"
+        ]
+    },
+    {
+        "id": 497,
+        "orthography": "sinonim",
+        "enGloss": "synonym",
+        "enCognate": "synonym",
+        "ruGloss": "синоним",
+        "ruCognate": "синоним",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "language"
+        ]
+    },
+    {
+        "id": 498,
+        "orthography": "эfféktiv",
+        "enGloss": "effective",
+        "enCognate": "effective",
+        "ruGloss": "эффективный",
+        "ruCognate": "эффективный",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "behavior"
+        ]
+    },
+    {
+        "id": 499,
+        "orthography": "onomatopéa",
+        "enGloss": "onomatopoeia",
+        "enCognate": "onomatopoeia",
+        "ruGloss": "ономатопея",
+        "ruCognate": "ономатопея",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "language"
+        ]
+    },
+    {
+        "id": 500,
+        "orthography": "fonólogy",
+        "enGloss": "phonology",
+        "enCognate": "phonology",
+        "ruGloss": "фонология",
+        "ruCognate": "фонология",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "language"
+        ]
+    },
+    {
+        "id": 501,
+        "orthography": "fonem",
+        "enGloss": "phoneme",
+        "enCognate": "phoneme",
+        "ruGloss": "фонема",
+        "ruCognate": "фонема",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "language"
+        ]
+    },
+    {
+        "id": 502,
+        "orthography": "jiráff",
+        "enGloss": "giraffe",
+        "enCognate": "giraffe",
+        "ruGloss": "жирафа",
+        "ruCognate": "жирафа",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "animal"
+        ]
+    },
+    {
+        "id": 503,
+        "orthography": "grammátika",
+        "enGloss": "grammar",
+        "enCognate": "grammatical",
+        "ruGloss": "грамматика",
+        "ruCognate": "грамматика",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "language"
+        ]
+    },
+    {
+        "id": 504,
+        "orthography": "akcent",
+        "enGloss": "accent/emphasis",
+        "enCognate": "accent",
+        "ruGloss": "акцент/ударение",
+        "ruCognate": "акцент",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "language"
+        ]
+    },
+    {
+        "id": 505,
+        "orthography": "normal",
+        "enGloss": "normal/normally",
+        "enCognate": "normal",
+        "ruGloss": "нормальный/нормально",
+        "ruCognate": "нормальный",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "behavior"
+        ]
+    },
+    {
+        "id": 506,
+        "orthography": "simbol",
+        "enGloss": "symbol",
+        "enCognate": "symbol",
+        "ruGloss": "символ",
+        "ruCognate": "символ",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "language"
+        ]
+    },
+    {
+        "id": 507,
+        "orthography": "typ",
+        "enGloss": "type",
+        "enCognate": "type",
+        "ruGloss": "тип",
+        "ruCognate": "тип",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "abstract"
+        ]
+    },
+    {
+        "id": 509,
+        "orthography": "morfólogy",
+        "enGloss": "morphology",
+        "enCognate": "morphology",
+        "ruGloss": "морфология",
+        "ruCognate": "морфология",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "language"
+        ]
+    },
+    {
+        "id": 510,
+        "orthography": "izolácian",
+        "enGloss": "isolation",
+        "enCognate": "isolation",
+        "ruGloss": "изоляция",
+        "ruCognate": "изоляция",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "behavior"
+        ]
+    },
+    {
+        "id": 511,
+        "orthography": "prefix",
+        "enGloss": "prefix",
+        "enCognate": "prefix",
+        "ruGloss": "префикс",
+        "ruCognate": "префикс",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "language"
+        ]
+    },
+    {
+        "id": 512,
+        "orthography": "suffix",
+        "enGloss": "suffix",
+        "enCognate": "suffix",
+        "ruGloss": "суффикс",
+        "ruCognate": "суффикс",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "language"
+        ]
+    },
+    {
+        "id": 513,
+        "orthography": "sort",
+        "enGloss": "sort/order",
+        "enCognate": "sort",
+        "ruGloss": "сортировать/порядок",
+        "ruCognate": "сортировать",
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "tags": [
+            "abstract"
+        ]
+    },
+    {
+        "id": 514,
+        "orthography": "subjekt",
+        "enGloss": "subject",
+        "enCognate": "subject",
+        "ruGloss": "субъект",
+        "ruCognate": "субъект",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "language"
+        ]
+    },
+    {
+        "id": 515,
+        "orthography": "process",
+        "enGloss": "process",
+        "enCognate": "process",
+        "ruGloss": "процесс",
+        "ruCognate": "процесс",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "action"
+        ]
+    },
+    {
+        "id": 516,
+        "orthography": "operácian",
+        "enGloss": "operation",
+        "enCognate": "operation",
+        "ruGloss": "операция",
+        "ruCognate": "операция",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "action"
+        ]
+    },
+    {
+        "id": 517,
+        "orthography": "procédur",
+        "enGloss": "procedure",
+        "enCognate": "procedure",
+        "ruGloss": "процедура",
+        "ruCognate": "процедура",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "action"
+        ]
+    },
+    {
+        "id": 518,
+        "orthography": "altérnativ",
+        "enGloss": "alternative",
+        "enCognate": "alternative",
+        "ruGloss": "альтернативный",
+        "ruCognate": "альтернативный",
+        "pos": [
+            "adj",
+            "noun"
+        ],
+        "tags": [
+            "abstract"
+        ]
+    },
+    {
+        "id": 519,
+        "orthography": "funkcian",
+        "enGloss": "function",
+        "enCognate": "function",
+        "ruGloss": "функция",
+        "ruCognate": "функция",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "math"
+        ]
+    },
+    {
+        "id": 520,
+        "orthography": "funkcional",
+        "enGloss": "functional",
+        "enCognate": "functional",
+        "ruGloss": "функциональный",
+        "ruCognate": "функциональный",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "abstract"
+        ]
+    },
+    {
+        "id": 521,
+        "orthography": "supermarket",
+        "enGloss": "supermarket",
+        "enCognate": "supermarket",
+        "ruGloss": "супермаркет",
+        "ruCognate": "супермаркет",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "place"
         ]
     }
 ];

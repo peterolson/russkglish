@@ -29,39 +29,46 @@
 	}
 </script>
 
-<h1>Text</h1>
+<main>
+	<h1>Text</h1>
 
-<div class="grid">
-	{#each sortedTexts as text}
-		<div class="text-item">
-			<a href="/texts/{text.title}">
-				<div class="img" style={`background-image: url(${text.img});`} />
-			</a>
-			<div>
-				<h2>
-					<a href="/texts/{text.title}">{text.title}</a>
-					<!--
+	<div class="grid">
+		{#each sortedTexts as text}
+			<div class="text-item">
+				<a href="/texts/{text.title}">
+					<div class="img" style={`background-image: url(${text.img});`} />
+				</a>
+				<div>
+					<h2>
+						<a href="/texts/{text.title}">{text.title}</a>
+						<!--
                     <button on:click={() => deleteText(text.title)}>❌</button>
                     -->
-				</h2>
-				<CategoryDisplay category={text.category} />
-				<div class="excerpt">
-					{#if text.subtitle}
-						<em>{text.subtitle}</em>
-					{/if}
-					<TextDisplay {text} isExcerpt />
+					</h2>
+					<CategoryDisplay category={text.category} />
+					<div class="excerpt">
+						{#if text.subtitle}
+							<em>{text.subtitle}</em>
+						{/if}
+						<TextDisplay {text} isExcerpt />
+					</div>
 				</div>
 			</div>
-		</div>
-	{/each}
-</div>
+		{/each}
+	</div>
 
-<br />
+	<br />
 
-<button on:click={addText}>Fabrikátsian text</button>
-<br /><br />
+	<button on:click={addText}>Fabrikátsian text</button>
+	<br /><br />
+</main>
 
 <style>
+	main {
+		padding: 16px;
+		background-color: rgba(255, 255, 255, 0.9);
+	}
+
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
