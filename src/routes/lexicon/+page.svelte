@@ -26,7 +26,7 @@
 	let gridNode: HTMLDivElement;
 	let selectedRow: LexiconEntry | undefined;
 
-	onMount(() => {
+	function onLoad() {
 		if (typeof agGrid === 'undefined') return;
 		const gridOptions = {
 			columnDefs: [
@@ -83,13 +83,24 @@
 			}
 		};
 		const grid = new agGrid.Grid(gridNode, gridOptions);
+	}
+
+	onMount(() => {
+		// load ag-grid script from CDN if it's not already loaded
+		if (typeof agGrid === 'undefined') {
+			const script = document.createElement('script');
+			script.src = 'https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.noStyle.js';
+			script.onload = onLoad;
+			document.body.appendChild(script);
+		} else {
+			onLoad();
+		}
 	});
 </script>
 
 <svelte:head>
 	<title>Lexikon</title>
-	<!-- Include the JS for AG Grid -->
-	<script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+
 	<!-- Include the core CSS, this is needed by the grid -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ag-grid-community/styles/ag-grid.css" />
 	<!-- Include the theme CSS, only need to import the theme you are going to use -->
