@@ -4,6 +4,7 @@
 	import { afterUpdate } from 'svelte';
 	import { lexicon } from '@/data/lexicon';
 	import type { LexiconEntry } from '@/data/lexicon.types';
+	import { orthographyToIPA } from '@/lib/toIPA';
 
 	export let text: Text;
 	export let isExcerpt: boolean = false;
@@ -20,6 +21,7 @@
 	let hoverDiv: HTMLElement;
 
 	function mouseMove(e: MouseEvent) {
+		if (isExcerpt) return;
 		selectedLexiconEntry = null;
 		const target = e.target as HTMLElement;
 		// get data attribute from the element
@@ -46,14 +48,17 @@
 </script>
 
 <svelte:head>
-	<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-	</script>
-	<title>{text.title}</title>
+	{#if !isExcerpt}
+		<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+		</script>
+		<title>{text.title}</title>
+	{/if}
 </svelte:head>
 
 <article class:excerpt={isExcerpt} on:mousemove={mouseMove}>
 	{#if !isExcerpt}
 		{#if text.category && !hideCategory}
+			<br />
 			<CategoryDisplay category={text.category} />
 		{/if}
 		<h1>{text.title}</h1>
@@ -68,14 +73,18 @@
 	{/if}
 
 	{@html isExcerpt ? text.text.slice(0, 300) : text.text}
+	<div style="clear: both;" />
+	<br />
 </article>
 
 <div bind:this={hoverDiv} class="hover-div" class:hidden={!selectedLexiconEntry}>
 	{#if selectedLexiconEntry}
 		<div class="lexicon-entry">
 			<strong>{selectedLexiconEntry.orthography}</strong>
-			<span>{selectedLexiconEntry.pos.join(' ')}</span>
+			<span>/{orthographyToIPA(selectedLexiconEntry.orthography)}/</span>
+			<em>{selectedLexiconEntry.pos.join(', ')}</em>
 		</div>
+		<hr />
 		<div style="display: flex; gap: 8px;">
 			<div>
 				{selectedLexiconEntry.enCognate}
@@ -142,5 +151,11 @@
 		border-radius: 4px;
 		font-size: 80%;
 		margin: 2px;
+	}
+
+	.lexicon-entry {
+		display: flex;
+		gap: 8px;
+		justify-content: space-between;
 	}
 </style>

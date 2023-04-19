@@ -81,12 +81,9 @@
 	}
 </script>
 
-<div />
-<div>
-	{#if alreadyExists}
-		<div class="caption not-matched">already exists</div>
-	{/if}
-</div>
+{#if alreadyExists}
+	<div class="caption not-matched">already exists</div>
+{/if}
 <div>
 	<input type="text" bind:value={orthography} />
 </div>

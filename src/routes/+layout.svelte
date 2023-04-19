@@ -4,7 +4,7 @@
 
 <nav>
 	<a href="/" class:active={$page.route.id === '/'}>Russglish</a>
-	<a href="/lexicon" class:active={$page.route.id?.startsWith('/lexicon')}>Lexicon</a>
+	<a href="/lexicon" class:active={$page.route.id?.startsWith('/lexicon')}>Lexikon</a>
 	<a href="/texts" class:active={$page.route.id?.startsWith('/texts')}>Text</a>
 </nav>
 

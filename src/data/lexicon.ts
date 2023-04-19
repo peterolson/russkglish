@@ -6599,7 +6599,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 465,
-        "orthography": "lexicon",
+        "orthography": "lexikon",
         "enGloss": "vocabulary/lexicon",
         "enCognate": "lexicon",
         "ruGloss": "лексикон/лексика",
@@ -7395,6 +7395,20 @@ export const lexicon: LexiconEntry[] = [
         ],
         "tags": [
             "place"
+        ]
+    },
+    {
+        "id": 522,
+        "orthography": "test",
+        "enGloss": "test",
+        "enCognate": "test",
+        "ruGloss": "тест",
+        "ruCognate": "тест",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "education"
         ]
     }
 ];

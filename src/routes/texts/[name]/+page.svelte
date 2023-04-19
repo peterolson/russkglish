@@ -5,6 +5,7 @@
 	import type { LexiconEntry } from '@/data/lexicon.types';
 	import { parseMarkup, type Text } from '@/lib/markup';
 	import TextDisplay from '@/components/TextDisplay.svelte';
+	import { isDev } from '@/data/config';
 
 	export let data: PageData;
 
@@ -38,6 +39,7 @@
 	let eventListener: (e: KeyboardEvent) => void;
 
 	afterUpdate(() => {
+		if (!isDev) return;
 		// clear previous overlays
 		suggestionContainer.innerHTML = '';
 		const scrollY = window.scrollY;
@@ -260,15 +262,19 @@
 </script>
 
 <div class="container">
-	<pre contenteditable="plaintext-only" bind:innerText={markup} bind:this={textareaNode} />
+	{#if isDev}
+		<pre contenteditable="plaintext-only" bind:innerText={markup} bind:this={textareaNode} />
+	{/if}
 	<div class="output">
 		<TextDisplay text={parsedText} />
 	</div>
 </div>
-<button on:click={save}>Save</button>
+{#if isDev}
+	<button on:click={save}>Save</button>
 
-<div class="overlay-container" bind:this={overlayContainer} />
-<div class="suggestion-container" bind:this={suggestionContainer} />
+	<div class="overlay-container" bind:this={overlayContainer} />
+	<div class="suggestion-container" bind:this={suggestionContainer} />
+{/if}
 
 <style>
 	.container {
@@ -287,6 +293,8 @@
 	}
 	.output {
 		width: 100%;
+		display: flex;
+		justify-content: center;
 		overflow: auto;
 	}
 </style>
