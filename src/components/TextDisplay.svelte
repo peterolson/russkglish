@@ -59,7 +59,12 @@
 	{#if !isExcerpt}
 		{#if text.category && !hideCategory}
 			<br />
-			<CategoryDisplay category={text.category} />
+			<div style="display: flex; gap: 8px;">
+				{#if !isExcerpt}
+					<a href="/texts" class="back-link">Text</a> ›
+				{/if}
+				<CategoryDisplay category={text.category} />
+			</div>
 		{/if}
 		<h1>{text.title}</h1>
 		{#if text.subtitle}

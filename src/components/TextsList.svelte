@@ -2,7 +2,10 @@
 	import { texts } from '@/data/texts';
 	import CategoryDisplay from '@/components/CategoryDisplay.svelte';
 	import TextDisplay from '@/components/TextDisplay.svelte';
-	const sortedTexts = texts.map((x, i) => ({ ...x, index: i })).sort((a, b) => a.title.localeCompare(b.title));
+
+	export let filteredTexts: typeof texts = texts;
+
+	const sortedTexts = filteredTexts.map((x, i) => ({ ...x, index: i })).sort((a, b) => a.title.localeCompare(b.title));
 </script>
 
 <div class="grid">

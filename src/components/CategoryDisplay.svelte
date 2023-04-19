@@ -19,5 +19,18 @@
 
 <div>
 	{icon}
-	{category}
+	<a href="/texts/category/{category}">
+		{category}
+	</a>
 </div>
+
+<style>
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+</style>
