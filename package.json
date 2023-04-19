@@ -13,6 +13,7 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/adapter-netlify": "^2.0.6",
 		"@sveltejs/kit": "^1.15.2",
 		"@types/commonmark": "^0.27.6",
 		"@typescript-eslint/eslint-plugin": "^5.27.0",
