@@ -99,7 +99,7 @@
 		{/if}
 	{/if}
 
-	{@html isExcerpt ? text.text.slice(0, 300) : text.text}
+	{@html isExcerpt ? text.text.slice(0, 1250) : text.text}
 	<div style="clear: both;" />
 	<br />
 </article>
