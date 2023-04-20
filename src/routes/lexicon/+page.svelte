@@ -30,17 +30,22 @@
 		if (typeof agGrid === 'undefined') return;
 		const gridOptions = {
 			columnDefs: [
-				{ field: 'id', headerName: 'ID', width: 75 },
 				{
-					field: 'freq',
-					headerName: 'Freq',
-					width: 85
-				},
-				{ field: 'orthography', width: 150 },
-				{
-					field: 'ipa',
-					headerName: 'IPA',
-					width: 150
+					headerName: `${lexicon.length} termin`,
+					children: [
+						{ field: 'id', headerName: 'ID', width: 75 },
+						{
+							field: 'freq',
+							headerName: 'Freq',
+							width: 85
+						},
+						{ field: 'orthography', width: 150 },
+						{
+							field: 'ipa',
+							headerName: 'IPA',
+							width: 150
+						}
+					]
 				},
 				{
 					headerName: 'English',
