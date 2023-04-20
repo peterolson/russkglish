@@ -9,6 +9,10 @@ export type Text = {
 	category: string;
 	img: string;
 	text: string;
+	enOriginal: string;
+	enOriginalURL: string;
+	ruOriginal: string;
+	ruOriginalURL: string;
 };
 
 const tokenPattern = /ъ+(\d+)/g;
@@ -40,6 +44,10 @@ export function parseMarkup(markup: string): Text {
 	let subtitle = '';
 	let category = '';
 	let img = '';
+	let enOriginal = '';
+	let enOriginalURL = '';
+	let ruOriginal = '';
+	let ruOriginalURL = '';
 	const lines = afterQuotes.split('\n');
 	const outputLines = [];
 	for (const line of lines) {
@@ -52,6 +60,14 @@ export function parseMarkup(markup: string): Text {
 			category = remainder;
 		} else if (line.startsWith('img.')) {
 			img = remainder;
+		} else if (line.startsWith('enOriginal.')) {
+			enOriginal = remainder;
+		} else if (line.startsWith('enOriginalURL.')) {
+			enOriginalURL = remainder;
+		} else if (line.startsWith('ruOriginal.')) {
+			ruOriginal = remainder;
+		} else if (line.startsWith('ruOriginalURL.')) {
+			ruOriginalURL = remainder;
 		} else {
 			outputLines.push(line);
 		}
@@ -62,6 +78,10 @@ export function parseMarkup(markup: string): Text {
 		subtitle: replaceWords(subtitle),
 		category: replaceWords(category),
 		img,
+		enOriginal,
+		enOriginalURL,
+		ruOriginal,
+		ruOriginalURL,
 		text: replaceWords(writer.render(reader.parse(text)), true)
 	};
 }

@@ -7410,5 +7410,20 @@ export const lexicon: LexiconEntry[] = [
         "tags": [
             "education"
         ]
+    },
+    {
+        "id": 523,
+        "orthography": "oríginal",
+        "enGloss": "original",
+        "enCognate": "original",
+        "ruGloss": "оригинал",
+        "ruCognate": "оригинал",
+        "pos": [
+            "noun",
+            "adj"
+        ],
+        "tags": [
+            "abstract"
+        ]
     }
 ];

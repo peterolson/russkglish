@@ -66,7 +66,29 @@
 				<CategoryDisplay category={text.category} />
 			</div>
 		{/if}
+		{#if text.enOriginal || text.ruOriginal}
+			<div class="original">
+				<strong>Original</strong>
+				<br />
+				{#if text.ruOriginal}
+					<a href={text.ruOriginalURL} target="_blank">
+						{text.ruOriginal}
+					</a>
+					[Русский]
+				{/if}
+				{#if text.ruOriginal && text.enOriginal}
+					<br />
+				{/if}
+				{#if text.enOriginal}
+					<a href={text.enOriginalURL} target="_blank">
+						{text.enOriginal}
+					</a>
+					[English]
+				{/if}
+			</div>
+		{/if}
 		<h1>{text.title}</h1>
+
 		{#if text.subtitle}
 			<div><em>{text.subtitle}</em></div>
 			<br />
@@ -162,5 +184,19 @@
 		display: flex;
 		gap: 8px;
 		justify-content: space-between;
+	}
+
+	.original {
+		text-align: right;
+		opacity: 0.9;
+		font-size: 90%;
+	}
+
+	.original a {
+		text-decoration: none;
+	}
+
+	.original a:hover {
+		text-decoration: underline;
 	}
 </style>
