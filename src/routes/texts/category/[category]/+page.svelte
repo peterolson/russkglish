@@ -5,6 +5,10 @@
 	export let data: PageData;
 </script>
 
+<svelte:head>
+	<title>{data.category}</title>
+</svelte:head>
+
 <main>
 	<h1>
 		<a href="/texts">Text</a> ›
