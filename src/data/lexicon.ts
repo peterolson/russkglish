@@ -7425,5 +7425,215 @@ export const lexicon: LexiconEntry[] = [
         "tags": [
             "abstract"
         ]
+    },
+    {
+        "id": 524,
+        "orthography": "kompany",
+        "enGloss": "company",
+        "enCognate": "company",
+        "ruGloss": "компания",
+        "ruCognate": "компания",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "people"
+        ]
+    },
+    {
+        "id": 525,
+        "orthography": "versian",
+        "enGloss": "version",
+        "enCognate": "version",
+        "ruGloss": "версия",
+        "ruCognate": "версия",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "abstract"
+        ]
+    },
+    {
+        "id": 526,
+        "orthography": "variant",
+        "enGloss": "variant/option",
+        "enCognate": "variant",
+        "ruGloss": "вариант",
+        "ruCognate": "вариант",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "abstract"
+        ]
+    },
+    {
+        "id": 527,
+        "orthography": "platform",
+        "enGloss": "platform",
+        "enCognate": "platform",
+        "ruGloss": "платформа",
+        "ruCognate": "платформа",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "construction"
+        ]
+    },
+    {
+        "id": 528,
+        "orthography": "sistem",
+        "enGloss": "system",
+        "enCognate": "system",
+        "ruGloss": "система",
+        "ruCognate": "система",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "technology"
+        ]
+    },
+    {
+        "id": 529,
+        "orthography": "konflikt",
+        "enGloss": "conflict",
+        "enCognate": "conflict",
+        "ruGloss": "конфликт",
+        "ruCognate": "конфликт",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "behavior"
+        ]
+    },
+    {
+        "id": 530,
+        "orthography": "privilegy",
+        "enGloss": "privilege / right",
+        "enCognate": "privilege",
+        "ruGloss": "привилегия / право",
+        "ruCognate": "привилегия",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "law"
+        ]
+    },
+    {
+        "id": 531,
+        "orthography": "princip",
+        "enGloss": "principle/rule",
+        "enCognate": "principle",
+        "ruGloss": "принцип/правило",
+        "ruCognate": "принцип",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "abstract"
+        ]
+    },
+    {
+        "id": 532,
+        "orthography": "domino",
+        "enGloss": "domino",
+        "enCognate": "domino",
+        "ruGloss": "домино",
+        "ruCognate": "домино",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "geometry"
+        ]
+    },
+    {
+        "id": 533,
+        "orthography": "trimino",
+        "enGloss": "trimino",
+        "enCognate": "trimino",
+        "ruGloss": "тримино",
+        "ruCognate": "тримино",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "geometry"
+        ]
+    },
+    {
+        "id": 534,
+        "orthography": "tetrámino",
+        "enGloss": "tetramino",
+        "enCognate": "tetramino",
+        "ruGloss": "тетрамино",
+        "ruCognate": "тетрамино",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "geometry"
+        ]
+    },
+    {
+        "id": 535,
+        "orthography": "pentámino",
+        "enGloss": "pentamino",
+        "enCognate": "pentamino",
+        "ruGloss": "пентамино",
+        "ruCognate": "пентамино",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "geometry"
+        ]
+    },
+    {
+        "id": 536,
+        "orthography": "geómetry",
+        "enGloss": "geometry",
+        "enCognate": "geometry",
+        "ruGloss": "геометрия",
+        "ruCognate": "геометрия",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "math"
+        ]
+    },
+    {
+        "id": 537,
+        "orthography": "figur",
+        "enGloss": "figure/shape",
+        "enCognate": "figure",
+        "ruGloss": "фигура/форма",
+        "ruCognate": "фигура",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "geometry"
+        ]
+    },
+    {
+        "id": 538,
+        "orthography": "kuadrat",
+        "enGloss": "square",
+        "enCognate": "quadrate",
+        "ruGloss": "квадрат",
+        "ruCognate": "квадрат",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "geometry"
+        ]
     }
 ];
