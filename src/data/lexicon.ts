@@ -7635,5 +7635,175 @@ export const lexicon: LexiconEntry[] = [
         "tags": [
             "geometry"
         ]
+    },
+    {
+        "id": 539,
+        "orthography": "pozícian",
+        "enGloss": "position",
+        "enCognate": "position",
+        "ruGloss": "позиция",
+        "ruCognate": "позиция",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "place"
+        ]
+    },
+    {
+        "id": 540,
+        "orthography": "gravitácian",
+        "enGloss": "gravitation/gravity",
+        "enCognate": "gravitation",
+        "ruGloss": "тяготение",
+        "ruCognate": "гравитация",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "science"
+        ]
+    },
+    {
+        "id": 541,
+        "orthography": "fundáment",
+        "enGloss": "foundation/bottom",
+        "enCognate": "fundament(al)",
+        "ruGloss": "низ/дно/фундамент",
+        "ruCognate": "фундамент",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "place"
+        ]
+    },
+    {
+        "id": 542,
+        "orthography": "klient",
+        "enGloss": "customer/client",
+        "enCognate": "client",
+        "ruGloss": "клиент",
+        "ruCognate": "клиент",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "person"
+        ]
+    },
+    {
+        "id": 543,
+        "orthography": "orientácian",
+        "enGloss": "orientation",
+        "enCognate": "orientation",
+        "ruGloss": "ориентация",
+        "ruCognate": "ориентация",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "place"
+        ]
+    },
+    {
+        "id": 544,
+        "orthography": "sportsmen",
+        "enGloss": "sportsman/game player",
+        "enCognate": "sportsman",
+        "ruGloss": "игрок/спортсмен",
+        "ruCognate": "спортсмен",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "person",
+            "job"
+        ]
+    },
+    {
+        "id": 545,
+        "orthography": "novo",
+        "enGloss": "new",
+        "enCognate": "novel/de novo",
+        "ruGloss": "новый",
+        "ruCognate": "новое",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "quality"
+        ]
+    },
+    {
+        "id": 546,
+        "orthography": "cikl",
+        "enGloss": "cycle/repeat",
+        "enCognate": "cycle",
+        "ruGloss": "цикл/повторить",
+        "ruCognate": "цикл",
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "tags": [
+            "math"
+        ]
+    },
+    {
+        "id": 547,
+        "orthography": "linea",
+        "enGloss": "line",
+        "enCognate": "linear",
+        "ruGloss": "линия",
+        "ruCognate": "линия",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "math"
+        ]
+    },
+    {
+        "id": 548,
+        "orthography": "likuidácian",
+        "enGloss": "destruction",
+        "enCognate": "liquidation",
+        "ruGloss": "уничтожение",
+        "ruCognate": "ликвидация",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "bad"
+        ]
+    },
+    {
+        "id": 549,
+        "orthography": "priz",
+        "enGloss": "prize/reward",
+        "enCognate": "prize",
+        "ruGloss": "приз/награда",
+        "ruCognate": "приз",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "game"
+        ]
+    },
+    {
+        "id": 550,
+        "orthography": "synkhrony",
+        "enGloss": "synchronous/at the same time/simultaneous",
+        "enCognate": "synchrony",
+        "ruGloss": "одновременно",
+        "ruCognate": "синхронный",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "time"
+        ]
     }
 ];
