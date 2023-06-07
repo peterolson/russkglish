@@ -9,7 +9,8 @@
 		Mith: '🐉',
 		História: '📅',
 		Mathemátik: '➗',
-		Эnciklopédia: '📚'
+		Эnciklopédia: '📚',
+		Sport: '🎮🏃'
 	};
 
 	const defaultIcon = '📃';

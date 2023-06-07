@@ -6316,7 +6316,7 @@ export const lexicon: LexiconEntry[] = [
     },
     {
         "id": 445,
-        "orthography": "kompúter",
+        "orthography": "kompyúter",
         "enGloss": "computer",
         "enCognate": "computer",
         "ruGloss": "компьютер",
@@ -7804,6 +7804,713 @@ export const lexicon: LexiconEntry[] = [
         ],
         "tags": [
             "time"
+        ]
+    },
+    {
+        "id": 551,
+        "orthography": "specifikácian",
+        "enGloss": "definition/description",
+        "enCognate": "specification",
+        "ruGloss": "определение/описание",
+        "ruCognate": "спецификация",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "speech"
+        ]
+    },
+    {
+        "id": 552,
+        "orthography": "globus",
+        "enGloss": "globe/world",
+        "enCognate": "globe",
+        "ruGloss": "глобус/земной шар",
+        "ruCognate": "глобус",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "place"
+        ]
+    },
+    {
+        "id": 553,
+        "orthography": "sfer",
+        "enGloss": "ball/sphere",
+        "enCognate": "sphere",
+        "ruGloss": "шар/сфера",
+        "ruCognate": "сфера",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "math"
+        ]
+    },
+    {
+        "id": 554,
+        "orthography": "kartógrafy",
+        "enGloss": "cartography",
+        "enCognate": "cartography",
+        "ruGloss": "картография",
+        "ruCognate": "картография",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "job"
+        ]
+    },
+    {
+        "id": 555,
+        "orthography": "basketbol",
+        "enGloss": "basketball",
+        "enCognate": "basketball",
+        "ruGloss": "баскетбол",
+        "ruCognate": "баскетбол",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "sport"
+        ]
+    },
+    {
+        "id": 556,
+        "orthography": "apparátus",
+        "enGloss": "apparatus",
+        "enCognate": "apparatus",
+        "ruGloss": "аппарат",
+        "ruCognate": "аппарат",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "technology"
+        ]
+    },
+    {
+        "id": 557,
+        "orthography": "kamera",
+        "enGloss": "camera",
+        "enCognate": "camera",
+        "ruGloss": "камера",
+        "ruCognate": "камера",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "technology"
+        ]
+    },
+    {
+        "id": 558,
+        "orthography": "fotógrafy",
+        "enGloss": "photo/photograph",
+        "enCognate": "photograph",
+        "ruGloss": "фотография",
+        "ruCognate": "фотография",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "technology"
+        ]
+    },
+    {
+        "id": 559,
+        "orthography": "kobra",
+        "enGloss": "snake",
+        "enCognate": "cobra",
+        "ruGloss": "змея",
+        "ruCognate": "кобра",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "biology",
+            "animal"
+        ]
+    },
+    {
+        "id": 560,
+        "orthography": "reptíla",
+        "enGloss": "reptile",
+        "enCognate": "reptile",
+        "ruGloss": "рептилия",
+        "ruCognate": "рептилия",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "biology"
+        ]
+    },
+    {
+        "id": 561,
+        "orthography": "toxin",
+        "enGloss": "toxin/poison/venom",
+        "enCognate": "toxin",
+        "ruGloss": "яд",
+        "ruCognate": "токсин",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "biology"
+        ]
+    },
+    {
+        "id": 562,
+        "orthography": "serióz",
+        "enGloss": "serious",
+        "enCognate": "serious",
+        "ruGloss": "серьезный",
+        "ruCognate": "серьезный",
+        "pos": [
+            "adj"
+        ],
+        "tags": [
+            "character"
+        ]
+    },
+    {
+        "id": 563,
+        "orthography": "ofis",
+        "enGloss": "office",
+        "enCognate": "office",
+        "ruGloss": "офис",
+        "ruCognate": "офис",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "place",
+            "job",
+            "building"
+        ]
+    },
+    {
+        "id": 564,
+        "orthography": "biznessmen",
+        "enGloss": "businessman",
+        "enCognate": "businessman",
+        "ruGloss": "бизнесмен",
+        "ruCognate": "бизнесмен",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "person",
+            "job"
+        ]
+    },
+    {
+        "id": 565,
+        "orthography": "praktik",
+        "enGloss": "work/practice",
+        "enCognate": "practice",
+        "ruGloss": "работать/заниматься",
+        "ruCognate": "практиковать",
+        "pos": [
+            "verb"
+        ],
+        "tags": [
+            "job",
+            "action"
+        ]
+    },
+    {
+        "id": 566,
+        "orthography": "stul",
+        "enGloss": "chair",
+        "enCognate": "stool",
+        "ruGloss": "стул",
+        "ruCognate": "стул",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "household"
+        ]
+    },
+    {
+        "id": 567,
+        "orthography": "dokument",
+        "enGloss": "document",
+        "enCognate": "document",
+        "ruGloss": "документ",
+        "ruCognate": "документ",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "literature"
+        ]
+    },
+    {
+        "id": 568,
+        "orthography": "idéa",
+        "enGloss": "idea",
+        "enCognate": "idea",
+        "ruGloss": "идея",
+        "ruCognate": "идея",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "abstract"
+        ]
+    },
+    {
+        "id": 569,
+        "orthography": "arbiter",
+        "enGloss": "judge/referee",
+        "enCognate": "arbiter",
+        "ruGloss": "судья/рефери",
+        "ruCognate": "арбитр",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "person",
+            "job",
+            "law"
+        ]
+    },
+    {
+        "id": 570,
+        "orthography": "advokat",
+        "enGloss": "lawyer",
+        "enCognate": "advocate",
+        "ruGloss": "юрист",
+        "ruCognate": "адвокат",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "person",
+            "job",
+            "law"
+        ]
+    },
+    {
+        "id": 571,
+        "orthography": "эxpert",
+        "enGloss": "expert",
+        "enCognate": "expert",
+        "ruGloss": "эксперт",
+        "ruCognate": "эксперт",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "person",
+            "job"
+        ]
+    },
+    {
+        "id": 572,
+        "orthography": "jurist",
+        "enGloss": "jurist/legal professional",
+        "enCognate": "jurist",
+        "ruGloss": "юрист/специалист в области права",
+        "ruCognate": "юрист",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "person",
+            "job",
+            "law"
+        ]
+    },
+    {
+        "id": 573,
+        "orthography": "rezolúcian",
+        "enGloss": "resolution/judgement/decision",
+        "enCognate": "resolution",
+        "ruGloss": "резолюция/решение",
+        "ruCognate": "резолюция",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "action"
+        ]
+    },
+    {
+        "id": 574,
+        "orthography": "konstitúcian",
+        "enGloss": "consitution",
+        "enCognate": "consitution",
+        "ruGloss": "конституция",
+        "ruCognate": "конституция",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "literature",
+            "law"
+        ]
+    },
+    {
+        "id": 575,
+        "orthography": "velósiped",
+        "enGloss": "bicycle",
+        "enCognate": "velocipede",
+        "ruGloss": "велосипед",
+        "ruCognate": "велосипед",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "transport"
+        ]
+    },
+    {
+        "id": 576,
+        "orthography": "эnergy",
+        "enGloss": "energy",
+        "enCognate": "energy",
+        "ruGloss": "энергия",
+        "ruCognate": "энергия",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "science"
+        ]
+    },
+    {
+        "id": 577,
+        "orthography": "motor",
+        "enGloss": "motor",
+        "enCognate": "motor",
+        "ruGloss": "мотор",
+        "ruCognate": "мотор",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "science",
+            "transport"
+        ]
+    },
+    {
+        "id": 578,
+        "orthography": "disk",
+        "enGloss": "disk/circle/wheel",
+        "enCognate": "disk",
+        "ruGloss": "диск/круг/колесо",
+        "ruCognate": "диск",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "math"
+        ]
+    },
+    {
+        "id": 579,
+        "orthography": "pedal",
+        "enGloss": "pedal",
+        "enCognate": "pedal",
+        "ruGloss": "педаль",
+        "ruCognate": "педаль",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "transport"
+        ]
+    },
+    {
+        "id": 580,
+        "orthography": "kredit",
+        "enGloss": "credit",
+        "enCognate": "credit",
+        "ruGloss": "кредит",
+        "ruCognate": "кредит",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "money"
+        ]
+    },
+    {
+        "id": 581,
+        "orthography": "kart",
+        "enGloss": "card",
+        "enCognate": "card",
+        "ruGloss": "карта",
+        "ruCognate": "карта",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "object"
+        ]
+    },
+    {
+        "id": 582,
+        "orthography": "finans",
+        "enGloss": "finance",
+        "enCognate": "finance",
+        "ruGloss": "финансы",
+        "ruCognate": "финансы",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "money"
+        ]
+    },
+    {
+        "id": 583,
+        "orthography": "tranzákcian",
+        "enGloss": "transaction",
+        "enCognate": "transaction",
+        "ruGloss": "транзакция",
+        "ruCognate": "транзакция",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "money"
+        ]
+    },
+    {
+        "id": 584,
+        "orthography": "plastik",
+        "enGloss": "plastic",
+        "enCognate": "plastic",
+        "ruGloss": "пластик",
+        "ruCognate": "пластик",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "material"
+        ]
+    },
+    {
+        "id": 585,
+        "orthography": "realíz",
+        "enGloss": "realize/complete/execute/implement",
+        "enCognate": "realize",
+        "ruGloss": "реализовать/завершить/исполнить/осуществить",
+        "ruCognate": "реализовать",
+        "pos": [
+            "verb"
+        ],
+        "tags": [
+            "action"
+        ]
+    },
+    {
+        "id": 586,
+        "orthography": "bank",
+        "enGloss": "bank",
+        "enCognate": "bank",
+        "ruGloss": "банк",
+        "ruCognate": "банк",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "place",
+            "money"
+        ]
+    },
+    {
+        "id": 587,
+        "orthography": "kompensácian",
+        "enGloss": "pay/payment",
+        "enCognate": "compensation",
+        "ruGloss": "платить/оплата",
+        "ruCognate": "компенсация",
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "tags": [
+            "money"
+        ]
+    },
+    {
+        "id": 588,
+        "orthography": "dollar",
+        "enGloss": "dollar/money",
+        "enCognate": "dollar",
+        "ruGloss": "доллар/деньги",
+        "ruCognate": "доллар",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "money"
+        ]
+    },
+    {
+        "id": 589,
+        "orthography": "akkáunt",
+        "enGloss": "account",
+        "enCognate": "account",
+        "ruGloss": "счет",
+        "ruCognate": "аккаунт",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "money"
+        ]
+    },
+    {
+        "id": 590,
+        "orthography": "vibrácian",
+        "enGloss": "vibration",
+        "enCognate": "vibration",
+        "ruGloss": "вибрация",
+        "ruCognate": "вибрация",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "science"
+        ]
+    },
+    {
+        "id": 591,
+        "orthography": "reverberácian",
+        "enGloss": "reverberation/echo/sound",
+        "enCognate": "reverberation",
+        "ruGloss": "реверберация/эхо/звук",
+        "ruCognate": "реверберация",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "science",
+            "sound"
+        ]
+    },
+    {
+        "id": 592,
+        "orthography": "kengaru",
+        "enGloss": "kangaroo",
+        "enCognate": "kangaroo",
+        "ruGloss": "кенгуру",
+        "ruCognate": "кенгуру",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "animal"
+        ]
+    },
+    {
+        "id": 593,
+        "orthography": "Austrália",
+        "enGloss": "Australia",
+        "enCognate": "Australia",
+        "ruGloss": "Австралия",
+        "ruCognate": "Австралия",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "place",
+            "country",
+            "geography"
+        ]
+    },
+    {
+        "id": 594,
+        "orthography": "tanc",
+        "enGloss": "dance",
+        "enCognate": "dance",
+        "ruGloss": "танец",
+        "ruCognate": "танец",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "action"
+        ]
+    },
+    {
+        "id": 595,
+        "orthography": "hop-hop",
+        "enGloss": "hop/jump",
+        "enCognate": "hop",
+        "ruGloss": "прыгать",
+        "ruCognate": "хоп",
+        "pos": [
+            "verb",
+            "interj"
+        ],
+        "tags": [
+            "action"
+        ]
+    },
+    {
+        "id": 596,
+        "orthography": "gastro",
+        "enGloss": "stomach/belly",
+        "enCognate": "gastro(enteritis)",
+        "ruGloss": "желудок/живот",
+        "ruCognate": "гастро(энтерит)",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "body"
+        ]
+    },
+    {
+        "id": 597,
+        "orthography": "galaktika",
+        "enGloss": "galaxy",
+        "enCognate": "galactic",
+        "ruGloss": "галактика",
+        "ruCognate": "галактика",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "science",
+            "space"
+        ]
+    },
+    {
+        "id": 598,
+        "orthography": "spiral",
+        "enGloss": "spiral",
+        "enCognate": "spiral",
+        "ruGloss": "спираль",
+        "ruCognate": "спираль",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "math"
+        ]
+    },
+    {
+        "id": 599,
+        "orthography": "million",
+        "enGloss": "million",
+        "enCognate": "million",
+        "ruGloss": "миллион",
+        "ruCognate": "миллион",
+        "pos": [
+            "noun"
+        ],
+        "tags": [
+            "math"
         ]
     }
 ];
